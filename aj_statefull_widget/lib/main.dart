@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   runApp(
@@ -11,10 +12,10 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue.shade900,
         appBar: AppBar(
           title: Text("Statefull Widget"),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.blue.shade400,
         ),
         body: Dice(),
       ),
@@ -22,7 +23,14 @@ class myApp extends StatelessWidget {
   }
 }
 
-class Dice extends StatelessWidget {
+class Dice extends StatefulWidget {
+  @override
+  _DiceState createState() => _DiceState();
+}
+
+class _DiceState extends State<Dice> {
+  var leftDiceNumber = 1;
+  var rightDiceNumber = 1;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -33,9 +41,16 @@ class Dice extends StatelessWidget {
             child: FlatButton(
               onPressed: () {
                 //signature for a voidcallback also called in some languages anonymous functions
-                print('Left button got pressed');
+                //a function with no name
+                setState(() {
+                  leftDiceNumber =
+                      Random().nextInt(6) + 1; //random number between 0 and 5
+                  print('Left button got pressed');
+                  print('diceNumber = $leftDiceNumber');
+                });
               },
-              child: Image.asset('images/dice1.png'),
+              child: Image.asset(
+                  'images/dice$leftDiceNumber.png'), //string interpolation with $
             ),
           ),
           Expanded(
@@ -45,7 +60,8 @@ class Dice extends StatelessWidget {
                 //signature for a voidcallback also called in some languages anonymous functions
                 print('Right button got pressed');
               },
-              child: Image.asset('images/dice2.png'),
+              child: Image.asset(
+                  'images/dice$rightDiceNumber.png'), //string interpolation with $
             ),
           ),
         ],
