@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
+import 'package:english_words/english_words.dart';
 
 void main() {
   runApp(
@@ -35,7 +35,7 @@ class _DiceState extends State<Dice> {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'hey',
+        nouns.first,
         style: TextStyle(
           fontFamily: 'Chilanka-Regular',
           fontSize: 40,
