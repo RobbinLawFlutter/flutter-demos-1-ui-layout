@@ -27,12 +27,14 @@ class myApp extends StatelessWidget {
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            Container(
-              height: 100.0,
-              width: 100.0,
-              color: Colors.white,
-              child: Text(
-                'Container 1',
+            Expanded(
+              child: Container(
+                height: 100.0,
+                width: 100.0,
+                color: Colors.white,
+                child: Text(
+                  'Container 1',
+                ),
               ),
             ),
             Container(
