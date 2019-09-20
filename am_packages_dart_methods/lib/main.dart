@@ -76,9 +76,9 @@ class _BodyOfAppState extends State<BodyOfApp> {
               ),
             ),
           ),
-          makeKey(textToShow: 'Click Me 3', soundToPlay: 3),
-          makeKey(textToShow: 'Click Me 4', soundToPlay: 4),
-          makeKey(textToShow: 'Click Me 5', soundToPlay: 5),
+          //makeKey(textToShow: 'Click Me 3', soundToPlay: 3),
+          //makeKey(textToShow: 'Click Me 4', soundToPlay: 4),
+          //makeKey(textToShow: 'Click Me 5', soundToPlay: 5),
         ],
       ),
     );
