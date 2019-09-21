@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:flutter/rendering.dart';
 
+/*
 void main() {
-  debugPaintSizeEnabled = false; // Set to true for visual layout
   runApp(MyApp());
 }
+*/
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -19,8 +21,6 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-
-  // #docregion column
   Widget _buildImageColumn() => Container(
         decoration: BoxDecoration(
           color: Colors.black26,
@@ -32,9 +32,12 @@ class MyApp extends StatelessWidget {
           ],
         ),
       );
-  // #enddocregion column
-
-  // #docregion row
+  Widget _buildImageRow(int imageIndex) => Row(
+        children: [
+          _buildDecoratedImage(imageIndex),
+          _buildDecoratedImage(imageIndex + 1),
+        ],
+      );
   Widget _buildDecoratedImage(int imageIndex) => Expanded(
         child: Container(
           decoration: BoxDecoration(
@@ -45,12 +48,4 @@ class MyApp extends StatelessWidget {
           child: Image.asset('images/pic$imageIndex.jpg'),
         ),
       );
-
-  Widget _buildImageRow(int imageIndex) => Row(
-        children: [
-          _buildDecoratedImage(imageIndex),
-          _buildDecoratedImage(imageIndex + 1),
-        ],
-      );
-  // #enddocregion row
 }
