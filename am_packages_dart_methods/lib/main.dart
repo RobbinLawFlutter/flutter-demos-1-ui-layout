@@ -1,4 +1,5 @@
 // this app demonstrates the use of packages
+// go to pub.dev/flutter
 // the "english_words" package
 // and the "audioPlayers" package
 // and some of the sutilties of dart methods which are very similar to C# methods
