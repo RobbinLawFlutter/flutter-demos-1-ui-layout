@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Quizzler());
+void main() => runApp(MyApp());
 
-class Quizzler extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -11,7 +11,7 @@ class Quizzler extends StatelessWidget {
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.0),
-            child: QuizPage(),
+            child: MyFirstPage(),
           ),
         ),
       ),
@@ -19,12 +19,12 @@ class Quizzler extends StatelessWidget {
   }
 }
 
-class QuizPage extends StatefulWidget {
+class MyFirstPage extends StatefulWidget {
   @override
-  _QuizPageState createState() => _QuizPageState();
+  _MyFirstPageState createState() => _MyFirstPageState();
 }
 
-class _QuizPageState extends State<QuizPage> {
+class _MyFirstPageState extends State<MyFirstPage> {
   @override
   Widget build(BuildContext context) {
     return Column(
