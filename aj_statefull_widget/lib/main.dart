@@ -3,7 +3,7 @@ import 'dart:math';
 
 void main() => runApp(MyApp());
 
-class myApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
