@@ -91,7 +91,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
 }
 
 /*
-question1: 'You can lead a cow down stairs but not up stairs.', false,
-question2: 'Approximately one quarter of human bones are in the feet.', true,
-question3: 'A slug\'s blood is green.', true,
+question1: 'The earth is flat.', false,
+question2: 'The earth is round.', true,
+question3: 'The earth is bigger than the moon.', true,
 */
