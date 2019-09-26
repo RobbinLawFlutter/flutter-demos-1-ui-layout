@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'question.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,6 +26,26 @@ class MyFirstPage extends StatefulWidget {
 }
 
 class _MyFirstPageState extends State<MyFirstPage> {
+  List<Question> questionBank = [
+    Question(q: 'The earth is flat.', a: false),
+    Question(q: 'The earth is flat.', a: true),
+    Question(q: 'The earth is flat.', a: true)
+  ];
+
+  Question q1 = Question(q: 'The earth is flat.', a: false);
+
+  List<Icon> score = [];
+
+  List<String> questions = [
+    'The earth is flat.',
+    'The earth is round.',
+    'The earth is bigger than the moon.'
+  ];
+
+  List<bool> answers = [false, true, true];
+
+  int questionNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -37,7 +58,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                'This is where the question text will go.',
+                questionBank[questionNum].questionText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -62,7 +83,23 @@ class _MyFirstPageState extends State<MyFirstPage> {
               ),
               onPressed: () {
                 //The user picked true.
-              },
+                setState(() {
+                  bool correctAnswer = questionBank[questionNum].questionAnswer;
+                  if (correctAnswer == true) {
+                    print('got it right');
+                  } else {
+                    print('got it wrong');
+                  }
+                  questionNum++;
+                  print(questionNum);
+                  score.add(
+                    Icon(
+                      Icons.check,
+                      color: Colors.green,
+                    ),
+                  ); // score.add
+                }); // setState
+              }, // onPressed
             ),
           ),
         ),
@@ -80,11 +117,23 @@ class _MyFirstPageState extends State<MyFirstPage> {
               ),
               onPressed: () {
                 //The user picked false.
+                setState(() {
+                  questionNum++;
+                  print(questionNum);
+                  score.add(
+                    Icon(
+                      Icons.check,
+                      color: Colors.green,
+                    ),
+                  ); // score.add
+                }); // setState
               },
             ),
           ),
         ),
-        //TODO: Add a Row here as your score keeper
+        Row(
+          children: score,
+        )
       ],
     );
   }
