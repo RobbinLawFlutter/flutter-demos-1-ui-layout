@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'question.dart';
+import 'quizMaster.dart';
+
+QuizMaster quizMaster = QuizMaster();
 
 void main() => runApp(MyApp());
 
@@ -26,24 +28,6 @@ class MyFirstPage extends StatefulWidget {
 }
 
 class _MyFirstPageState extends State<MyFirstPage> {
-  List<Question> questionBank = [
-    Question(q: 'The earth is flat.', a: false),
-    Question(q: 'The earth is flat.', a: true),
-    Question(q: 'The earth is flat.', a: true)
-  ];
-
-  Question q1 = Question(q: 'The earth is flat.', a: false);
-
-  List<Icon> score = [];
-
-  List<String> questions = [
-    'The earth is flat.',
-    'The earth is round.',
-    'The earth is bigger than the moon.'
-  ];
-
-  List<bool> answers = [false, true, true];
-
   int questionNum = 0;
 
   @override
@@ -58,7 +42,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                questionBank[questionNum].questionText,
+                quizMaster.questionBank[questionNum].questionText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -84,7 +68,8 @@ class _MyFirstPageState extends State<MyFirstPage> {
               onPressed: () {
                 //The user picked true.
                 setState(() {
-                  bool correctAnswer = questionBank[questionNum].questionAnswer;
+                  bool correctAnswer =
+                      quizMaster.questionBank[questionNum].questionAnswer;
                   if (correctAnswer == true) {
                     print('got it right');
                   } else {
@@ -92,12 +77,6 @@ class _MyFirstPageState extends State<MyFirstPage> {
                   }
                   questionNum++;
                   print(questionNum);
-                  score.add(
-                    Icon(
-                      Icons.check,
-                      color: Colors.green,
-                    ),
-                  ); // score.add
                 }); // setState
               }, // onPressed
             ),
@@ -120,20 +99,22 @@ class _MyFirstPageState extends State<MyFirstPage> {
                 setState(() {
                   questionNum++;
                   print(questionNum);
-                  score.add(
-                    Icon(
-                      Icons.check,
-                      color: Colors.green,
-                    ),
-                  ); // score.add
                 }); // setState
               },
             ),
           ),
         ),
         Row(
-          children: score,
-        )
+          children: <Widget>[
+            Text(
+              'hey man',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
       ],
     );
   }
