@@ -28,7 +28,7 @@ class MyFirstPage extends StatefulWidget {
 }
 
 class _MyFirstPageState extends State<MyFirstPage> {
-  int questionNum = 0;
+  int questionNumber = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                quizMaster.questionBank[questionNum].questionText,
+                quizMaster.getQuestionText(questionNumber),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -68,15 +68,20 @@ class _MyFirstPageState extends State<MyFirstPage> {
               onPressed: () {
                 //The user picked true.
                 setState(() {
+                  quizMaster.questionBank[questionNumber].questionAnswer = true;
                   bool correctAnswer =
-                      quizMaster.questionBank[questionNum].questionAnswer;
+                      quizMaster.questionBank[questionNumber].questionAnswer;
+                  /*
+                  bool correctAnswer =
+                      quizMaster.getQuestionAnswer(questionNumber);
+                  */
                   if (correctAnswer == true) {
                     print('got it right');
                   } else {
                     print('got it wrong');
                   }
-                  questionNum++;
-                  print(questionNum);
+                  questionNumber++;
+                  print(questionNumber);
                 }); // setState
               }, // onPressed
             ),
@@ -97,8 +102,19 @@ class _MyFirstPageState extends State<MyFirstPage> {
               onPressed: () {
                 //The user picked false.
                 setState(() {
-                  questionNum++;
-                  print(questionNum);
+                  bool correctAnswer =
+                      quizMaster.questionBank[questionNumber].questionAnswer;
+                  /*
+                  bool correctAnswer =
+                      quizMaster.getQuestionAnswer(questionNumber);
+                  */
+                  if (correctAnswer == false) {
+                    print('got it right');
+                  } else {
+                    print('got it wrong');
+                  }
+                  questionNumber++;
+                  print(questionNumber);
                 }); // setState
               },
             ),
