@@ -30,14 +30,23 @@ class MyFirstPage extends StatefulWidget {
 class _MyFirstPageState extends State<MyFirstPage> {
   List<Icon> scoreKeeper = [];
 
+  List<String> questions = [
+    'the earth is flat',
+    'the earth is round',
+    'this is fun'
+  ];
+
+  List<bool> answers = [false, true, true];
+
   int questionNumber = 0;
 
   void checkAnswer(bool userAnswer) {
     setState(() {
+      bool correctAnswer = answers[questionNumber];
       //quizMaster.questionBank[questionNumber].questionAnswer = true;
       //bool correctAnswer =
       //quizMaster.questionBank[questionNumber].questionAnswer;
-      bool correctAnswer = quizMaster.getQuestionAnswer();
+      //bool correctAnswer = quizMaster.getQuestionAnswer();
       if (userAnswer == correctAnswer) {
         print('got it right');
         scoreKeeper.add(
@@ -73,8 +82,9 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
+                questions[questionNumber],
                 //quizMaster.questionBank[questionNumber].questionText,
-                quizMaster.getQuestionText(),
+                //quizMaster.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
