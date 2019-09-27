@@ -42,7 +42,8 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                quizMaster.getQuestionText(questionNumber),
+                quizMaster.questionBank[questionNumber].questionText,
+                //quizMaster.getQuestionText(questionNumber),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
