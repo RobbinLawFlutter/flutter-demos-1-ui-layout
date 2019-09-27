@@ -11,7 +11,7 @@ class QuizMaster {
   ];
 
   // ENCAPSULATION
-  // Making this variable and list PRIVATE ensures that no where else outside of this class can the data be changed.
+  // Making this variable and list PRIVATE "_" ensures that no where else outside of this class can the data be changed.
   // But now we need a getter for each piece of data,
   // and if we want to be able to change the data outside of this class we need a setter.
   // We have now brought the _questionNumber into this class so we can keep track of it and not crash the app.

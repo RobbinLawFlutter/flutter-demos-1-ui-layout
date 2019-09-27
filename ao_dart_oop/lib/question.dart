@@ -12,8 +12,8 @@ class Question {
   String questionText;
   bool questionAnswer;
   Question(String questionText, bool questionAnswer) {
-    this.questionText = q;
-    this.questionAnswer = a;
+    this.questionText = questionText;
+    this.questionAnswer = questionAnswer;
   }
 */
 

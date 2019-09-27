@@ -1,3 +1,15 @@
+// This app shows why it is good to modularize, abstract, and
+// encapsulate code.
+// four pillars of OOP
+// Abstraction by using classes and instanciating objects from the class template.
+// Encapsulation "_" make members private to the class.
+// Inheritance "extends" the base class template.
+// Polymorphism "@overload" changes methods of the base class.
+
+// CHALLENGE:  download and use the package rflutter_alert 1.0.2 to give an
+// alert if the _questionNumber gets to big.
+// Hints: go to git hub  Londonappbrewery/quizzler-flutter-challenge-final  and look at main.dart for clues.
+
 import 'package:flutter/material.dart';
 import 'quizMaster.dart';
 
@@ -66,7 +78,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
       }
       questionNumber++;
       print(questionNumber);
-      quizMaster.nextQuestion();
+      //quizMaster.nextQuestion();
     }); // setState
   }
 
