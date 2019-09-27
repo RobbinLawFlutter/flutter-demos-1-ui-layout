@@ -43,7 +43,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             child: Center(
               child: Text(
                 quizMaster.questionBank[questionNumber].questionText,
-                //quizMaster.getQuestionText(questionNumber),
+                //quizMaster.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -69,12 +69,12 @@ class _MyFirstPageState extends State<MyFirstPage> {
               onPressed: () {
                 //The user picked true.
                 setState(() {
-                  quizMaster.questionBank[questionNumber].questionAnswer = true;
+                  //quizMaster.questionBank[questionNumber].questionAnswer = true;
                   bool correctAnswer =
                       quizMaster.questionBank[questionNumber].questionAnswer;
                   /*
                   bool correctAnswer =
-                      quizMaster.getQuestionAnswer(questionNumber);
+                      quizMaster.getQuestionAnswer();
                   */
                   if (correctAnswer == true) {
                     print('got it right');
@@ -83,6 +83,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
                   }
                   questionNumber++;
                   print(questionNumber);
+                  // quizMaster.nextQuestion();
                 }); // setState
               }, // onPressed
             ),
@@ -107,7 +108,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
                       quizMaster.questionBank[questionNumber].questionAnswer;
                   /*
                   bool correctAnswer =
-                      quizMaster.getQuestionAnswer(questionNumber);
+                      quizMaster.getQuestionAnswer();
                   */
                   if (correctAnswer == false) {
                     print('got it right');
@@ -116,6 +117,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
                   }
                   questionNumber++;
                   print(questionNumber);
+                  // quizMaster.nextQuestion();
                 }); // setState
               },
             ),
@@ -136,9 +138,3 @@ class _MyFirstPageState extends State<MyFirstPage> {
     );
   }
 }
-
-/*
-question1: 'The earth is flat.', false,
-question2: 'The earth is round.', true,
-question3: 'The earth is bigger than the moon.', true,
-*/
