@@ -28,7 +28,38 @@ class MyFirstPage extends StatefulWidget {
 }
 
 class _MyFirstPageState extends State<MyFirstPage> {
+  List<Icon> scoreKeeper = [];
+
   int questionNumber = 0;
+
+  void checkAnswer(bool userAnswer) {
+    setState(() {
+      //quizMaster.questionBank[questionNumber].questionAnswer = true;
+      //bool correctAnswer =
+      //quizMaster.questionBank[questionNumber].questionAnswer;
+      bool correctAnswer = quizMaster.getQuestionAnswer();
+      if (userAnswer == correctAnswer) {
+        print('got it right');
+        scoreKeeper.add(
+          Icon(
+            Icons.check,
+            color: Colors.green,
+          ),
+        );
+      } else {
+        print('got it wrong');
+        scoreKeeper.add(
+          Icon(
+            Icons.close,
+            color: Colors.red,
+          ),
+        );
+      }
+      questionNumber++;
+      print(questionNumber);
+      quizMaster.nextQuestion();
+    }); // setState
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +73,8 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                quizMaster.questionBank[questionNumber].questionText,
-                //quizMaster.getQuestionText(),
+                //quizMaster.questionBank[questionNumber].questionText,
+                quizMaster.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -67,24 +98,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
                 ),
               ),
               onPressed: () {
-                //The user picked true.
-                setState(() {
-                  //quizMaster.questionBank[questionNumber].questionAnswer = true;
-                  bool correctAnswer =
-                      quizMaster.questionBank[questionNumber].questionAnswer;
-                  /*
-                  bool correctAnswer =
-                      quizMaster.getQuestionAnswer();
-                  */
-                  if (correctAnswer == true) {
-                    print('got it right');
-                  } else {
-                    print('got it wrong');
-                  }
-                  questionNumber++;
-                  print(questionNumber);
-                  // quizMaster.nextQuestion();
-                }); // setState
+                checkAnswer(true);
               }, // onPressed
             ),
           ),
@@ -102,37 +116,13 @@ class _MyFirstPageState extends State<MyFirstPage> {
                 ),
               ),
               onPressed: () {
-                //The user picked false.
-                setState(() {
-                  bool correctAnswer =
-                      quizMaster.questionBank[questionNumber].questionAnswer;
-                  /*
-                  bool correctAnswer =
-                      quizMaster.getQuestionAnswer();
-                  */
-                  if (correctAnswer == false) {
-                    print('got it right');
-                  } else {
-                    print('got it wrong');
-                  }
-                  questionNumber++;
-                  print(questionNumber);
-                  // quizMaster.nextQuestion();
-                }); // setState
+                checkAnswer(false);
               },
             ),
           ),
         ),
         Row(
-          children: <Widget>[
-            Text(
-              'hey man',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.white,
-              ),
-            ),
-          ],
+          children: scoreKeeper,
         ),
       ],
     );
