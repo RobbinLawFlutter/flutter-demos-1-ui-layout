@@ -4,7 +4,7 @@
 // Abstraction by using classes and instanciating objects from the class template.
 // Encapsulation "_" make members private to the class.
 // Inheritance "extends" the base class template.
-// Polymorphism "@overload" changes methods of the base class.
+// Polymorphism "@override" changes methods of the base class.
 
 // CHALLENGE:  download and use the package rflutter_alert 1.0.2 to give an
 // alert if the _questionNumber gets to big.
@@ -55,9 +55,9 @@ class _MyFirstPageState extends State<MyFirstPage> {
   void checkAnswer(bool userAnswer) {
     setState(() {
       bool correctAnswer = answers[questionNumber];
-      //quizMaster.questionBank[questionNumber].questionAnswer = true;
+      //quizMaster.questionBank1[questionNumber].questionAnswer = true;
       //bool correctAnswer =
-      //quizMaster.questionBank[questionNumber].questionAnswer;
+      //quizMaster.questionBank1[questionNumber].questionAnswer;
       //bool correctAnswer = quizMaster.getQuestionAnswer();
       if (userAnswer == correctAnswer) {
         print('got it right');
@@ -78,7 +78,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
       }
       questionNumber++;
       print(questionNumber);
-      //quizMaster.nextQuestion();
+      quizMaster.nextQuestion();
     }); // setState
   }
 
@@ -95,7 +95,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             child: Center(
               child: Text(
                 questions[questionNumber],
-                //quizMaster.questionBank[questionNumber].questionText,
+                //quizMaster.questionBank1[questionNumber].questionText,
                 //quizMaster.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
