@@ -12,9 +12,10 @@
 
 import 'package:flutter/material.dart';
 import 'quizMaster.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
+import 'alert.dart';
 
 QuizMaster quizMaster = QuizMaster();
+MyAlert myAlert = MyAlert();
 
 void main() => runApp(MyApp());
 
@@ -82,22 +83,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
         print(questionNumber);
         quizMaster.nextQuestion();
       } else {
-        Alert(
-      context: context,
-      type: AlertType.error,
-      title: "RFLUTTER ALERT",
-      desc: "Flutter is more awesome with RFlutter Alert.",
-      buttons: [
-        DialogButton(
-          child: Text(
-            "COOL",
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          onPressed: () => Navigator.pop(context),
-          width: 120,
-        )
-      ],
-    ).show();
+        myAlert.getMyAlert(context);
         quizMaster.reset();
         scoreKeeper = [];
       }
