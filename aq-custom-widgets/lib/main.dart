@@ -1,5 +1,5 @@
 // this app shows themes
-// go to dribbble.com and search for simple bmi
+// go to dribbble.com and search for 'simple bmi'
 // go to colorzilla.com and download the color picker
 
 import 'package:flutter/material.dart';
