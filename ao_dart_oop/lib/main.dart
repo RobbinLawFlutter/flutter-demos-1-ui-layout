@@ -12,6 +12,7 @@
 
 import 'package:flutter/material.dart';
 import 'quizMaster.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 QuizMaster quizMaster = QuizMaster();
 
@@ -54,31 +55,52 @@ class _MyFirstPageState extends State<MyFirstPage> {
 
   void checkAnswer(bool userAnswer) {
     setState(() {
-      bool correctAnswer = answers[questionNumber];
-      //quizMaster.questionBank1[questionNumber].questionAnswer = true;
-      //bool correctAnswer =
-      //quizMaster.questionBank1[questionNumber].questionAnswer;
-      //bool correctAnswer = quizMaster.getQuestionAnswer();
-      if (userAnswer == correctAnswer) {
-        print('got it right');
-        scoreKeeper.add(
-          Icon(
-            Icons.check,
-            color: Colors.green,
-          ),
-        );
+      if (quizMaster.isNotFinished() == true) {
+        //bool correctAnswer = answers[questionNumber];
+        //quizMaster.questionBank1[questionNumber].questionAnswer = true;
+        //bool correctAnswer =
+        //  quizMaster.questionBank1[questionNumber].questionAnswer;
+        bool correctAnswer = quizMaster.getQuestionAnswer();
+        if (userAnswer == correctAnswer) {
+          print('got it right');
+          scoreKeeper.add(
+            Icon(
+              Icons.check,
+              color: Colors.green,
+            ),
+          );
+        } else {
+          print('got it wrong');
+          scoreKeeper.add(
+            Icon(
+              Icons.close,
+              color: Colors.red,
+            ),
+          );
+        }
+        questionNumber++;
+        print(questionNumber);
+        quizMaster.nextQuestion();
       } else {
-        print('got it wrong');
-        scoreKeeper.add(
-          Icon(
-            Icons.close,
-            color: Colors.red,
+        Alert(
+      context: context,
+      type: AlertType.error,
+      title: "RFLUTTER ALERT",
+      desc: "Flutter is more awesome with RFlutter Alert.",
+      buttons: [
+        DialogButton(
+          child: Text(
+            "COOL",
+            style: TextStyle(color: Colors.white, fontSize: 20),
           ),
-        );
+          onPressed: () => Navigator.pop(context),
+          width: 120,
+        )
+      ],
+    ).show();
+        quizMaster.reset();
+        scoreKeeper = [];
       }
-      questionNumber++;
-      print(questionNumber);
-      quizMaster.nextQuestion();
     }); // setState
   }
 
@@ -94,9 +116,9 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                questions[questionNumber],
+                //questions[questionNumber],
                 //quizMaster.questionBank1[questionNumber].questionText,
-                //quizMaster.getQuestionText(),
+                quizMaster.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,

@@ -41,4 +41,18 @@ class QuizMaster {
   bool getQuestionAnswer() {
     return _questionBank2[_questionNumber].questionAnswer;
   }
+
+  bool isNotFinished() {
+    if (_questionNumber >= _questionBank2.length - 1) {
+      print('Now returning false');
+      return false;
+
+    } else {
+      return true;
+    }
+  }
+
+  void reset() {
+    _questionNumber = 0;
+  }
 }
