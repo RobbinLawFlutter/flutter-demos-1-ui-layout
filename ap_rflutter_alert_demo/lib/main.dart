@@ -163,7 +163,7 @@ class PopupDialog extends StatelessWidget {
       context: context,
       title: "RFLUTTER ALERT",
       desc: "Flutter is more awesome with RFlutter Alert.",
-      image: Image.asset("assets/success.png"),
+      image: Image.asset("assets/bottle.jpg"),
     ).show();
   }
 
