@@ -1,160 +1,202 @@
-// This app shows why it is good to modularize, abstract, and
-// encapsulate code.
-// four pillars of OOP
-// Abstraction by using classes and instanciating objects from the class template.
-// Encapsulation "_" make members private to the class.
-// Inheritance "extends" the base class template.
-// Polymorphism "@override" changes methods of the base class.
-
-// CHALLENGE:  download and use the package rflutter_alert 1.0.2 to give an
-// alert if the _questionNumber gets to big.
-// Hints: go to github  londonappbrewery/quizzler-flutter-challenge-final  and look at main.dart for clues.
-
 import 'package:flutter/material.dart';
-import 'quizMaster.dart';
-import 'alert.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
-QuizMaster quizMaster = QuizMaster();
-MyAlert myAlert = MyAlert();
+void main() => runApp(RatelApp());
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class RatelApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey.shade900,
-        body: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.0),
-            child: MyFirstPage(),
-          ),
+        appBar: AppBar(
+          title: Text('RFlutter Alert by Ratel'),
         ),
+        body: PopupDialog(),
       ),
     );
   }
 }
 
-class MyFirstPage extends StatefulWidget {
-  @override
-  _MyFirstPageState createState() => _MyFirstPageState();
-}
-
-class _MyFirstPageState extends State<MyFirstPage> {
-  List<Icon> scoreKeeper = [];
-
-  List<String> questions = [
-    'the earth is flat',
-    'the earth is round',
-    'this is fun'
-  ];
-
-  List<bool> answers = [false, true, true];
-
-  int questionNumber = 0;
-
-  void checkAnswer(bool userAnswer) {
-    setState(() {
-      if (quizMaster.isNotFinished() == true) {
-        //bool correctAnswer = answers[questionNumber];
-        //quizMaster.questionBank1[questionNumber].questionAnswer = true;
-        //bool correctAnswer =
-        //  quizMaster.questionBank1[questionNumber].questionAnswer;
-        bool correctAnswer = quizMaster.getQuestionAnswer();
-        if (userAnswer == correctAnswer) {
-          print('got it right');
-          scoreKeeper.add(
-            Icon(
-              Icons.check,
-              color: Colors.green,
-            ),
-          );
-        } else {
-          print('got it wrong');
-          scoreKeeper.add(
-            Icon(
-              Icons.close,
-              color: Colors.red,
-            ),
-          );
-        }
-        questionNumber++;
-        print(questionNumber);
-        quizMaster.nextQuestion();
-      } else {
-        myAlert.getMyAlert(context);
-        quizMaster.reset();
-        scoreKeeper = [];
-      }
-    }); // setState
-  }
-
+class PopupDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        Expanded(
-          flex: 5,
-          child: Padding(
-            padding: EdgeInsets.all(10.0),
-            child: Center(
-              child: Text(
-                //questions[questionNumber],
-                //quizMaster.questionBank1[questionNumber].questionText,
-                quizMaster.getQuestionText(),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 25.0,
-                  color: Colors.white,
-                ),
-              ),
+    return Container(
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            RaisedButton(
+              child: Text('Basic Alert'),
+              onPressed: () => _onBasicAlertPressed(context),
             ),
-          ),
-        ),
-        Expanded(
-          child: Padding(
-            padding: EdgeInsets.all(15.0),
-            child: FlatButton(
-              textColor: Colors.white,
-              color: Colors.green,
-              child: Text(
-                'True',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
-                ),
-              ),
-              onPressed: () {
-                checkAnswer(true);
-              }, // onPressed
+            RaisedButton(
+              child: Text('Alert with Button'),
+              onPressed: () => _onAlertButtonPressed(context),
             ),
-          ),
-        ),
-        Expanded(
-          child: Padding(
-            padding: EdgeInsets.all(15.0),
-            child: FlatButton(
-              color: Colors.red,
-              child: Text(
-                'False',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.white,
-                ),
-              ),
-              onPressed: () {
-                checkAnswer(false);
-              },
+            RaisedButton(
+              child: Text('Alert with Buttons'),
+              onPressed: () => _onAlertButtonsPressed(context),
             ),
-          ),
+            RaisedButton(
+              child: Text('Alert with Style'),
+              onPressed: () => _onAlertWithStylePressed(context),
+            ),
+            RaisedButton(
+              child: Text('Alert with Custom Image'),
+              onPressed: () => _onAlertWithCustomImagePressed(context),
+            ),
+            RaisedButton(
+              child: Text('Alert with Custom Content'),
+              onPressed: () => _onAlertWithCustomContentPressed(context),
+            ),
+          ],
         ),
-        Row(
-          children: scoreKeeper,
+      ),
+    );
+  }
+
+// The easiest way for creating RFlutter Alert
+  _onBasicAlertPressed(context) {
+    Alert(
+            context: context,
+            title: "RFLUTTER ALERT",
+            desc: "Flutter is more awesome with RFlutter Alert.")
+        .show();
+  }
+
+// Alert with single button.
+  _onAlertButtonPressed(context) {
+    Alert(
+      context: context,
+      type: AlertType.error,
+      title: "RFLUTTER ALERT",
+      desc: "Flutter is more awesome with RFlutter Alert.",
+      buttons: [
+        DialogButton(
+          child: Text(
+            "COOL",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => Navigator.pop(context),
+          width: 120,
+        )
+      ],
+    ).show();
+  }
+
+// Alert with multiple and custom buttons
+  _onAlertButtonsPressed(context) {
+    Alert(
+      context: context,
+      type: AlertType.warning,
+      title: "RFLUTTER ALERT",
+      desc: "Flutter is more awesome with RFlutter Alert.",
+      buttons: [
+        DialogButton(
+          child: Text(
+            "FLAT",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => Navigator.pop(context),
+          color: Color.fromRGBO(0, 179, 134, 1.0),
+        ),
+        DialogButton(
+          child: Text(
+            "GRADIENT",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => Navigator.pop(context),
+          gradient: LinearGradient(colors: [
+            Color.fromRGBO(116, 116, 191, 1.0),
+            Color.fromRGBO(52, 138, 199, 1.0)
+          ]),
+        )
+      ],
+    ).show();
+  }
+
+// Advanced using of alerts
+  _onAlertWithStylePressed(context) {
+    // Reusable alert style
+    var alertStyle = AlertStyle(
+      animationType: AnimationType.fromTop,
+      isCloseButton: false,
+      isOverlayTapDismiss: false,
+      descStyle: TextStyle(fontWeight: FontWeight.bold),
+      animationDuration: Duration(milliseconds: 400),
+      alertBorder: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(0.0),
+        side: BorderSide(
+          color: Colors.grey,
+        ),
+      ),
+      titleStyle: TextStyle(
+        color: Colors.red,
+      ),
+    );
+
+    // Alert dialog using custom alert style
+    Alert(
+      context: context,
+      style: alertStyle,
+      type: AlertType.info,
+      title: "RFLUTTER ALERT",
+      desc: "Flutter is more awesome with RFlutter Alert.",
+      buttons: [
+        DialogButton(
+          child: Text(
+            "COOL",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => Navigator.pop(context),
+          color: Color.fromRGBO(0, 179, 134, 1.0),
+          radius: BorderRadius.circular(0.0),
         ),
       ],
-    );
+    ).show();
+  }
+
+// Alert custom images
+  _onAlertWithCustomImagePressed(context) {
+    Alert(
+      context: context,
+      title: "RFLUTTER ALERT",
+      desc: "Flutter is more awesome with RFlutter Alert.",
+      image: Image.asset("assets/success.png"),
+    ).show();
+  }
+
+// Alert custom content
+  _onAlertWithCustomContentPressed(context) {
+    Alert(
+        context: context,
+        title: "LOGIN",
+        content: Column(
+          children: <Widget>[
+            TextField(
+              decoration: InputDecoration(
+                icon: Icon(Icons.account_circle),
+                labelText: 'Username',
+              ),
+            ),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                icon: Icon(Icons.lock),
+                labelText: 'Password',
+              ),
+            ),
+          ],
+        ),
+        buttons: [
+          DialogButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(
+              "LOGIN",
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
+          )
+        ]).show();
   }
 }
