@@ -18,7 +18,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Calculator'),
+        title: Text('BMI Calculator'),
       ),
       body: Column(
         children: <Widget>[
