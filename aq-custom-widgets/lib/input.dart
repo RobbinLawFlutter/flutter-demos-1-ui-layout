@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-const double bottomContainerHeight = 80;
+const bottomContainerHeight = 80.0;
 const activeCardColor = Color(0xFF1D1E33);
 const bottomContainerColor = Color(0xFFEB1555);
 
@@ -40,7 +40,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
                         Text(
                           'MALE',
                           style:
-                              TextStyle(fontSize: 18, color: Color(0xFF8D8E98)),
+                              TextStyle(fontSize: 18, color: Color(0xFF8D8E98),),
                         ),
                       ],
                     ),
@@ -106,7 +106,9 @@ class _MyFirstPageState extends State<MyFirstPage> {
 class ReuseableCard extends StatelessWidget {
   ReuseableCard(
       {@required this.myColor,
-      this.reusableCardChild}); // constructor that requires a Color parameter.
+      this.reusableCardChild}); 
+      // constructor that requires a Color parameter,
+      // and a reusableCardChild widget
 
   final Color
       myColor; // final makes this property called myColor of type Color immutable, cannot change once set.
