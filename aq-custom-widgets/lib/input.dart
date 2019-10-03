@@ -52,14 +52,14 @@ class _MyFirstPageState extends State<MyFirstPage> {
                     reusableCardChild: Column(
                       children: <Widget>[
                         Icon(
-                          FontAwesomeIcons.mars,
+                          FontAwesomeIcons.venus,
                           size: 80,
                         ),
                         SizedBox(
                           height: 15,
                         ),
                         Text(
-                          'MALE',
+                          'FEMALE',
                           style:
                               TextStyle(fontSize: 18, color: Color(0xFF8D8E98)),
                         ),
