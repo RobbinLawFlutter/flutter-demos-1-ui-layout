@@ -1,3 +1,5 @@
+// use the color picker again to pick the color of the ReuseableCard
+
 import 'package:flutter/material.dart';
 
 class MyFirstPage extends StatefulWidget {

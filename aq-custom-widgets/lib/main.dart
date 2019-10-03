@@ -1,6 +1,7 @@
 // this app shows themes
 // go to dribbble.com and search for 'simple bmi'
 // go to colorzilla.com and download the color picker
+// use the picker to get the code for the primary and background color of the app
 
 import 'package:flutter/material.dart';
 import 'input.dart';
