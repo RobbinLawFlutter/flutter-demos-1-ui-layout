@@ -1,6 +1,5 @@
-// this MyFifthPage demonstrates the use of the icons but as another "custom widget"
-// inside the ReuseableCard custom widget.
-// Also the icon text pairs are now centered in the ReuesableCard widget.
+// this MyFifthPage demonstrates the use of both custom widgets
+// but now they are both modularized into their own dart files
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -9,6 +8,7 @@ import 'my-icon.dart';
 
 const bottomContainerHeight = 80.0;
 const activeCardColor = Color(0xFF1D1E33);
+const inactiveCardColor = Color(0xFF111328);
 const bottomContainerColor = Color(0xFFEB1555);
 
 class MyFifthPage extends StatefulWidget {
@@ -17,6 +17,29 @@ class MyFifthPage extends StatefulWidget {
 }
 
 class _MyFifthPageState extends State<MyFifthPage> {
+  Color maleCardColor = inactiveCardColor;
+  Color femaleCardColor = inactiveCardColor;
+
+  // 1 = male, 2 = female
+  void updateColor(int gender) {
+    if (gender == 1) {
+      if (maleCardColor == inactiveCardColor) {
+        maleCardColor = activeCardColor;
+        femaleCardColor = inactiveCardColor;
+      } else {
+        maleCardColor = inactiveCardColor;
+      }
+    }
+    if (gender == 2) {
+      if (femaleCardColor == inactiveCardColor) {
+        femaleCardColor = activeCardColor;
+        maleCardColor = inactiveCardColor;
+      } else {
+        femaleCardColor = inactiveCardColor;
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,20 +52,36 @@ class _MyFifthPageState extends State<MyFifthPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: ReuseableCard(
-                    myColor: activeCardColor,
-                    reusableCardChild: new MyIcon(
-                      icon: FontAwesomeIcons.mars,
-                      label: 'MALE',
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        updateColor(1);
+                      });
+                      print('Male card was pressed');
+                    },
+                    child: ReuseableCard(
+                      myColor: maleCardColor,
+                      reusableCardChild: MyIcon(
+                        icon: FontAwesomeIcons.mars,
+                        label: 'MALE',
+                      ),
                     ),
                   ),
                 ),
                 Expanded(
-                  child: ReuseableCard(
-                    myColor: activeCardColor,
-                    reusableCardChild: MyIcon(
-                      icon: FontAwesomeIcons.venus,
-                      label: 'FEMALE',
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        updateColor(2);
+                      });
+                      print('Female card was pressed');
+                    },
+                    child: ReuseableCard(
+                      myColor: femaleCardColor,
+                      reusableCardChild: MyIcon(
+                        icon: FontAwesomeIcons.venus,
+                        label: 'FEMALE',
+                      ),
                     ),
                   ),
                 ),
