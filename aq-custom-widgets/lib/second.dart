@@ -1,19 +1,15 @@
-// use the color picker again to pick the color of the ReuseableCard
-// go to pub.dev and search for font_awesome_flutter package and download and configure pubspec.yaml
-
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const bottomContainerHeight = 80.0;
 const activeCardColor = Color(0xFF1D1E33);
 const bottomContainerColor = Color(0xFFEB1555);
 
-class MyFirstPage extends StatefulWidget {
+class MySecondPage extends StatefulWidget {
   @override
-  _MyFirstPageState createState() => _MyFirstPageState();
+  _MySecondPageState createState() => _MySecondPageState();
 }
 
-class _MyFirstPageState extends State<MyFirstPage> {
+class _MySecondPageState extends State<MySecondPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,46 +24,14 @@ class _MyFirstPageState extends State<MyFirstPage> {
                 Expanded(
                   child: ReuseableCard(
                     myColor: activeCardColor,
-                    reusableCardChild: Column(
-                      children: <Widget>[
-                        Icon(
-                          FontAwesomeIcons.mars,
-                          size: 80,
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        Text(
-                          'MALE',
-                          style:
-                              TextStyle(fontSize: 18, color: Color(0xFF8D8E98),),
-                        ),
-                      ],
-                    ),
                   ),
                 ),
                 Expanded(
                   child: ReuseableCard(
                     myColor: activeCardColor,
-                    reusableCardChild: Column(
-                      children: <Widget>[
-                        Icon(
-                          FontAwesomeIcons.venus,
-                          size: 80,
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        Text(
-                          'FEMALE',
-                          style:
-                              TextStyle(fontSize: 18, color: Color(0xFF8D8E98)),
-                        ),
-                      ],
-                    ),
                   ),
                 ),
-               ],
+              ],
             ),
           ),
           Expanded(
@@ -104,11 +68,9 @@ class _MyFirstPageState extends State<MyFirstPage> {
 }
 
 class ReuseableCard extends StatelessWidget {
-  ReuseableCard(
-      {@required this.myColor,
-      this.reusableCardChild}); 
-      // constructor that requires a Color parameter,
-      // and a reusableCardChild widget
+  ReuseableCard({@required this.myColor, this.reusableCardChild});
+  // constructor that requires a Color parameter,
+  // and a reusableCardChild widget
 
   final Color
       myColor; // final makes this property called myColor of type Color immutable, cannot change once set.

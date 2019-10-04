@@ -4,7 +4,10 @@
 // use the picker to get the code for the primary and background color of the app
 
 import 'package:flutter/material.dart';
-import 'input.dart';
+import 'first.dart';
+import 'second.dart';
+import 'third.dart';
+import 'fourth.dart';
 
 void main() => runApp(MyApp());
 
