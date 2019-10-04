@@ -1,3 +1,6 @@
+// this MySecondPage demonstrates the use of "custom widgets" to reuse code.
+// It displays the same as the MyFirstPage.
+
 import 'package:flutter/material.dart';
 
 const bottomContainerHeight = 80.0;

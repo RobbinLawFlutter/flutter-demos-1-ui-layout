@@ -1,4 +1,5 @@
 // go to pub.dev and search for font_awesome_flutter package and download and configure pubspec.yaml
+// this MyThirdPage demonstrates the use of Icons from pub.dev
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -51,7 +52,6 @@ class _MyThirdPageState extends State<MyThirdPage> {
                   child: ReuseableCard(
                     myColor: activeCardColor,
                     reusableCardChild: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
                           FontAwesomeIcons.venus,

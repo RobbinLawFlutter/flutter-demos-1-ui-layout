@@ -1,3 +1,7 @@
+// this MyFourthPage demonstrates the use of the icons but as another "custom widget"
+// inside the ReuseableCard custom widget.
+// Also the icon text pairs are now centered in the ReuesableCard widget.
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -85,6 +89,7 @@ class MyIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Icon(
           icon,
