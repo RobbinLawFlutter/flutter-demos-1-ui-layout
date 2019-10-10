@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "as-navigation-flutter-demo"
 		}
 	],
 	"settings": {}
