@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import 'package:au_navigation/constants.dart';
 
 class MyIcon extends StatelessWidget {
   MyIcon({this.icon, this.label});

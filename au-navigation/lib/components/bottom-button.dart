@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'reusable-card.dart';
-import 'my-icon.dart';
-import 'constants.dart';
-import 'results.dart';
+import 'package:au_navigation/constants.dart';
 
 class BottomButton extends StatelessWidget {
   const BottomButton({@required this.myText, @required this.onTap});
