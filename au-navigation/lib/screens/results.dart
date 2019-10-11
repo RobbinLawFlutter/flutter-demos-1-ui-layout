@@ -4,6 +4,10 @@ import 'package:au_navigation/constants.dart';
 import 'package:au_navigation/components/reusable-card.dart';
 
 class ResultsPage extends StatelessWidget {
+  ResultsPage({@required this.bmiResult});
+
+  final String bmiResult;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,6 +20,8 @@ class ResultsPage extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Container(
+                padding: EdgeInsets.all(15),
+                alignment: Alignment.bottomLeft,
                 child: Text(
                   'Your BMI',
                   style: kTitleTextStyle,
@@ -31,7 +37,7 @@ class ResultsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      '50.0',
+                      bmiResult,
                       style: kBMITextStyle,
                     ),
                   ],
@@ -42,8 +48,7 @@ class ResultsPage extends StatelessWidget {
               child: BottomButton(
                 myText: 'RECALCULATE',
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ResultsPage()));
+                  Navigator.pop(context);
                 },
               ),
             ),

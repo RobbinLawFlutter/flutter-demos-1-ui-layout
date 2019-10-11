@@ -10,6 +10,7 @@ import 'package:au_navigation/components/my-icon.dart';
 import 'package:au_navigation/components/bottom-button.dart';
 import 'package:au_navigation/constants.dart';
 import 'package:au_navigation/screens/results.dart';
+import 'package:au_navigation/calculator.dart';
 
 enum Gender {
   male,
@@ -222,8 +223,14 @@ class MySeventhPageState extends State<MySeventhPage> {
           new BottomButton(
             myText: 'CALCULATE',
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ResultsPage()));
+              Calculator calc = Calculator(height: height, weight: weight);
+
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ResultsPage(
+                            bmiResult: calc.calculateBMI(),
+                          )));
             },
           ),
         ],
