@@ -4,13 +4,7 @@
 // use the picker to get the code for the primary and background color of the app
 
 import 'package:flutter/material.dart';
-import 'first.dart';
-import 'second.dart';
-import 'third.dart';
-import 'fourth.dart';
-import 'fifth.dart';
-import 'sixth.dart';
-import 'seventh.dart';
+import 'package:au_navigation/screens/seventh.dart';
 
 void main() => runApp(MyApp());
 

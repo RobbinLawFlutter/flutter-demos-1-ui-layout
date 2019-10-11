@@ -4,9 +4,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'reusable-card.dart';
-import 'my-icon.dart';
-import 'constants.dart';
+import 'package:au_navigation/components/reusable-card.dart';
+import 'package:au_navigation/components/round-icon-button.dart';
+import 'package:au_navigation/components/my-icon.dart';
+import 'package:au_navigation/components/bottom-button.dart';
+import 'package:au_navigation/constants.dart';
 
 enum Gender {
   male,
@@ -216,36 +218,15 @@ class MySeventhPageState extends State<MySeventhPage> {
               ],
             ),
           ),
-          Container(
-            color: kBottomContainerColor,
-            margin: EdgeInsets.only(top: 10),
-            width: double.infinity,
-            height: kBottomContainerHeight,
+          new BottomButton(
+            myText: 'CALCULATE',
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ResultsPage()));
+            },
           ),
         ],
       ),
-    );
-  }
-}
-
-class RoundIconButton extends StatelessWidget {
-  RoundIconButton({@required this.icon, @required this.onPressed});
-
-  final IconData icon;
-  final Function onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: Icon(icon),
-      onPressed: onPressed,
-      elevation: 6,
-      constraints: BoxConstraints.tightFor(
-        width: 56.0,
-        height: 56.0,
-      ),
-      shape: CircleBorder(),
-      fillColor: Color(0xFF4C4F5E),
     );
   }
 }
