@@ -220,17 +220,18 @@ class MySeventhPageState extends State<MySeventhPage> {
               ],
             ),
           ),
-          new BottomButton(
+          BottomButton(
             myText: 'CALCULATE',
             onTap: () {
               Calculator calc = Calculator(height: height, weight: weight);
-
               Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => ResultsPage(
-                            bmiResult: calc.calculateBMI(),
-                          )));
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultsPage(
+                    bmiResult: calc.calculateBMI(),
+                  ),
+                ),
+              );
             },
           ),
         ],
