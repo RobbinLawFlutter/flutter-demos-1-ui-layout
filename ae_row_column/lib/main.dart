@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 // using the row and column widgets
 void main() {
   runApp(
-    myApp(),
+    MyApp(),
   );
 }
 
-class myApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
