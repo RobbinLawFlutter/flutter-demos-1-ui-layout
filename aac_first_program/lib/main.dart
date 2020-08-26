@@ -1,24 +1,24 @@
+// https://www.youtube.com/watch?v=wE7khGHVkYY
+
 import 'package:flutter/material.dart';
 
 void main() {
-  //entry point to the app
-  runApp(
-    //runApp function
-    MaterialApp(
-      //first level widget of Material Design
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Welcome to Flutter',
       home: Scaffold(
-        //default route
-        backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Center Widget & Network Image"),
-          backgroundColor: Colors.amber,
+          title: Text('Welcome to Flutter'),
         ),
         body: Center(
-          child: Image(
-              image: NetworkImage(
-                  'https://www.w3schools.com/w3css/img_snowtops.jpg')),
+          child: Text('Hello World'),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
