@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 // go to materialpallet.com
 void main() {
   runApp(
-    myApp(),
+    MyApp(),
   );
 }
 
-class myApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

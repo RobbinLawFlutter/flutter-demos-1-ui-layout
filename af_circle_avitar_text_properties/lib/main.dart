@@ -9,11 +9,11 @@ import 'package:flutter/material.dart';
 // now edit pubspec.yaml to add the font same way as images
 void main() {
   runApp(
-    myApp(),
+    MyApp(),
   );
 }
 
-class myApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
