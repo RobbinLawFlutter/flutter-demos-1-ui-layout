@@ -11,11 +11,11 @@ import 'package:flutter/material.dart';
 // and replace with the new ones unzipped
 void main() {
   runApp(
-    myApp(),
+    MyApp(),
   );
 }
 
-class myApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
