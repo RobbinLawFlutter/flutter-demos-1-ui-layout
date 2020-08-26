@@ -1,6 +1,7 @@
 // Define a function.
 printInteger(int aNumber) {
-  print('The number is $aNumber.'); // Print to console.
+  print(
+      'The number is $aNumber.'); // Print to console using string interpolation.
 }
 
 // This is where the app starts executing.
