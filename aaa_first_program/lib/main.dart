@@ -1,24 +1,11 @@
-import 'package:flutter/material.dart';
+// Define a function.
+printInteger(int aNumber) {
+  print('The number is $aNumber.'); // Print to console.
+}
 
-void main() {
-  //entry point to the app
-  runApp(
-    //runApp function
-    MaterialApp(
-      //first level widget of Material Design
-      home: Scaffold(
-        //default route
-        backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          title: Text("Center Widget & Network Image"),
-          backgroundColor: Colors.amber,
-        ),
-        body: Center(
-          child: Image(
-              image: NetworkImage(
-                  'https://www.w3schools.com/w3css/img_snowtops.jpg')),
-        ),
-      ),
-    ),
-  );
+// This is where the app starts executing.
+main() {
+  print('This is our first Dart App');
+  var number = 42; // Declare and initialize a variable.
+  printInteger(number); // Call a function.
 }
