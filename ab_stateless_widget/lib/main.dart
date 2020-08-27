@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Stateless Widget"),
+          title: Text("Stateless Widget with Web Image"),
           backgroundColor: Colors.blue,
         ),
         body: Center(
