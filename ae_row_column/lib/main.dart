@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
 // using the row and column widgets
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

@@ -10,9 +10,7 @@ import 'package:flutter/material.dart';
 // delete mipmap-hdpi,-mdpi,-xhdpi,-xxhdpi,-xxxhdpi directories
 // and replace with the new ones unzipped
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

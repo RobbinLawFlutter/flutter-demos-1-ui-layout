@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+// https://flutter.dev/docs/development/ui/layout
+
 /*
 void main() {
   runApp(MyApp());
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+
   Widget _buildImageColumn() => Container(
         decoration: BoxDecoration(
           color: Colors.black26,

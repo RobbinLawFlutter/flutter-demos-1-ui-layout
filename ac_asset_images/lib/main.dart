@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 // drag and drop an image to appicon.co then generate a zip file
 // in studio navigate to android/app/src/main/res
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

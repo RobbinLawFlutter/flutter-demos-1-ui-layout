@@ -8,7 +8,6 @@
 
 // CHALLENGE:  download and use the package rflutter_alert 1.0.2 to give an
 // alert if the _questionNumber gets to big.
-// Hints: go to github  londonappbrewery/quizzler-flutter-challenge-final  and look at main.dart for clues.
 
 import 'package:flutter/material.dart';
 import 'quizMaster.dart';

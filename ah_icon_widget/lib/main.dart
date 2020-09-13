@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 //using the Icon Widget
 //also adding padding widget
-// go to materialpallet.com
+// go to http://www.materialpalette.com
+
 void main() {
   runApp(
     MyApp(),
