@@ -9,7 +9,15 @@
 
 import 'package:flutter/material.dart';
 
+//This version of the code is hard to read
+//as there are no , after each ) at the end
 void main() {
+  runApp(MaterialApp(home: Center(child: Text('Hello World!'))));
+}
+//This version of the code is easy to read
+//as there are , after each ) and if we right mouse
+//and choose Formate Document we get this result
+/* void main() {
   runApp(
     MaterialApp(
       home: Center(
@@ -19,4 +27,4 @@ void main() {
       ),
     ),
   );
-}
+} */
