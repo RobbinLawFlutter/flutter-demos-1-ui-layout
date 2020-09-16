@@ -1,5 +1,5 @@
 //In this app we create our own class called MyApp.
-//runApp will instanciate this MyApp into an Widget object
+//runApp will instanciate this MyApp into a Widget object
 //and run it.
 //The extends key word means that we are inheriting
 //from the StatelessWidget class.
