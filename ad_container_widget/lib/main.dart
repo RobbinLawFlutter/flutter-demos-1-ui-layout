@@ -26,14 +26,17 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Container(
+          padding: EdgeInsets.fromLTRB(20.0, 10, 5.0, 10),
           //padding: EdgeInsets.all(50.0),
-          //margin: EdgeInsets.fromLTRB(10.0, 50.0, 30.0, 20.0),
+          //margin: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
           //margin: EdgeInsets.all(50.0),
           //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
           height: 300.0,
           width: 300.0,
           color: Colors.white,
-          child: Image(image: AssetImage('images/bottle.jpg')),
+          child: Image(
+            image: AssetImage('images/bottle.jpg'),
+          ),
         ),
       ),
     );

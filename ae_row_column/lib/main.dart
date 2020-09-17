@@ -18,25 +18,25 @@ class MyApp extends StatelessWidget {
           title: Text("Row and Column Widgets"),
           backgroundColor: Colors.blue,
         ),
-        body: Column(
+        body: Row(
           //crossAxisAlignment: CrossAxisAlignment.stretch,
           //crossAxisAlignment: CrossAxisAlignment.start,
-          //crossAxisAlignment: CrossAxisAlignment.end,
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            Expanded(
-              child: Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.white,
+            Container(
+              height: 100.0,
+              width: 100.0,
+              color: Colors.white,
+              child: Center(
                 child: Text(
                   'Container 1',
                 ),
               ),
             ),
             Container(
-              height: 100.0,
+              height: 150.0,
               width: 100.0,
               color: Colors.orange,
               child: Text(
@@ -44,8 +44,9 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Container(
-              height: 100.0,
-              width: 100.0,
+              height: 50.0,
+              //height: double.infinity,
+              width: 50.0,
               color: Colors.red,
               child: Text(
                 'Container 3',
@@ -53,7 +54,12 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               height: 20.0,
-              width: double.infinity,
+              //height: double.infinity,
+              color: Colors.blue,
+              //width: double.infinity,
+              child: Text(
+                'Container 4',
+              ),
             ),
           ],
         ),

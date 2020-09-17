@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(
-          child: Image(image: AssetImage('images/bottle.jpg')),
+          child: Image(
+            image: AssetImage('images/bottle.jpg'),
+          ),
         ),
       ),
     );
