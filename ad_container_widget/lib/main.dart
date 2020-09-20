@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+
+//To see what is happening in this app we need to start the dartdevtools
+//by going to View/Command Palette/Dart: Open DevTools.
+//Choose to open DevTools in the browser and click on Debug Paint to show
+//the results of the padding and margin demo.
+
+//We can use the padding and margin properties of the Container Widget
+//to apply padding and margin to the Container.
+//We can also use the Padding Widget wrapping the Container to apply
+//padding, but from the body of the Scaffolds perspective.
+
 // display an asset image
 // to change the launcher icon from the flutter icon
 // drag and drop an image to appicon.co then generate a zip file
@@ -26,14 +37,18 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Container(
-          padding: EdgeInsets.fromLTRB(20.0, 10, 5.0, 10),
-          //padding: EdgeInsets.all(50.0),
+          height: 400.0,
+          width: 340.0,
+          //color: Colors.white,
+          //padding: EdgeInsets.fromLTRB(50, 240, 10, 50),
+          //padding: EdgeInsets.all(100.0),
           //margin: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
           //margin: EdgeInsets.all(50.0),
           //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
-          height: 300.0,
-          width: 300.0,
-          color: Colors.white,
+          // decoration: BoxDecoration(
+          //   shape: BoxShape.circle,
+          //   color: Colors.amber,
+          // ),
           child: Image(
             image: AssetImage('images/bottle.jpg'),
           ),
