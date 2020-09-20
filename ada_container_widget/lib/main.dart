@@ -45,10 +45,11 @@ class MyApp extends StatelessWidget {
           //margin: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
           //margin: EdgeInsets.all(50.0),
           //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
-          // decoration: BoxDecoration(
-          //   shape: BoxShape.circle,
-          //   color: Colors.amber,
-          // ),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.amber,
+            border: Border.all(color: Colors.black, width: 3),
+          ),
           child: Image(
             image: AssetImage('images/bottle.jpg'),
           ),
