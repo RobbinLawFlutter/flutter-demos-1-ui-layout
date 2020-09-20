@@ -56,8 +56,8 @@ class _DiceState extends State<Dice> {
                 //signature for a voidcallback also called in some languages anonymous functions
                 print('Right button got pressed');
               },
-              child: Image.asset(
-                  'images/dice$rightDiceNumber.png'), //string interpolation with $
+              child: Image.asset('images/dice$rightDiceNumber.png'),
+              //string interpolation with $
             ),
           ),
         ],

@@ -3,6 +3,13 @@ import 'package:flutter/rendering.dart';
 
 // https://flutter.dev/docs/development/ui/layout
 
+//The first thing this app shows is a short cut (lambda operator)
+//to use when you have only one statement in a code block.
+//Instead of the {} use =>
+
+//The second thing this app shows is the use of custom
+//methods to create complex Widgets reusing code.
+
 /*
 void main() {
   runApp(MyApp());
