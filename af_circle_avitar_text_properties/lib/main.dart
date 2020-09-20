@@ -8,9 +8,7 @@ import 'package:flutter/material.dart';
 // the ttf file to the new directory
 // now edit pubspec.yaml to add the font same way as images
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -33,9 +31,9 @@ class MyApp extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             CircleAvatar(
-              radius: 50,
-              backgroundColor: Colors.blue,
-              backgroundImage: AssetImage('images/moon.jpg'),
+              radius: 150,
+              backgroundColor: Colors.yellow,
+              //backgroundImage: AssetImage('images/moon.jpg'),
             ),
             Text(
               'moon pic',
