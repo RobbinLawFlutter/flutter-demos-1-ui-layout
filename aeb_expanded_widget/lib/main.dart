@@ -7,8 +7,9 @@ import 'package:flutter/material.dart';
 //Choose to open DevTools in the browser and click on Debug Paint to show
 //the results of the padding and margin demo.
 
-//We can use the Padding Widget wrapping the Container to apply
-//padding, but from the body of the Scaffolds perspective.
+//We can use the Expanded Widget with the Padding Widget
+//and the Container Widget to stretch the Container Widgets
+//as per the flex value.
 
 void main() {
   runApp(MyApp());
@@ -26,26 +27,43 @@ class MyApp extends StatelessWidget {
           title: Text("Container Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              Expanded(
-                flex: 1,
+        body: Column(
+          children: [
+            Expanded(
+              flex: 0,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: 400.0,
-                  width: 340.0,
+                  height: 100.0,
+                  width: 100.0,
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
-                    color: Colors.amber,
+                    color: Colors.blue,
                   ),
                   child: Image(
                     image: AssetImage('images/bottle.jpg'),
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+            Expanded(
+              flex: 0,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 100.0,
+                  width: 100.0,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    color: Colors.yellow,
+                  ),
+                  child: Image(
+                    image: AssetImage('images/moon.jpg'),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
