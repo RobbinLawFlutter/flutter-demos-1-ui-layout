@@ -19,11 +19,13 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Row(
+          mainAxisSize: MainAxisSize.max,
+          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.end,
           //crossAxisAlignment: CrossAxisAlignment.stretch,
           //crossAxisAlignment: CrossAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          mainAxisSize: MainAxisSize.max,
+          //crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Container(
               height: 100.0,
@@ -54,9 +56,7 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               height: 20.0,
-              //height: double.infinity,
               color: Colors.blue,
-              //width: double.infinity,
               child: Text(
                 'Container 4',
               ),
