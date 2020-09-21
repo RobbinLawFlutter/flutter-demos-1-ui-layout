@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 //using the Icon Widget
-//also adding padding widget
 // go to http://www.materialpalette.com
 
 void main() {
@@ -23,51 +22,57 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Column(
-          //crossAxisAlignment: CrossAxisAlignment.stretch,
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          //crossAxisAlignment: CrossAxisAlignment.end,
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            CircleAvatar(
-              radius: 50,
-              backgroundColor: Colors.blue,
-              backgroundImage: AssetImage('images/moon.jpg'),
-            ),
-            Text(
-              'moon pic',
-              style: TextStyle(
-                fontFamily: 'Chilanka-Regular',
-                fontSize: 40,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 2.5,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                radius: 150,
+                backgroundColor: Colors.blue,
+                backgroundImage: AssetImage('images/bottle.jpg'),
               ),
             ),
-            Container(
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              //padding: EdgeInsets.all(10),
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.build,
-                      size: 50,
-                      color: Colors.blue.shade500,
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Text(
-                      'go to this place',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.blue.shade300,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'bottle pic',
+                style: TextStyle(
+                  fontFamily: 'Chilanka-Regular',
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2.5,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black, width: 8),
+                  color: Colors.white,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.build,
+                        size: 50,
+                        color: Colors.blue.shade500,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 30,
+                      ),
+                      Text(
+                        'go to this place',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.blue.shade300,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

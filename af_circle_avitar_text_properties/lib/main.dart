@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 // using Avitar Widgets & Manipulating Text Properties
 // also loading custom fonts
 // google fonts.google.com download the font you want and unzip
+//in my case Chilanka-Regular
 // create a directory in studio called "fonts" and drag and drop
 // the ttf file to the new directory
 // now edit pubspec.yaml to add the font same way as images
@@ -23,29 +24,34 @@ class MyApp extends StatelessWidget {
           title: Text("Avitar & Text Properties"),
           backgroundColor: Colors.blue,
         ),
-        body: Column(
-          //crossAxisAlignment: CrossAxisAlignment.stretch,
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          //crossAxisAlignment: CrossAxisAlignment.end,
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
-            CircleAvatar(
-              radius: 150,
-              backgroundColor: Colors.yellow,
-              //backgroundImage: AssetImage('images/moon.jpg'),
-            ),
-            Text(
-              'moon pic',
-              style: TextStyle(
-                fontFamily: 'Chilanka-Regular',
-                fontSize: 40,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 2.5,
+        body: Align(
+          alignment: Alignment.center,
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: CircleAvatar(
+                  radius: 150,
+                  backgroundColor: Colors.yellow,
+                  backgroundImage: AssetImage('images/bottle.jpg'),
+                ),
               ),
-            ),
-          ],
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  'bottle pic',
+                  style: TextStyle(
+                    fontFamily: 'Chilanka-Regular',
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.5,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
