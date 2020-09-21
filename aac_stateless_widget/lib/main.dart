@@ -7,6 +7,7 @@
 //the base classes build method to our own.
 //Our version will return our produced MaterialApp Widget tree.
 
+//stateless Widget from Widgets 101 series
 // https://www.youtube.com/watch?v=wE7khGHVkYY
 
 // https://flutter.dev/docs/development/ui/layout
