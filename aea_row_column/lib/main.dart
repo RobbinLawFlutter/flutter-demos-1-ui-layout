@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+
 // using the row and column widgets
 void main() {
   runApp(MyApp());
@@ -18,10 +19,11 @@ class MyApp extends StatelessWidget {
           title: Text("Row and Column Widgets"),
           backgroundColor: Colors.blue,
         ),
-        body: Row(
+        body: Column(
           mainAxisSize: MainAxisSize.max,
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           //mainAxisAlignment: MainAxisAlignment.end,
           //crossAxisAlignment: CrossAxisAlignment.stretch,
           //crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +50,8 @@ class MyApp extends StatelessWidget {
             Container(
               height: 50.0,
               //height: double.infinity,
-              width: 50.0,
+              width: 50,
+              //width: double.infinity,
               color: Colors.red,
               child: Text(
                 'Container 3',
@@ -56,6 +59,7 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               height: 20.0,
+              //width: 10,
               color: Colors.blue,
               child: Text(
                 'Container 4',

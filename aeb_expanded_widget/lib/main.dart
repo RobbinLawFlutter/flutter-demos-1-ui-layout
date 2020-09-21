@@ -30,9 +30,9 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
-              flex: 0,
+              flex: 1,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Container(
                   height: 100.0,
                   width: 100.0,
@@ -47,9 +47,9 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 0,
+              flex: 2,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Container(
                   height: 100.0,
                   width: 100.0,
