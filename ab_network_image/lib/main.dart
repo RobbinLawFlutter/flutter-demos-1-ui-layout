@@ -17,10 +17,8 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Center(
-          child: Image(
-            image: NetworkImage(
-                'https://www.w3schools.com/w3css/img_snowtops.jpg'),
-          ),
+          child:
+              Image.network('https://www.w3schools.com/w3css/img_snowtops.jpg'),
         ),
       ),
     );
