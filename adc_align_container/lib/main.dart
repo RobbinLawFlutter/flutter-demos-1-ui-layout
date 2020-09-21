@@ -31,6 +31,10 @@ class MyApp extends StatelessWidget {
         ),
         body: Align(
           alignment: Alignment.bottomCenter,
+          //alignment: Alignment.bottomLeft,
+          //alignment: Alignment.topRight,
+          //alignment: Alignment.center, //default
+          //alignment: Alignment.centerLeft,
           child: Container(
             height: 400.0,
             width: 340.0,
