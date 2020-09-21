@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 //using the Icon Widget
 // go to http://www.materialpalette.com
 
+//Icons from Material
+//https://material.io/resources/icons/?style=baseline
+
+//SizedBox Widget of the Week
+//https://www.youtube.com/watch?v=EHPu_DzRfqA
 void main() {
   runApp(
     MyApp(),
