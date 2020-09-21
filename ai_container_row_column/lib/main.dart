@@ -42,12 +42,14 @@ class MyApp extends StatelessWidget {
           ],
         ),
       );
+
   Widget _buildImageRow(int imageIndex) => Row(
         children: [
           _buildDecoratedImage(imageIndex),
           _buildDecoratedImage(imageIndex + 1),
         ],
       );
+
   Widget _buildDecoratedImage(int imageIndex) => Expanded(
         child: Container(
           decoration: BoxDecoration(

@@ -2,7 +2,8 @@
 // go to pub.dev/flutter
 // the "english_words" package
 // and the "audioPlayers" package
-// and some of the sutilties of dart methods which are very similar to C# methods
+// and some of the sutilties of dart methods
+// which are very similar to C# methods
 // methods with no parameters and return nothing
 // methods with positional parameters
 // methods with named parameters
@@ -77,8 +78,8 @@ class _BodyOfAppState extends State<BodyOfApp> {
               ),
             ),
           ),
-          //makeKey(textToShow: 'Click Me 3', soundToPlay: 3),
-          //makeKey(textToShow: 'Click Me 4', soundToPlay: 4),
+          makeKey(textToShow: 'Click Me 3', soundToPlay: 3),
+          makeKey(textToShow: 'Click Me 4', soundToPlay: 4),
           //makeKey(textToShow: 'Click Me 5', soundToPlay: 5),
         ],
       ),

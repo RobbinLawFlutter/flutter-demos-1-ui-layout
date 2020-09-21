@@ -36,24 +36,24 @@ class _DiceState extends State<Dice> {
             flex: 1,
             child: FlatButton(
               onPressed: () {
-                //signature for a voidcallback also called in some languages anonymous functions
+                //signature for a voidcallback also called in some
+                //languages anonymous functions
                 //a function with no name
                 setState(() {
-                  leftDiceNumber =
-                      Random().nextInt(6) + 1; //random number between 0 and 5
+                  leftDiceNumber = Random().nextInt(6) + 1;
+                  //random number between 0 and 5
                   print('Left button got pressed');
                   print('diceNumber = $leftDiceNumber');
                 });
               },
-              child: Image.asset(
-                  'images/dice$leftDiceNumber.png'), //string interpolation with $
+              child: Image.asset('images/dice$leftDiceNumber.png'),
+              //string interpolation with $
             ),
           ),
           Expanded(
             flex: 1,
             child: FlatButton(
               onPressed: () {
-                //signature for a voidcallback also called in some languages anonymous functions
                 print('Right button got pressed');
               },
               child: Image.asset('images/dice$rightDiceNumber.png'),
