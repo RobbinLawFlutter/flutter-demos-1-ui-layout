@@ -26,31 +26,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter layout demo'),
         ),
-        body: Center(child: _buildImageColumn()),
+        body: Center(child: buildImageColumn()),
       ),
     );
   }
 
-  Widget _buildImageColumn() => Container(
-        decoration: BoxDecoration(
-          color: Colors.black26,
-        ),
-        child: Column(
-          children: [
-            _buildImageRow(1),
-            _buildImageRow(3),
-          ],
-        ),
-      );
-
-  Widget _buildImageRow(int imageIndex) => Row(
-        children: [
-          _buildDecoratedImage(imageIndex),
-          _buildDecoratedImage(imageIndex + 1),
-        ],
-      );
-
-  Widget _buildDecoratedImage(int imageIndex) => Expanded(
+  Widget buildDecoratedImage(int imageIndex) => Expanded(
         child: Container(
           decoration: BoxDecoration(
             border: Border.all(width: 10, color: Colors.black38),
@@ -60,4 +41,25 @@ class MyApp extends StatelessWidget {
           child: Image.asset('images/pic$imageIndex.jpg'),
         ),
       );
+
+  Widget buildImageRow(int imageIndex) => Row(
+        children: [
+          buildDecoratedImage(imageIndex),
+          buildDecoratedImage(imageIndex + 1),
+        ],
+      );
+
+  Widget buildImageColumn() {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.black26,
+      ),
+      child: Column(
+        children: [
+          buildImageRow(1),
+          buildImageRow(3),
+        ],
+      ),
+    );
+  }
 }
