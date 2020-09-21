@@ -9,8 +9,6 @@ import 'package:flutter/material.dart';
 
 //We can use the padding and margin properties of the Container Widget
 //to apply padding and margin to the Container.
-//We can also use the Padding Widget wrapping the Container to apply
-//padding, but from the body of the Scaffolds perspective.
 
 // display an asset image
 // to change the launcher icon from the flutter icon
