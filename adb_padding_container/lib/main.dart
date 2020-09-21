@@ -28,23 +28,16 @@ class MyApp extends StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              Expanded(
-                flex: 1,
-                child: Container(
-                  height: 400.0,
-                  width: 340.0,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    color: Colors.amber,
-                  ),
-                  child: Image(
-                    image: AssetImage('images/bottle.jpg'),
-                  ),
-                ),
-              ),
-            ],
+          child: Container(
+            height: 400.0,
+            width: 340.0,
+            decoration: BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.amber,
+            ),
+            child: Image(
+              image: AssetImage('images/bottle.jpg'),
+            ),
           ),
         ),
       ),
