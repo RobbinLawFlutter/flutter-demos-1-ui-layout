@@ -19,30 +19,15 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter layout demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter layout demos'),
+  Widget build(BuildContext context) => MaterialApp(
+        title: 'Flutter layout demo',
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('Flutter layout demos'),
+          ),
+          body: Center(child: buildImageColumn()),
         ),
-        body: Center(child: buildImageColumn()),
-      ),
-    );
-  }
-
-  Widget buildDecoratedImage(int imageIndex) {
-    return Expanded(
-      child: Container(
-        decoration: BoxDecoration(
-          border: Border.all(width: 10, color: Colors.black38),
-          borderRadius: const BorderRadius.all(const Radius.circular(8)),
-        ),
-        margin: const EdgeInsets.all(4),
-        child: Image.asset('images/pic$imageIndex.jpg'),
-      ),
-    );
-  }
+      );
 
   Widget buildImageColumn() => Container(
         decoration: BoxDecoration(
@@ -62,4 +47,17 @@ class MyApp extends StatelessWidget {
           buildDecoratedImage(imageIndex + 1),
         ],
       );
+
+  Widget buildDecoratedImage(int imageIndex) {
+    return Expanded(
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(width: 10, color: Colors.black38),
+          borderRadius: const BorderRadius.all(const Radius.circular(8)),
+        ),
+        margin: const EdgeInsets.all(4),
+        child: Image.asset('images/pic$imageIndex.jpg'),
+      ),
+    );
+  }
 }
