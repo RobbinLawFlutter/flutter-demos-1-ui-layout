@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter layout demo'),
+          title: Text('Flutter layout demos'),
         ),
         body: Center(child: buildImageColumn()),
       ),
@@ -44,16 +44,9 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  Widget buildImageRow(int imageIndex) => Row(
-        children: [
-          buildDecoratedImage(imageIndex),
-          buildDecoratedImage(imageIndex + 1),
-        ],
-      );
-
   Widget buildImageColumn() => Container(
         decoration: BoxDecoration(
-          color: Colors.black26,
+          color: Colors.black45,
         ),
         child: Column(
           children: [
@@ -61,5 +54,12 @@ class MyApp extends StatelessWidget {
             buildImageRow(3),
           ],
         ),
+      );
+
+  Widget buildImageRow(int imageIndex) => Row(
+        children: [
+          buildDecoratedImage(imageIndex),
+          buildDecoratedImage(imageIndex + 1),
+        ],
       );
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+
 // using Avitar Widgets & Manipulating Text Properties
 // also loading custom fonts
 // google fonts.google.com download the font you want and unzip
@@ -43,10 +44,11 @@ class MyApp extends StatelessWidget {
                   'bottle pic',
                   style: TextStyle(
                     fontFamily: 'Chilanka-Regular',
-                    fontSize: 40,
+                    fontSize: 60,
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    letterSpacing: 2.5,
+                    //fontWeight: FontWeight.normal,
+                    letterSpacing: 4.5,
                   ),
                 ),
               ),

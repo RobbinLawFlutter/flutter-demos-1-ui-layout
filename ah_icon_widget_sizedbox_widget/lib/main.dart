@@ -62,12 +62,12 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     children: <Widget>[
                       Icon(
-                        Icons.build,
+                        Icons.add_shopping_cart,
                         size: 50,
                         color: Colors.blue.shade500,
                       ),
                       SizedBox(
-                        width: 30,
+                        width: 20,
                       ),
                       Text(
                         'go to this place',
