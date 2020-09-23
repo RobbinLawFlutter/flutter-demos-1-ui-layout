@@ -5,7 +5,7 @@ import 'package:flutter/rendering.dart';
 
 //The first thing this app shows is a short cut (lambda operator)
 //to use when you have only one statement in a code block.
-//Instead of the {} use =>
+//Instead of the { runApp(); } or { return Widget} use =>
 
 //The second thing this app shows is the use of custom
 //methods to create complex Widgets reusing code.
