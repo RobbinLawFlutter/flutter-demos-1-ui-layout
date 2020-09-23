@@ -26,15 +26,15 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Container Widget"),
+          title: Text("Align Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Align(
-          alignment: Alignment.bottomCenter,
+          //alignment: Alignment.bottomCenter,
           //alignment: Alignment.bottomLeft,
           //alignment: Alignment.topRight,
-          //alignment: Alignment.center, //default
           //alignment: Alignment.centerLeft,
+          //alignment: Alignment.center, //default
           child: Container(
             height: 400.0,
             width: 340.0,
