@@ -60,11 +60,6 @@ flutter:
     - family: Chilanka-Regular
       fonts:
         - asset: fonts/Chilanka-Regular.ttf
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

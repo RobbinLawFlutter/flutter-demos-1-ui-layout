@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Container(
