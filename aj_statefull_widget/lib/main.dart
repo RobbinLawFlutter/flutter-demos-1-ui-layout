@@ -27,8 +27,8 @@ class Dice extends StatefulWidget {
 }
 
 class _DiceState extends State<Dice> {
-  var leftDiceNumber = 1;
-  var rightDiceNumber = 1;
+  int leftDiceNumber = 1;
+  int rightDiceNumber = 1;
   @override
   Widget build(BuildContext context) {
     return Center(
