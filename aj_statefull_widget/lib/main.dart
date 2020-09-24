@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+//Flutter 101: Statefull Widgets
+//https://www.youtube.com/watch?v=AqCMFXEmf3w
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue.shade900,
         appBar: AppBar(
-          title: Text("Statefull Widget"),
+          title: Text("Statefull Widgets"),
           backgroundColor: Colors.blue.shade400,
         ),
         body: Dice(),
@@ -41,7 +43,7 @@ class _DiceState extends State<Dice> {
                 //a function with no name
                 setState(() {
                   leftDiceNumber = Random().nextInt(6) + 1;
-                  //random number between 0 and 5
+                  //random number between 0 and 5 then add 1
                   print('Left button got pressed');
                   print('diceNumber = $leftDiceNumber');
                 });
