@@ -1,13 +1,13 @@
-// this app demonstrates the use of packages
-// go to pub.dev/flutter
+// This app demonstrates the use of packages
+// go to pub.dev/flutter and download
 // the "english_words" package
-// and the "audioPlayers" package
-// and some of the sutilties of dart methods
-// which are very similar to C# methods
-// methods with no parameters and return nothing
-// methods with positional parameters
-// methods with named parameters
-// methods that return something like basic types or objects
+// and the "audioPlayers" package.
+// This app also shows some of the sutilties of dart methods
+// which are very similar to C# methods.
+// Also methods with no parameters and return nothing,
+// methods with positional parameters,
+// methods with named parameters,
+// methods that return something like basic types or objects.
 
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
