@@ -4,8 +4,9 @@ import 'dart:math';
 //Flutter 101: Statefull Widgets
 //https://www.youtube.com/watch?v=AqCMFXEmf3w
 
-//CHALLENGE: Finish the right dice to operate like the left.
-
+//CHALLENGE 1: Finish the right dice to operate like the left.
+//CHALLENGE 2: Create a method inside the class to reuse code.
+//Make it so that when the right dice is pressed both dice update.
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -58,7 +59,7 @@ class _DiceState extends State<Dice> {
                   //At the end of the setState anonomous function
                   //setState triggers the nearest build method
                   //which in turn updates or rerenders the screen
-                  //to reflect anything labeled DIRTY.
+                  //to reflect changes from anything labeled DIRTY.
                 });
               },
               child: Image.asset('images/dice$leftDiceNumber.png'),
@@ -68,6 +69,7 @@ class _DiceState extends State<Dice> {
             flex: 1,
             child: FlatButton(
               onPressed: () {
+                //changeBothDiceFace();
                 print('Right button got pressed');
                 print('rightDiceNumber = $rightDiceNumber');
               },
@@ -78,4 +80,11 @@ class _DiceState extends State<Dice> {
       ),
     );
   }
+
+  // void changeBothDiceFace() {
+  //   setState(() {
+  //     leftDiceNumber = Random().nextInt(6) + 1;
+  //     rightDiceNumber = Random().nextInt(6) + 1;
+  //   });
+  // }
 }
