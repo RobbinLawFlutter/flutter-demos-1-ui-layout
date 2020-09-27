@@ -4,7 +4,7 @@
 // and the "audioPlayers" package.
 // This app also shows some of the sutilties of dart methods
 // which are very similar to C# methods.
-// Also methods with no parameters and return nothing,
+// The app shows methods with no parameters and that return nothing,
 // methods with positional parameters,
 // methods with named parameters,
 // methods that return something like basic types or objects.
@@ -48,8 +48,9 @@ class _BodyOfAppState extends State<BodyOfApp> {
                 playSound1();
               },
               child: Text(
+                //To see all the nouns view nouns.dart
+                //in the dependencies for this project
                 nouns.first,
-                // 'Click Me 1',
                 style: TextStyle(
                   fontFamily: 'Chilanka-Regular',
                   fontSize: 40,
@@ -67,7 +68,6 @@ class _BodyOfAppState extends State<BodyOfApp> {
               },
               child: Text(
                 nouns.last,
-                // 'Click Me 2',
                 style: TextStyle(
                   fontFamily: 'Chilanka-Regular',
                   fontSize: 40,
@@ -78,9 +78,9 @@ class _BodyOfAppState extends State<BodyOfApp> {
               ),
             ),
           ),
-          makeKey(textToShow: 'Click Me 3', soundToPlay: 3),
-          makeKey(textToShow: 'Click Me 4', soundToPlay: 4),
-          //makeKey(textToShow: 'Click Me 5', soundToPlay: 5),
+          makeKey(textToShow: 'Click Me 1', soundToPlay: 3),
+          makeKey(textToShow: 'Click Me 2', soundToPlay: 4),
+          makeKey(textToShow: 'Click Me 3', soundToPlay: 5),
         ],
       ),
     );
@@ -90,7 +90,8 @@ class _BodyOfAppState extends State<BodyOfApp> {
   var direction = 1;
 
   void playSound1() {
-    // simplest function that has no input parmameters and returns nothing
+    //simplest function that has
+    //no input parmameters and returns nothing
     final player = AudioCache();
     player.play('note$soundNumber.wav');
     if (soundNumber >= 1 && soundNumber <= 6 && direction == 1) {
@@ -103,13 +104,16 @@ class _BodyOfAppState extends State<BodyOfApp> {
   }
 
   void playSound2(int sound) {
-    // medium function that has one positional input parmeter and returns nothing
+    //medium function that has
+    //one positional input parmeter and returns nothing
     final player = AudioCache();
     player.play('note$sound.wav');
   }
 
   Expanded makeKey({String textToShow, int soundToPlay}) {
-    // most complicated function that has named input parameters {}, and returns an object of type Exapanded
+    //most complicated function that has named
+    //input parameters {}, and returns
+    //an object of type Exapanded
     return Expanded(
       child: FlatButton(
         onPressed: () {

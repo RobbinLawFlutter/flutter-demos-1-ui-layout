@@ -7,7 +7,7 @@ import 'package:flutter/rendering.dart';
 //to use when you have only one statement in a code block.
 //Instead of the { runApp(); } or { return Widget} use =>
 
-//The second thing this app shows is the use of custom
+//The second thing this app shows is the use of
 //methods to create complex Widgets reusing code.
 
 /*
