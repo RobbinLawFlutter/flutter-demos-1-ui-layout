@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
-//Flutter 101: Statefull Widgets
-//https://www.youtube.com/watch?v=AqCMFXEmf3w
+//Dart is a Statically Typed Language
+//int myInt = 123;
+//string myString = 'Hello'; notice single quotes in dart
+//double myDouble = 12.3;
+//bool myBool = true;
+//These all produce static types with initialization
+//int myInt2;
+//This produces a static int type even with no init.
+//A variable can be made dynaically typed with the keyword dynamic
+//dynamic myDynamic;
+//myDynamic = 123;
+//myDynamic = 'Hello';
+//var myDynamic2;
+//This produces a dynamic type as no initiaizaiton has occured.
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,35 +33,30 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Dice extends StatefulWidget {
-  @override
-  _DiceState createState() => _DiceState();
-}
-
-class _DiceState extends State<Dice> {
-  int leftDiceNumber = 1;
-  int rightDiceNumber = 1;
+class Dice extends StatelessWidget {
+  //We cannot put vars here (unless we mark them final)
+  //because a stateless widget is imutable (can't change)
+  //int myLeftDiceNumber = 1;
   @override
   Widget build(BuildContext context) {
+    //If we change these numbers and hotreload the images will update
+    int leftDiceNumber = 1;
+    var rightDiceNumber = 4;
     return Center(
       child: Row(
         children: <Widget>[
           Expanded(
             flex: 1,
             child: FlatButton(
+              //Signature for a voidcallback also called in some
+              //languages anonymous functions.
+              //A function with no name and in this case no parms
               onPressed: () {
-                //signature for a voidcallback also called in some
-                //languages anonymous functions
-                //a function with no name
-                setState(() {
-                  leftDiceNumber = Random().nextInt(6) + 1;
-                  //random number between 0 and 5 then add 1
-                  print('Left button got pressed');
-                  print('diceNumber = $leftDiceNumber');
-                });
+                print('Left button got pressed');
+                print('leftDiceNumber = $leftDiceNumber');
               },
-              child: Image.asset('images/dice$leftDiceNumber.png'),
               //string interpolation with $
+              child: Image.asset('images/dice$leftDiceNumber.png'),
             ),
           ),
           Expanded(
@@ -57,9 +64,9 @@ class _DiceState extends State<Dice> {
             child: FlatButton(
               onPressed: () {
                 print('Right button got pressed');
+                print('rightDiceNumber = $rightDiceNumber');
               },
               child: Image.asset('images/dice$rightDiceNumber.png'),
-              //string interpolation with $
             ),
           ),
         ],
