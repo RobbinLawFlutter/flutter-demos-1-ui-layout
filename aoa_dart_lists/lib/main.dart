@@ -10,11 +10,6 @@
 // alert if the _questionNumber gets to big.
 
 import 'package:flutter/material.dart';
-import 'quizMaster.dart';
-import 'alert.dart';
-
-QuizMaster quizMaster = QuizMaster();
-MyAlert myAlert = MyAlert();
 
 void main() => runApp(MyApp());
 
@@ -52,15 +47,12 @@ class _MyFirstPageState extends State<MyFirstPage> {
   List<bool> answers = [false, true, true];
 
   int questionNumber = 0;
+  int loopNumber = 0;
 
   void checkAnswer(bool userAnswer) {
     setState(() {
-      if (quizMaster.isNotFinished() == true) {
-        //bool correctAnswer = answers[questionNumber];
-        //quizMaster.questionBank1[questionNumber].questionAnswer = true;
-        //bool correctAnswer =
-        //  quizMaster.questionBank1[questionNumber].questionAnswer;
-        bool correctAnswer = quizMaster.getQuestionAnswer();
+      if (loopNumber < 3) {
+        bool correctAnswer = answers[questionNumber];
         if (userAnswer == correctAnswer) {
           print('got it right');
           scoreKeeper.add(
@@ -78,15 +70,20 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
           );
         }
-        questionNumber++;
-        print(questionNumber);
-        quizMaster.nextQuestion();
+        if (questionNumber < 2) {
+          questionNumber++;
+        }
+        loopNumber++;
+        print('loopnumber is $loopNumber');
+        print('questionnumber is $questionNumber');
       } else {
-        myAlert.getMyAlert(context);
-        quizMaster.reset();
+        questionNumber = 0;
+        loopNumber = 0;
+        print('loopnumber is $loopNumber');
+        print('questionnumber is $questionNumber');
         scoreKeeper = [];
       }
-    }); // setState
+    });
   }
 
   @override
@@ -101,9 +98,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                //questions[questionNumber],
-                //quizMaster.questionBank1[questionNumber].questionText,
-                quizMaster.getQuestionText(),
+                questions[questionNumber],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
