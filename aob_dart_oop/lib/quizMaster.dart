@@ -1,15 +1,5 @@
 import 'question.dart';
 
-class QuizMaster {
-  // This list is PUBLIC and so the data can be changed from anywhere else in the app.
-  List<Question> questionBank1 = [
-    Question('The earth is flat.', false),
-    Question('The earth is round.', true),
-    Question('The earth is smaller than the moon.', false),
-    Question('The earth is bigger than the moon.', true),
-    Question('Programming in flutter is fun.', true)
-  ];
-
   // ENCAPSULATION
   // Making this variable and list PRIVATE "_" ensures that no where else outside of this class can the data be changed.
   // But now we need a getter for each piece of data,
@@ -18,7 +8,7 @@ class QuizMaster {
 
   int _questionNumber = 0;
 
-  List<Question> _questionBank2 = [
+  List<Question> _questionBank = [
     Question('The earth is flat.', false),
     Question('The earth is round.', true),
     Question('The earth is smaller than the moon.', false),
@@ -27,26 +17,25 @@ class QuizMaster {
   ];
 
   void nextQuestion() {
-    if (_questionNumber < _questionBank2.length - 1) {
+    if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
     }
-    print(_questionNumber);
-    print(_questionBank2.length);
+    print('_questionNumber is $_questionNumber');
+    //print('_questionBank2 length is ${_questionBank.length}');
   }
 
   String getQuestionText() {
-    return _questionBank2[_questionNumber].questionText;
+    return _questionBank[_questionNumber].questionText;
   }
 
   bool getQuestionAnswer() {
-    return _questionBank2[_questionNumber].questionAnswer;
+    return _questionBank[_questionNumber].questionAnswer;
   }
 
   bool isNotFinished() {
-    if (_questionNumber >= _questionBank2.length - 1) {
-      print('Now returning false');
+    if (_questionNumber >= _questionBank.length - 1) {
+      print('isNotFinished Now returning false');
       return false;
-
     } else {
       return true;
     }

@@ -43,23 +43,9 @@ class MyFirstPage extends StatefulWidget {
 class _MyFirstPageState extends State<MyFirstPage> {
   List<Icon> scoreKeeper = [];
 
-  List<String> questions = [
-    'the earth is flat',
-    'the earth is round',
-    'this is fun'
-  ];
-
-  List<bool> answers = [false, true, true];
-
-  int questionNumber = 0;
-
   void checkAnswer(bool userAnswer) {
     setState(() {
       if (quizMaster.isNotFinished() == true) {
-        //bool correctAnswer = answers[questionNumber];
-        //quizMaster.questionBank1[questionNumber].questionAnswer = true;
-        //bool correctAnswer =
-        //  quizMaster.questionBank1[questionNumber].questionAnswer;
         bool correctAnswer = quizMaster.getQuestionAnswer();
         if (userAnswer == correctAnswer) {
           print('got it right');
@@ -78,15 +64,13 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
           );
         }
-        questionNumber++;
-        print(questionNumber);
         quizMaster.nextQuestion();
       } else {
-        myAlert.getMyAlert(context);
         quizMaster.reset();
         scoreKeeper = [];
+        //myAlert.getMyAlert(context);
       }
-    }); // setState
+    });
   }
 
   @override
@@ -101,8 +85,6 @@ class _MyFirstPageState extends State<MyFirstPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                //questions[questionNumber],
-                //quizMaster.questionBank1[questionNumber].questionText,
                 quizMaster.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -128,7 +110,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
               ),
               onPressed: () {
                 checkAnswer(true);
-              }, // onPressed
+              },
             ),
           ),
         ),
