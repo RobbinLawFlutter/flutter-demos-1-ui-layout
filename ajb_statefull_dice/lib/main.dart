@@ -3,6 +3,9 @@ import 'dart:math';
 
 //Flutter 101: Statefull Widgets
 //https://www.youtube.com/watch?v=AqCMFXEmf3w
+
+//CHALLENGE: Finish the right dice to operate like the left.
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -38,18 +41,27 @@ class _DiceState extends State<Dice> {
             flex: 1,
             child: FlatButton(
               onPressed: () {
-                //signature for a voidcallback also called in some
-                //languages anonymous functions
-                //a function with no name
+                print('Just entered onPressed anonomous function');
                 setState(() {
+                  //setState takes as a parm an anonomous function.
+                  //Inside this function setState will mark DIRTY
+                  //any variable that changes well as anything that uses
+                  //that DIRTY variable anywhere inside the nearest build
+                  //method.
+
+                  //Random number between 0 and 5 then add 1
                   leftDiceNumber = Random().nextInt(6) + 1;
-                  //random number between 0 and 5 then add 1
+
                   print('Left button got pressed');
-                  print('diceNumber = $leftDiceNumber');
+                  print('leftDiceNumber = $leftDiceNumber');
+
+                  //At the end of the setState anonomous function
+                  //setState triggers the nearest build method
+                  //which in turn updates or rerenders the screen
+                  //to reflect anything labeled DIRTY.
                 });
               },
               child: Image.asset('images/dice$leftDiceNumber.png'),
-              //string interpolation with $
             ),
           ),
           Expanded(
@@ -57,9 +69,9 @@ class _DiceState extends State<Dice> {
             child: FlatButton(
               onPressed: () {
                 print('Right button got pressed');
+                print('rightDiceNumber = $rightDiceNumber');
               },
               child: Image.asset('images/dice$rightDiceNumber.png'),
-              //string interpolation with $
             ),
           ),
         ],
