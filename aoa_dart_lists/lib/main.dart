@@ -6,9 +6,6 @@
 // Inheritance "extends" the base class template.
 // Polymorphism "@override" changes methods of the base class.
 
-// CHALLENGE:  download and use the package rflutter_alert 1.0.2 to give an
-// alert if the _questionNumber gets to big.
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

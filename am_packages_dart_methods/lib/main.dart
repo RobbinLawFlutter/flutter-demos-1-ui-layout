@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue.shade900,
         appBar: AppBar(
-          title: Text("Statefull Widget"),
+          title: Text("Using Packages Widget"),
           backgroundColor: Colors.blue.shade400,
         ),
         body: BodyOfApp(),
@@ -64,7 +64,7 @@ class _BodyOfAppState extends State<BodyOfApp> {
           Expanded(
             child: FlatButton(
               onPressed: () {
-                playSound1();
+                playSound2(4);
               },
               child: Text(
                 nouns.last,
@@ -78,9 +78,18 @@ class _BodyOfAppState extends State<BodyOfApp> {
               ),
             ),
           ),
-          makeKey(textToShow: 'Click Me 1', soundToPlay: 3),
-          makeKey(textToShow: 'Click Me 2', soundToPlay: 4),
-          makeKey(textToShow: 'Click Me 3', soundToPlay: 5),
+          makeKey(
+            soundToPlay: 3,
+            textToShow: 'Click Me 1',
+          ),
+          makeKey(
+            textToShow: 'Click Me 2',
+            soundToPlay: 4,
+          ),
+          makeKey(
+            textToShow: 'Click Me 3',
+            soundToPlay: 5,
+          ),
         ],
       ),
     );
