@@ -6,15 +6,11 @@
 // Inheritance "extends" the base class template.
 // Polymorphism "@override" changes methods of the base class.
 
-// CHALLENGE:  download and use the package rflutter_alert 1.0.2 to give an
-// alert if the _questionNumber gets to big.
-
 import 'package:flutter/material.dart';
 import 'quizMaster.dart';
 import 'alert.dart';
 
 QuizMaster quizMaster = QuizMaster();
-MyAlert myAlert = MyAlert();
 
 void main() => runApp(MyApp());
 
@@ -65,11 +61,14 @@ class _MyFirstPageState extends State<MyFirstPage> {
           );
         }
         quizMaster.nextQuestion();
-      } else {
-        quizMaster.reset();
-        scoreKeeper = [];
-        //myAlert.getMyAlert(context);
       }
+    });
+  }
+
+  void startOver() {
+    setState(() {
+      quizMaster.reset();
+      scoreKeeper = [];
     });
   }
 
@@ -128,6 +127,24 @@ class _MyFirstPageState extends State<MyFirstPage> {
               ),
               onPressed: () {
                 checkAnswer(false);
+              },
+            ),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: FlatButton(
+              color: Colors.amber,
+              child: Text(
+                'Start Over',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white,
+                ),
+              ),
+              onPressed: () {
+                startOver();
               },
             ),
           ),

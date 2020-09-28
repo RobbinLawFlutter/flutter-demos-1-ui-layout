@@ -1,12 +1,16 @@
 import 'question.dart';
 
-  // ENCAPSULATION
-  // Making this variable and list PRIVATE "_" ensures that no where else outside of this class can the data be changed.
-  // But now we need a getter for each piece of data,
-  // and if we want to be able to change the data outside of this class we need a setter.
-  // We have now brought the _questionNumber into this class so we can keep track of it and not crash the app.
+// ENCAPSULATION
+//Making this variable and list PRIVATE "_"
+//ensures that no where else outside of this class can the data be changed.
+//But now we need a getter for each piece of data,
+//and if we want to be able to change the data outside of this class we need a setter.
+//We have now brought the _questionNumber into this class so we
+//can keep track of it and not crash the app.
 
-  int _questionNumber = 0;
+class QuizMaster {
+  int _questionNumber;
+  int _loopNumber;
 
   List<Question> _questionBank = [
     Question('The earth is flat.', false),
@@ -16,12 +20,19 @@ import 'question.dart';
     Question('Programming in flutter is fun.', true)
   ];
 
+  QuizMaster() {
+    _questionNumber = 0;
+    _loopNumber = 0;
+  }
   void nextQuestion() {
     if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
     }
     print('_questionNumber is $_questionNumber');
-    //print('_questionBank2 length is ${_questionBank.length}');
+    if (_loopNumber < _questionBank.length) {
+      _loopNumber++;
+    }
+    print('_loopNumber is $_loopNumber');
   }
 
   String getQuestionText() {
@@ -33,7 +44,7 @@ import 'question.dart';
   }
 
   bool isNotFinished() {
-    if (_questionNumber >= _questionBank.length - 1) {
+    if (_loopNumber >= _questionBank.length) {
       print('isNotFinished Now returning false');
       return false;
     } else {
@@ -43,5 +54,6 @@ import 'question.dart';
 
   void reset() {
     _questionNumber = 0;
+    _loopNumber = 0;
   }
 }

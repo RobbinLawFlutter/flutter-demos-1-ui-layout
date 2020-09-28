@@ -51,7 +51,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
 
   void checkAnswer(bool userAnswer) {
     setState(() {
-      if (loopNumber < 3) {
+      if (loopNumber < questions.length) {
         bool correctAnswer = answers[questionNumber];
         if (userAnswer == correctAnswer) {
           print('got it right');
@@ -70,19 +70,23 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
           );
         }
-        if (questionNumber < 2) {
+        if (questionNumber < questions.length - 1) {
           questionNumber++;
         }
         loopNumber++;
         print('loopnumber is $loopNumber');
         print('questionnumber is $questionNumber');
-      } else {
-        questionNumber = 0;
-        loopNumber = 0;
-        print('loopnumber is $loopNumber');
-        print('questionnumber is $questionNumber');
-        scoreKeeper = [];
       }
+    });
+  }
+
+  void startOver() {
+    setState(() {
+      questionNumber = 0;
+      loopNumber = 0;
+      print('loopnumber is $loopNumber');
+      print('questionnumber is $questionNumber');
+      scoreKeeper = [];
     });
   }
 
@@ -141,6 +145,24 @@ class _MyFirstPageState extends State<MyFirstPage> {
               ),
               onPressed: () {
                 checkAnswer(false);
+              },
+            ),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: FlatButton(
+              color: Colors.amber,
+              child: Text(
+                'Start Over',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white,
+                ),
+              ),
+              onPressed: () {
+                startOver();
               },
             ),
           ),
