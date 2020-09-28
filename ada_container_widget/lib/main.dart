@@ -13,14 +13,6 @@ import 'package:flutter/material.dart';
 //We can use the padding and margin properties of the Container Widget
 //to apply padding and margin to the Container.
 
-// display an asset image
-// to change the launcher icon from the flutter icon
-// drag and drop an image to appicon.co then generate a zip file
-// unzip downloaded file
-// in studio navigate to android/app/src/main/res
-// right mouse and show in explorer
-// delete mipmap-hdpi,-mdpi,-xhdpi,-xxhdpi,-xxxhdpi directories
-// and replace with the new ones unzipped
 void main() {
   runApp(MyApp());
 }

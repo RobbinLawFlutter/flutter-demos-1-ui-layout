@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Stateless Widget'),
+          title: Text('Intro to Stateless Widget'),
         ),
         body: Center(
           child: Text(

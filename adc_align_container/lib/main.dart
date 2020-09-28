@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 
 //We can use the Align Widget wrapping the Container to
 //align it, but from the body of the Scaffolds perspective.
+//We can also use Align wrapping the image to align it inside
+//the container.
 
 void main() {
   runApp(MyApp());
@@ -42,8 +44,15 @@ class MyApp extends StatelessWidget {
               shape: BoxShape.rectangle,
               color: Colors.amber,
             ),
-            child: Image(
-              image: AssetImage('images/bottle.jpg'),
+            child: Align(
+              //alignment: Alignment.bottomCenter,
+              //alignment: Alignment.bottomLeft,
+              //alignment: Alignment.topRight,
+              //alignment: Alignment.centerLeft,
+              //alignment: Alignment.center, //default
+              child: Image(
+                image: AssetImage('images/bottle.jpg'),
+              ),
             ),
           ),
         ),

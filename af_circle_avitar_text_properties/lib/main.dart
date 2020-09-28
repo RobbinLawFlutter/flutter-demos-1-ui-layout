@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
 
-// using Avitar Widgets & Manipulating Text Properties
-// also loading custom fonts
-// google fonts.google.com download the font you want and unzip
+//Using Avitar Widgets & Manipulating Text Properties
+//Also loading custom fonts
+//google fonts.google.com download the font you want and unzip
 //in my case Chilanka-Regular
-// create a directory in studio called "fonts" and drag and drop
-// the ttf file to the new directory
-// now edit pubspec.yaml to add the font same way as images
+//create a directory in studio called "fonts" and drag and drop
+//the ttf file to the new directory
+//now edit pubspec.yaml to add the font same way as images
 void main() {
   runApp(MyApp());
 }

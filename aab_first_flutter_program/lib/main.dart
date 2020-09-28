@@ -16,7 +16,7 @@ void main() {
 }
 //This version of the code is easy to read
 //as there are , after each ) and if we right mouse
-//and choose Formate Document we get this result
+//and choose Format Document we get this result
 /* void main() {
   runApp(
     MaterialApp(

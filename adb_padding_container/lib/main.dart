@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Container Widget"),
+          title: Text("Padding Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Padding(

@@ -10,10 +10,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //first level widget of Material Design
     return MaterialApp(
-      //first level widget of Material Design
+      //default route of MaterialApp Widget
       home: Scaffold(
-        //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Stateless Widget with Network Image"),

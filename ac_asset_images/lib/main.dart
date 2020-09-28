@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-// display an asset image
-// drag and drop an image to appicon.co then generate a zip file
-// in studio navigate to android/app/src/main/res
+//This app shows how to display an asset image.
+//Also we will get a custom launcher icon in place.
+//To change the launcher icon from the flutter icon
+//drag and drop an image to appicon.co then generate a zip file
+//unzip downloaded file
+//in VSCode navigate to android/app/src/main/res
+//right mouse and show in explorer
+//delete mipmap-hdpi,-mdpi,-xhdpi,-xxhdpi,-xxxhdpi directories
+//and replace with the new ones unzipped
+
 void main() {
   runApp(MyApp());
 }
