@@ -40,8 +40,8 @@ class Dice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //If we change these numbers and hotreload the images will update
-    int leftDiceNumber = 1;
-    var rightDiceNumber = 4;
+    int leftDiceNumber = 2;
+    var rightDiceNumber = 1;
     return Center(
       child: Row(
         children: <Widget>[
