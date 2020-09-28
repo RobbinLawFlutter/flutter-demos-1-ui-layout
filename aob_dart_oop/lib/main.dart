@@ -6,9 +6,10 @@
 // Inheritance "extends" the base class template.
 // Polymorphism "@override" changes methods of the base class.
 
+//Challenge: Make the scoreKeeper list part of the quizMaster class.
+
 import 'package:flutter/material.dart';
 import 'quizMaster.dart';
-import 'alert.dart';
 
 QuizMaster quizMaster = QuizMaster();
 
