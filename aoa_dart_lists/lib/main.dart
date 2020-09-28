@@ -1,10 +1,11 @@
-// This app shows why it is good to modularize, abstract, and
-// encapsulate code.
-// four pillars of OOP
-// Abstraction by using classes and instanciating objects from the class template.
-// Encapsulation "_" make members private to the class.
-// Inheritance "extends" the base class template.
-// Polymorphism "@override" changes methods of the base class.
+//This app as well as the next shows why
+//it is good to modularize, abstract, and
+//encapsulate code.
+//four pillars of OOP
+//Abstraction by using classes and instanciating objects from the class template.
+//Encapsulation "_" make members private to the class.
+//Inheritance "extends" the base class template.
+//Polymorphism "@override" changes methods of the base class.
 
 import 'package:flutter/material.dart';
 
