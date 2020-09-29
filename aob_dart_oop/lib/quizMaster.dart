@@ -13,11 +13,11 @@ class QuizMaster {
   int _loopNumber;
 
   List<Question> _questionBank = [
-    Question('The earth is flat.', false),
-    Question('The earth is round.', true),
-    Question('The earth is smaller than the moon.', false),
-    Question('The earth is bigger than the moon.', true),
-    Question('Programming in flutter is fun.', true)
+    Question(qText: 'The earth is flat.', qAnswer: false),
+    Question(qText: 'The earth is round.', qAnswer: true),
+    Question(qText: 'The earth is smaller than the moon.', qAnswer: false),
+    Question(qText: 'The earth is bigger than the moon.', qAnswer: true),
+    Question(qText: 'Programming in flutter is fun.', qAnswer: true)
   ];
 
   QuizMaster() {

@@ -1,20 +1,32 @@
 class Question {
-  String questionText;
-  bool questionAnswer;
+  String qText;
+  bool qAnswer;
 
-  Question(String q, bool a) {
-    questionText = q;
-    questionAnswer = a;
-  }
+//In this constructor it will work because
+//the names in the parameter list (q and a) are different
+//then the class property names qText and qAnswer
+  // Question(String q, bool a) {
+  //   qText = q;
+  //   qAnswer = a;
+  // }
 
-/*
-  Question(String q, bool a) {
-    this.questionText = q;
-    this.questionAnswer = a;
-  }
-*/
+//In this constructor we have to use the
+//key word "this" as both the parameter
+//and property names are the same.
+  // Question(String qText, bool qAnswer) {
+  //   this.qText = qText;
+  //   this.qAnswer = qAnswer;
+  // }
 
-/*
-  Question(this.questionText, this.questionAnswer);
-*/
+//In this constructor we use a short cut
+//to place whatever args are passed directly
+//into the properties.
+  // Question(this.qText, this.qAnswer);
+
+//NOTICE: in all of these contructors
+//we are using positional parameters.
+
+//We could also use named parameters
+
+  Question({this.qText, this.qAnswer});
 }
