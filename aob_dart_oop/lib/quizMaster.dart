@@ -36,11 +36,11 @@ class QuizMaster {
   }
 
   String getQuestionText() {
-    return _questionBank[_questionNumber].questionText;
+    return _questionBank[_questionNumber].qText;
   }
 
   bool getQuestionAnswer() {
-    return _questionBank[_questionNumber].questionAnswer;
+    return _questionBank[_questionNumber].qAnswer;
   }
 
   bool isNotFinished() {
