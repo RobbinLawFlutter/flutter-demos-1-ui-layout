@@ -13,7 +13,7 @@ class QuizMaster {
   int _loopNumber;
 
   List<Question> _questionBank = [
-    Question(qText: 'The earth is flat.', qAnswer: false),
+    Question(qAnswer: false, qText: 'The earth is flat.'),
     Question(qText: 'The earth is round.', qAnswer: true),
     Question(qText: 'The earth is smaller than the moon.', qAnswer: false),
     Question(qText: 'The earth is bigger than the moon.', qAnswer: true),

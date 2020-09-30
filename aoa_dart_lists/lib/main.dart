@@ -114,7 +114,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: FlatButton(
-              textColor: Colors.white,
+              //textColor: Colors.white,
               color: Colors.green,
               child: Text(
                 'True',
