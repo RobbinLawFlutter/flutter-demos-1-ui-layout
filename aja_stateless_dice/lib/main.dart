@@ -37,6 +37,11 @@ class Dice extends StatelessWidget {
   //We cannot put vars here (unless we mark them final)
   //because a stateless widget is imutable (can't change)
   //int myLeftDiceNumber = 1;
+
+  void reactToButtonPress() {
+    print('Our left button was pressed');
+  }
+
   @override
   Widget build(BuildContext context) {
     //If we change these numbers and hotreload the images will update
@@ -48,13 +53,27 @@ class Dice extends StatelessWidget {
           Expanded(
             flex: 1,
             child: FlatButton(
+              //This will not work as it is trying to call the method
+              //when flutter is building the UI.
+              //onPressed: reactToButtonPress(),
+
+              //This will work as it is a pointer to the named method
+              //This method has to return void and cannot take args.
+              // onPressed: reactToButtonPress,
+
               //Signature for a voidcallback also called in some
               //languages anonymous functions.
               //A function with no name and in this case no parms
+              //When flutter builds the UI
+              //it does not run the function but attaches a pointer
+              //to the function to the onPressed property.
+              //The code inside the anonymous function is run
+              //only when the button is pressed.
               onPressed: () {
                 print('Left button got pressed');
                 print('leftDiceNumber = $leftDiceNumber');
               },
+
               //string interpolation with $
               child: Image.asset('images/dice$leftDiceNumber.png'),
             ),

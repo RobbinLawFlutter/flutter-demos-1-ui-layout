@@ -20,7 +20,9 @@ class Question {
 
 //In this constructor we use a short cut
 //to place whatever args are passed directly
-//into the properties.
+//into the properties. The parameter name has
+//to be the same as the property name.
+//Notice also no {} just ; at end of ()
   // Question(this.qText, this.qAnswer);
 
 //NOTICE: in all of these contructors
