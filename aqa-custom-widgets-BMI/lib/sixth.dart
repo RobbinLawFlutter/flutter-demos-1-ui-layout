@@ -1,6 +1,7 @@
-// this MySixthPage demonstrates the use of both custom widgets
-// but now they are both modularized into their own dart files
-// also shows passing functions
+//This MySixthPage demonstrates the use of both custom widgets
+//but now they are both modularized into their own dart files.
+//Also this version shows passing functions and sliders.
+//Also all constants are modularized into their own file.
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

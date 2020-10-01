@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         // the 0xFF is the transparency, then 0B Red, 10 Green, 34 Blue
         scaffoldBackgroundColor: Color(0xFF0B1034),
       ),
-      home: MySeventhPage(),
+      home: MySixthPage(),
     );
   }
 }

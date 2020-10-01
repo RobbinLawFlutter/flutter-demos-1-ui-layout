@@ -71,12 +71,13 @@ class _MySecondPageState extends State<MySecondPage> {
 }
 
 class ReuseableCard extends StatelessWidget {
-  ReuseableCard({@required this.myColor, this.reusableCardChild});
   // constructor that requires a Color parameter,
-  // and a reusableCardChild widget
+  // and optionally a reusableCardChild widget
+  ReuseableCard({@required this.myColor, this.reusableCardChild});
 
-  final Color
-      myColor; // final makes this property called myColor of type Color immutable, cannot change once set.
+  // final makes this property called myColor
+  //of type Color immutable, cannot change once set.
+  final Color myColor;
 
   final Widget reusableCardChild;
 

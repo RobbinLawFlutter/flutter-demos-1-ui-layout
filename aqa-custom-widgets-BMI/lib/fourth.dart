@@ -1,6 +1,7 @@
-// this MyFourthPage demonstrates the use of the icons but as another "custom widget"
-// inside the ReuseableCard custom widget.
-// Also the icon text pairs are now centered in the ReuesableCard widget.
+//This MyFourthPage demonstrates the use of the icons
+//but as another "custom widget"
+//inside the ReuseableCard custom widget.
+//Also the icon text pairs are now centered in the ReuesableCard widget.
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -112,11 +113,8 @@ class MyIcon extends StatelessWidget {
 
 class ReuseableCard extends StatelessWidget {
   ReuseableCard({@required this.myColor, this.reusableCardChild});
-  // constructor that requires a Color parameter,
-  // and an optional reusableCardChild widget
 
   final Color myColor;
-  // final makes this property called myColor of type Color immutable, cannot change once set.
 
   final Widget reusableCardChild;
 

@@ -1,4 +1,5 @@
-// go to pub.dev and search for font_awesome_flutter package and download and configure pubspec.yaml
+//Go to pub.dev and search for font_awesome_flutter
+//package and download and configure pubspec.yaml
 // this MyThirdPage demonstrates the use of Icons from pub.dev
 
 import 'package:flutter/material.dart';
@@ -107,11 +108,8 @@ class _MyThirdPageState extends State<MyThirdPage> {
 
 class ReuseableCard extends StatelessWidget {
   ReuseableCard({@required this.myColor, this.reusableCardChild});
-  // constructor that requires a Color parameter,
-  // and optionally a reusableCardChild widget
 
   final Color myColor;
-  // final makes this property called myColor of type Color immutable, cannot change once set.
 
   final Widget reusableCardChild;
 

@@ -1,7 +1,7 @@
-// this MyFifthPage demonstrates the use of both custom widgets
-// but now they are both modularized into their own dart files
-// also shows the use of enums
-// and the Ternary Operator
+//This MyFifthPage demonstrates the use of both custom widgets
+//but now they are both modularized into their own dart files.
+//Also shows the use of enums
+//and the Ternary Operator.
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
