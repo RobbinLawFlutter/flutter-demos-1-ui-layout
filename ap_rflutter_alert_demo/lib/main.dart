@@ -120,7 +120,7 @@ class PopupDialog extends StatelessWidget {
   _onAlertWithStylePressed(context) {
     // Reusable alert style
     var alertStyle = AlertStyle(
-      animationType: AnimationType.fromTop,
+      animationType: AnimationType.fromRight,
       isCloseButton: false,
       isOverlayTapDismiss: false,
       descStyle: TextStyle(fontWeight: FontWeight.bold),
