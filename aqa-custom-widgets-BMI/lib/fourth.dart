@@ -30,7 +30,7 @@ class _MyFourthPageState extends State<MyFourthPage> {
                 Expanded(
                   child: ReuseableCard(
                     myColor: activeCardColor,
-                    reusableCardChild: new MyIcon(
+                    reusableCardChild: MyIcon(
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
                     ),
@@ -82,10 +82,10 @@ class _MyFourthPageState extends State<MyFourthPage> {
 }
 
 class MyIcon extends StatelessWidget {
-  MyIcon({this.icon, this.label});
-
   final IconData icon;
   final String label;
+
+  MyIcon({this.icon, this.label});
 
   @override
   Widget build(BuildContext context) {

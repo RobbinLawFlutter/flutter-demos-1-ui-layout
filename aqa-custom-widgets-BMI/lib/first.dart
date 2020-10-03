@@ -1,5 +1,5 @@
-// use the color picker again to pick the color for the activeCardColor
-// this MyFirstPage demonstrates the tree without any "custom widgets".
+//Use the color picker again to pick the color for the activeCardColor.
+//This MyFirstPage demonstrates the tree without any "custom widgets".
 
 import 'package:flutter/material.dart';
 

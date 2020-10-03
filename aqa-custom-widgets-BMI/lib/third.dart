@@ -1,6 +1,6 @@
+//This MyThirdPage demonstrates the use of Icons from pub.dev.
 //Go to pub.dev and search for font_awesome_flutter
-//package and download and configure pubspec.yaml
-// this MyThirdPage demonstrates the use of Icons from pub.dev
+//package and download and configure pubspec.yaml.
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
