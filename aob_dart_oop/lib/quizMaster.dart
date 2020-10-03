@@ -60,6 +60,7 @@ class QuizMaster {
   }
 
   void reset() {
+    print('reset');
     _questionNumber = 0;
     _loopNumber = 0;
   }
