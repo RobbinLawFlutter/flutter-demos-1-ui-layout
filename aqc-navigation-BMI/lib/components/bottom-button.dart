@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:au_navigation/constants.dart';
+import 'package:aqc_navigation_BMI/constants.dart';
 
 class BottomButton extends StatelessWidget {
   const BottomButton({@required this.myText, @required this.onTap});

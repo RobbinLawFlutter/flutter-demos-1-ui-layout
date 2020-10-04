@@ -1,7 +1,7 @@
-import 'package:au_navigation/components/bottom-button.dart';
 import 'package:flutter/material.dart';
-import 'package:au_navigation/constants.dart';
-import 'package:au_navigation/components/reusable-card.dart';
+import 'package:aqc_navigation_BMI/components/bottom-button.dart';
+import 'package:aqc_navigation_BMI/constants.dart';
+import 'package:aqc_navigation_BMI/components/reusable-card.dart';
 
 class ResultsPage extends StatelessWidget {
   ResultsPage({@required this.bmiResult});
