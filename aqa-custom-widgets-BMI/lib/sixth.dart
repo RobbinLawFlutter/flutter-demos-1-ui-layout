@@ -4,6 +4,9 @@
 //Also the use of a slider.
 //Also all constants are modularized into their own file.
 
+//Flutter Slider Widget of the Week
+//https://www.youtube.com/watch?v=ufb4gIPDmEs&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=58
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'reusable-card-enhanced.dart';
