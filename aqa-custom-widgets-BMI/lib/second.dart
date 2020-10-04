@@ -1,7 +1,7 @@
 //This MySecondPage demonstrates the use
 //of "custom widgets" to reuse code.
 //It displays the same as the MyFirstPage.
-//It also shows the diff of const vs final.
+//It also shows the diff between const vs final.
 
 import 'package:flutter/material.dart';
 
@@ -72,6 +72,8 @@ class _MySecondPageState extends State<MySecondPage> {
   }
 }
 
+//This is a custom widget made from other widgets
+//but customized for our needs.
 class ReuseableCard extends StatelessWidget {
   //final makes this property called myColor
   //of type Color immutable, cannot change once set.

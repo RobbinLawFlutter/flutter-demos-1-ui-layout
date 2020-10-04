@@ -1,7 +1,9 @@
 //This MyFifthPage demonstrates the use of both custom widgets
-//but now they are both modularized into their own dart files.
+//but now they are both modularized into their own
+//my-icon.dart and reusable-card.dart files.
 //Also shows the use of enums
 //and the Ternary Operator.
+//Also functionality with GestureDetector and setSate.
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -29,7 +31,6 @@ class _MyFifthPageState extends State<MyFifthPage> {
   Color maleCardColor = inactiveCardColor;
   Color femaleCardColor = inactiveCardColor;
 
-  // 1 = male, 2 = female
   void updateColor(Gender selectedGender) {
     if (selectedGender == Gender.male) {
       if (maleCardColor == inactiveCardColor) {
@@ -64,16 +65,25 @@ class _MyFifthPageState extends State<MyFifthPage> {
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
-                        selectedGender = Gender.male;
+                        //First way using a method to
+                        //update the card color.
                         //updateColor(Gender.male);
+
+                        //Second way directly selecting gender.
+                        selectedGender = Gender.male;
                       });
                       print('Male card was pressed');
                     },
                     child: ReuseableCard(
+                      //First way updating color via
+                      //variable that was changed in method.
+                      //myColor: maleCardColor,
+
+                      //Second way using terinary operator.
                       myColor: selectedGender == Gender.male
                           ? activeCardColor
                           : inactiveCardColor,
-                      //myColor: maleCardColor,
+
                       reusableCardChild: MyIcon(
                         icon: FontAwesomeIcons.mars,
                         label: 'MALE',
@@ -85,16 +95,23 @@ class _MyFifthPageState extends State<MyFifthPage> {
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
-                        selectedGender = Gender.female;
+                        //First way
                         //updateColor(Gender.female);
+
+                        //Second way
+                        selectedGender = Gender.female;
                       });
                       print('Female card was pressed');
                     },
                     child: ReuseableCard(
+                      //First way
+                      //myColor: femaleCardColor,
+
+                      //Second way
                       myColor: selectedGender == Gender.female
                           ? activeCardColor
                           : inactiveCardColor,
-                      //myColor: femaleCardColor,
+
                       reusableCardChild: MyIcon(
                         icon: FontAwesomeIcons.venus,
                         label: 'FEMALE',

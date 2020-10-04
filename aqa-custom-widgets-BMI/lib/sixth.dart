@@ -1,11 +1,12 @@
-//This MySixthPage demonstrates the use of both custom widgets
-//but now they are both modularized into their own dart files.
-//Also this version shows passing functions and sliders.
+//This MySixthPage demonstrates passing functions as args
+//as the ReuseableCard class has been enhanced to include
+//the GestureDetector and its onpressed property as a parm.
+//Also the use of a slider.
 //Also all constants are modularized into their own file.
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'reusable-card.dart';
+import 'reusable-card-enhanced.dart';
 import 'my-icon.dart';
 import 'constants.dart';
 
@@ -22,29 +23,6 @@ class MySixthPage extends StatefulWidget {
 class _MySixthPageState extends State<MySixthPage> {
   Gender selectedGender;
   int height = 180;
-
-  Color maleCardColor = kInactiveCardColor;
-  Color femaleCardColor = kInactiveCardColor;
-
-  // 1 = male, 2 = female
-  void updateColor(Gender selectedGender) {
-    if (selectedGender == Gender.male) {
-      if (maleCardColor == kInactiveCardColor) {
-        maleCardColor = kActiveCardColor;
-        femaleCardColor = kInactiveCardColor;
-      } else {
-        maleCardColor = kInactiveCardColor;
-      }
-    }
-    if (selectedGender == Gender.female) {
-      if (femaleCardColor == kInactiveCardColor) {
-        femaleCardColor = kActiveCardColor;
-        maleCardColor = kInactiveCardColor;
-      } else {
-        femaleCardColor = kInactiveCardColor;
-      }
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +46,6 @@ class _MySixthPageState extends State<MySixthPage> {
                     myColor: selectedGender == Gender.male
                         ? kActiveCardColor
                         : kInactiveCardColor,
-                    //myColor: maleCardColor,
                     reusableCardChild: MyIcon(
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
@@ -85,7 +62,6 @@ class _MySixthPageState extends State<MySixthPage> {
                     myColor: selectedGender == Gender.female
                         ? kActiveCardColor
                         : kInactiveCardColor,
-                    //myColor: femaleCardColor,
                     reusableCardChild: MyIcon(
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',

@@ -1,10 +1,10 @@
-// this MySeventhPage demonstrates the use of both custom widgets
-// but now they are both modularized into their own dart files
-// also shows passing functions
+//This MySeventhPage demonstrates yet another custom
+//widget called RoundIconButton which makes use
+//of RawMaterialButton.
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'reusable-card.dart';
+import 'reusable-card-enhanced.dart';
 import 'my-icon.dart';
 import 'constants.dart';
 
@@ -49,7 +49,6 @@ class MySeventhPageState extends State<MySeventhPage> {
                     myColor: selectedGender == Gender.male
                         ? kActiveCardColor
                         : kInactiveCardColor,
-                    //myColor: maleCardColor,
                     reusableCardChild: MyIcon(
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
@@ -66,7 +65,6 @@ class MySeventhPageState extends State<MySeventhPage> {
                     myColor: selectedGender == Gender.female
                         ? kActiveCardColor
                         : kInactiveCardColor,
-                    //myColor: femaleCardColor,
                     reusableCardChild: MyIcon(
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',

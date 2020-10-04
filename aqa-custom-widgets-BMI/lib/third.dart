@@ -63,8 +63,10 @@ class _MyThirdPageState extends State<MyThirdPage> {
                         ),
                         Text(
                           'FEMALE',
-                          style:
-                              TextStyle(fontSize: 18, color: Color(0xFF8D8E98)),
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xFF8D8E98),
+                          ),
                         ),
                       ],
                     ),
@@ -110,7 +112,6 @@ class ReuseableCard extends StatelessWidget {
   ReuseableCard({@required this.myColor, this.reusableCardChild});
 
   final Color myColor;
-
   final Widget reusableCardChild;
 
   @override
