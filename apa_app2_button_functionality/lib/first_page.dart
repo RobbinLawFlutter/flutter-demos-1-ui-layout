@@ -15,7 +15,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
       if (_enabled) {
         return () {
           setState(() {
-            _msg1 = 'Enabled';
+            //_msg1 = 'Enabled';
             print('Button Pressed');
           });
         };
@@ -37,9 +37,9 @@ class _MyFirstPageState extends State<MyFirstPage> {
                 Text('enable functionality'),
                 Switch(
                     value: _enabled,
-                    onChanged: (bool value) {
+                    onChanged: (bool value1) {
                       setState(() {
-                        _enabled = value;
+                        _enabled = value1;
                         if (_enabled) {
                           _msg1 = 'Enabled';
                           print('_enabled is true');
