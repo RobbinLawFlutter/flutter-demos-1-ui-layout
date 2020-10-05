@@ -62,6 +62,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         primaryColor: Color(0xFFFF8366),
         //primaryColor: Color(0xFF0B1034),
+
         //the 0xFF is the transparency (opaqe),
         //then 0B Red, 10 Green, 34 Blue
         scaffoldBackgroundColor: Color(0xFFFF8366),
