@@ -29,4 +29,5 @@ void main() {
   print(hawaiianBeaches.keys);
   print(hawaiianBeaches.values);
   print(hawaiianBeaches['Big Island']);
+  print(hawaiianBeaches['Oahu'][1]);
 }
