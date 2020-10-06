@@ -6,9 +6,9 @@ Map<String, int> myAgeBook = {
   'Bob': 40,
   'James': 30,
 };
-
-// Maps often use strings as keys.
-var hawaiianBeaches = {
+//We could use var here as well
+//var hawaiianBeaches = {};
+Map<String, List<String>> hawaiianBeaches = {
   'Oahu': ['Waikiki', 'Kailua', 'Waimanalo'],
   'Big Island': ['Wailea Bay', 'Pololu Beach'],
   'Kauai': ['Hanalei', 'Poipu']
@@ -26,4 +26,7 @@ void main() {
   print(myAgeBook.length);
   print(myAgeBook.keys);
   print(myAgeBook.values);
+  print(hawaiianBeaches.keys);
+  print(hawaiianBeaches.values);
+  print(hawaiianBeaches['Big Island']);
 }
