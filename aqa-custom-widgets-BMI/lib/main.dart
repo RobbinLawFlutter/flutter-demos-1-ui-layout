@@ -47,7 +47,8 @@ import 'sixth.dart';
 
 //This MySeventhPage demonstrates yet another custom
 //widget called RoundIconButton which makes use
-//of RawMaterialButton.
+//of RawMaterialButton to compose a new widget from
+//basic components.
 import 'seventh.dart';
 
 void main() => runApp(MyApp());
@@ -60,13 +61,13 @@ class MyApp extends StatelessWidget {
       //.copyWith() allows us to change only certain
       //dark theme defaults.
       theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFFFF8366),
-        //primaryColor: Color(0xFF0B1034),
+        //primaryColor: Color(0xFFFF8366),
+        primaryColor: Color(0xFF0B1034),
 
         //the 0xFF is the transparency (opaqe),
         //then 0B Red, 10 Green, 34 Blue
-        scaffoldBackgroundColor: Color(0xFFFF8366),
-        //scaffoldBackgroundColor: Color(0xFF0B1034),
+        //scaffoldBackgroundColor: Color(0xFFFF8366),
+        scaffoldBackgroundColor: Color(0xFF0B1034),
       ),
       home: MySecondPage(),
     );
