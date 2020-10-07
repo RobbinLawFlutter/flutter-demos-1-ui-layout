@@ -38,16 +38,18 @@ int calculator1(int n1, int n2, Function calculation) {
   return calculation(n1, n2);
 }
 
-//Top level property
+//Top level variable
 Function calculator2 = (int n1, int n2, Function calculation) {
   return calculation(n1, n2);
 };
 
 class Car {
-  //Class member property that is a function.
-  Function drive;
   //Class constructor with named parm that must be a function name.
   Car({this.drive});
+
+  //Class member property that is a function.
+  Function drive;
+
   //Class member method.
   void wheels() {
     print('nice wheels');

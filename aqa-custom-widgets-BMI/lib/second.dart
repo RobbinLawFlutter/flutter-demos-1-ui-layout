@@ -75,6 +75,10 @@ class _MySecondPageState extends State<MySecondPage> {
 //This is a custom widget made from other widgets
 //but customized for our needs.
 class ReuseableCard extends StatelessWidget {
+  // constructor that requires a Color parameter,
+  // and optionally a reusableCardChild widget
+  ReuseableCard({@required this.myColor, this.reusableCardChild});
+
   //final makes this property called myColor
   //of type Color immutable, cannot change once set.
   //const is a compile time constant
@@ -85,10 +89,6 @@ class ReuseableCard extends StatelessWidget {
   //const Color myConstColor;
   final Color myColor;
   final Widget reusableCardChild;
-
-  // constructor that requires a Color parameter,
-  // and optionally a reusableCardChild widget
-  ReuseableCard({@required this.myColor, this.reusableCardChild});
 
   @override
   Widget build(BuildContext context) {

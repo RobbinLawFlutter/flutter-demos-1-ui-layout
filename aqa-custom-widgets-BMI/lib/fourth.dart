@@ -83,10 +83,10 @@ class _MyFourthPageState extends State<MyFourthPage> {
 }
 
 class MyIcon extends StatelessWidget {
+  MyIcon({this.icon, this.label});
+
   final IconData icon;
   final String label;
-
-  MyIcon({this.icon, this.label});
 
   @override
   Widget build(BuildContext context) {

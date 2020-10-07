@@ -25,7 +25,9 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Flutter layout demos'),
           ),
-          body: Center(child: buildImageColumn()),
+          body: Center(
+            child: buildImageColumn(),
+          ),
         ),
       );
 
