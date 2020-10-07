@@ -13,13 +13,12 @@ class _MyFirstPageState extends State<MyFirstPage> {
   Widget build(BuildContext context) {
     Object onPressed1() {
       if (_enabled) {
+        print('onPressed1 returning address of anon func but NOT running it');
         return () {
-          setState(() {
-            //_msg1 = 'Enabled';
-            print('Button Pressed');
-          });
+          print('Button Pressed as anon func now running');
         };
       } else {
+        print('onPressed1 returning NULL');
         return null;
       }
     }
@@ -37,9 +36,10 @@ class _MyFirstPageState extends State<MyFirstPage> {
                 Text('enable functionality'),
                 Switch(
                     value: _enabled,
-                    onChanged: (bool value1) {
+                    onChanged: (bool onChangedValue) {
+                      print('onChangedValue is $onChangedValue');
                       setState(() {
-                        _enabled = value1;
+                        _enabled = onChangedValue;
                         if (_enabled) {
                           _msg1 = 'Enabled';
                           print('_enabled is true');
