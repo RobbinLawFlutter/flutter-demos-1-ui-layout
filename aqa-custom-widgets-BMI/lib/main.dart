@@ -69,7 +69,7 @@ class MyApp extends StatelessWidget {
         //scaffoldBackgroundColor: Color(0xFFFF8366),
         scaffoldBackgroundColor: Color(0xFF0B1034),
       ),
-      home: MySixthPage(),
+      home: MySeventhPage(),
     );
   }
 }
