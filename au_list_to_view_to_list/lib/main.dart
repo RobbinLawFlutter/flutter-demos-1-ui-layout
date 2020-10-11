@@ -10,9 +10,10 @@ void main() {
   List people = List();
   people.add(Person("Joe", "Smithers", 55));
   people.add(Person("Patrick", "Thomas", 45));
-  var mappedNames = people.map((n) => 'Mr. ${n.firstName} ${n.lastName}');
-  print(mappedNames);
-  log(mappedNames);
+  print(people);
+  // var mappedNames = people.map((n) => 'Mr. ${n.firstName} ${n.lastName}');
+  // print(mappedNames);
+  // log(mappedNames);
 }
 
 void log(var lst) {
