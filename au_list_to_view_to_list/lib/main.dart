@@ -15,15 +15,25 @@ void main() {
   print(people);
   //Printing the properties of each object (Person) in the people list.
   people.forEach((element) {
-    print('Hey ${element.firstName}, ${element.lastName} age ${element.age}');
+    print(
+        'First Mr. ${element.firstName}, ${element.lastName} age ${element.age}');
   });
   //Using the List.map() method to create a view of transformed data
   //made up from the objects in the people list.
   //Here we are creating a string made up from the Person property
   //data of each object in the people list.
-  var view =
-      people.map((n) => 'Mr. ${n.firstName} ${n.lastName} age ${n.age}.');
+  //We are using an anonymous function with
+  //the lambda operator as a short cut
+  //so we do not need the {} or the return.
+  var view = people
+      .map((n) => 'Second Mr. ${n.firstName} ${n.lastName} age ${n.age}.');
   print(view);
+  //Here we are using a anonymous function without the lambda
+  //but now we have to include {} and a return.
+  var view1 = people.map((n) {
+    return 'Third Mr. ${n.firstName} ${n.lastName} age ${n.age}.';
+  });
+  print(view1);
   var listFromView = view.toList();
   print(listFromView);
   log('The following are the elements in the view', view);
