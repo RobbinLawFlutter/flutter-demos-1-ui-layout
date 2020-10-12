@@ -1,3 +1,9 @@
+//Video explaining .map() and .toList() from net ninja.
+//https://www.youtube.com/watch?v=_AC90CiDoKA&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=17
+
+//Iterables
+//https://dart.dev/codelabs/iterables
+
 class Person {
   String firstName;
   String lastName;
@@ -25,6 +31,7 @@ void main() {
   //We are using an anonymous function with
   //the lambda operator as a short cut
   //so we do not need the {} or the return.
+  //The .map() returns an Iterable
   var view = people
       .map((n) => 'Second Mr. ${n.firstName} ${n.lastName} age ${n.age}.');
   print(view);
@@ -34,6 +41,7 @@ void main() {
     return 'Third Mr. ${n.firstName} ${n.lastName} age ${n.age}.';
   });
   print(view1);
+  //The .toList() converts the Iterable view into a list.
   var listFromView = view.toList();
   print(listFromView);
   log('The following are the elements in the view', view);
