@@ -9,15 +9,28 @@ class Screen2 extends StatelessWidget {
         title: Text('Screen 2'),
       ),
       body: Center(
-        child: RaisedButton(
-          color: Colors.red,
-          child: Text('Go To Screen 1'),
-          onPressed: () {
-            Navigator.pushNamed(
-              context,
-              '/first',
-            );
-          },
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            RaisedButton(
+              color: Colors.red,
+              child: Text('Go To Screen 1'),
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  '/first',
+                );
+              },
+            ),
+            RaisedButton(
+              color: Colors.green,
+              child: Text('Go Back'),
+              onPressed: () {
+                //Navigate back by popping
+                Navigator.pop(context);
+              },
+            ),
+          ],
         ),
       ),
     );
