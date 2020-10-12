@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       initialRoute: '/',
+      //We are creating a Map type by using {}.
+      //A list would be [].
       routes: {
         '/': (context) => Screen0(),
         '/first': (context) => Screen1(),
