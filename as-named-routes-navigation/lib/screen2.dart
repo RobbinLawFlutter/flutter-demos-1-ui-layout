@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 class Screen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Map data = {};
+
+    data = ModalRoute.of(context).settings.arguments;
+    print(data);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
@@ -12,6 +17,9 @@ class Screen2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            data == null
+                ? Text('no data')
+                : Text('${data['firstname']}, ${data['lastname']}'),
             RaisedButton(
               color: Colors.red,
               child: Text('Go To Screen 1'),
@@ -19,6 +27,7 @@ class Screen2 extends StatelessWidget {
                 Navigator.pushNamed(
                   context,
                   '/first',
+                  arguments: data,
                 );
               },
             ),

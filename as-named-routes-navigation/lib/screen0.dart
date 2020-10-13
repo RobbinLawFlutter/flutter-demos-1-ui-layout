@@ -16,10 +16,12 @@ class Screen0 extends StatelessWidget {
               color: Colors.red,
               child: Text('Go To Screen 1'),
               onPressed: () {
-                Navigator.pushNamed(
-                  context,
-                  '/first',
-                );
+                //Use .pushReplacementNamed to replace the
+                //previous page where as .pushNamed goes on
+                //top of the previous page.
+                //Can not pop if using .pushReplacementNamed.
+                Navigator.pushNamed(context, '/first',
+                    arguments: {'firstname': 'Robbin', 'lastname': 'Law'});
                 //Navigate to Screen 1
               },
             ),
@@ -27,10 +29,8 @@ class Screen0 extends StatelessWidget {
               color: Colors.blue,
               child: Text('Go To Screen 2'),
               onPressed: () {
-                Navigator.pushNamed(
-                  context,
-                  '/second',
-                );
+                Navigator.pushNamed(context, '/second',
+                    arguments: {'firstname': 'Jim', 'lastname': 'Bean'});
                 //Navigate to Screen 2
               },
             ),
