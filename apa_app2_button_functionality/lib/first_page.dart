@@ -17,7 +17,11 @@ class _MyFirstPageState extends State<MyFirstPage> {
         return () {
           print('Anon func now running as button pressed');
           //Because there are no () this anonymous function
-          //is NOT called but the address of it is returned.
+          //is NOT called but the address of it is returned to who ever
+          //called onPressed1.
+          //This means that the button will now appear and only
+          //when the button is pressed will this anonymous function
+          //run.
         };
       } else {
         print('onPressed1 returning NULL');
@@ -28,12 +32,15 @@ class _MyFirstPageState extends State<MyFirstPage> {
     Object onPressed2() {
       if (_enabled) {
         print(
-            'onPressed2 returning the result of running the anonymous function');
+            'onPressed2 returning a null as the result of running the anonymous function');
         return () {
-          print('Anon func now running');
+          print('Anon func now running, returning a null');
           //These () are what makes the anonymous function run
           //every time that onPressed2 is called,
           //and that happens every time the build runs.
+          //Since the anonymous function does not return anything
+          //a null is sent back to who ever called onPressed2.
+          //This means that the button will never show using onPressed2.
         }();
       } else {
         print('onPressed2 returning NULL');
@@ -99,6 +106,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
                     //If _enabled is false onPressed1 will return
                     //null and the button will disappear and be disabled.
                     onPressed: onPressed1(),
+
                     //If we call onPressed2 instead of onPressed1 the
                     //anonymous function will run but the button
                     //will NOT appear, THIS DOES NOT WORK.
