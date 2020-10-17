@@ -1,4 +1,4 @@
-//Video explaining .map() and .toList() from net ninja.
+//Video explaining .map() and .toList() from net ninja. About 1/2 way.
 //https://www.youtube.com/watch?v=_AC90CiDoKA&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=17
 
 //Iterables
