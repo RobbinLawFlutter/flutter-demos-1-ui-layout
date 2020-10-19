@@ -5,11 +5,11 @@
 //https://dart.dev/codelabs/iterables
 
 class Person {
+  Person(this.firstName, this.lastName, this.age);
+
   String firstName;
   String lastName;
   int age;
-
-  Person(this.firstName, this.lastName, this.age);
 }
 
 void main() {
@@ -32,6 +32,10 @@ void main() {
   //the lambda operator as a short cut
   //so we do not need the {} or the return.
   //The .map() returns an Iterable
+  //the var n is a pointer to each element in the list and
+  //is updated to the next element in the list each iteration that
+  //.map() does.
+  //The var n gives us access to each elements properties and methods.
   var view = people
       .map((n) => 'Second Mr. ${n.firstName} ${n.lastName} age ${n.age}.');
   print(view);
@@ -47,6 +51,8 @@ void main() {
   log('The following are the elements in the view', view);
   log('The following are the elements in the listFromView', listFromView);
   //We can do both steps to create a new list all at once.
+  //This is called chaining methods and is used in all
+  //modern programming languages, like javaScript, python, and C#.
   var newList = people
       .map((e) => 'Hey There ${e.firstName} are you age ${e.age}?')
       .toList();
