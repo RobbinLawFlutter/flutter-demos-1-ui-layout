@@ -107,10 +107,10 @@ class PopupDialog extends StatelessWidget {
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           onPressed: () => Navigator.pop(context),
-          gradient: LinearGradient(colors: [
-            Color.fromRGBO(116, 116, 191, 1.0),
-            Color.fromRGBO(52, 138, 199, 1.0)
-          ]),
+          // gradient: LinearGradient(colors: [
+          //   Color.fromRGBO(116, 116, 191, 1.0),
+          //   Color.fromRGBO(52, 138, 199, 1.0)
+          // ]),
         )
       ],
     ).show();
