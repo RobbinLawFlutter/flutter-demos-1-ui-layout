@@ -11,7 +11,7 @@ class Customer {
 
 main() {
   Map map = {'Jack': 23, 'Adam': 27, 'Katherin': 25};
-  Map map0 = {'name': 'Jack', 'age': 27};
+  //Map map0 = {'name': 'Jack', 'age': 27};
   var list1 = [];
   //Convert a map to a list of Customer objects.
   map.forEach((k, v) => list1.add(Customer(k, v)));
