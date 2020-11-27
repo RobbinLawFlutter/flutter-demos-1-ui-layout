@@ -1,7 +1,10 @@
 //runApp function sets up the initial settings for the app
 //and defines which is the root widget of the application.
 //The framework forces the root widget to cover all the screen.
-//Our root widget is the MaterialApp
+//Our root widget is the MaterialApp widget.
+//The word "widget" refers to any object that that
+//shows on the screen, or helps to show objects
+//on the screen.
 
 // https://flutter.dev/docs/development/ui/widgets-intro
 
