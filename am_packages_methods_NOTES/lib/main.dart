@@ -123,6 +123,7 @@ class _BodyOfAppState extends State<BodyOfApp> {
     //most complicated function that has named
     //input parameters {}, and returns
     //an object of type Exapanded
+    //Note that all named parameters are optional.
     return Expanded(
       child: FlatButton(
         onPressed: () {
