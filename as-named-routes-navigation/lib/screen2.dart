@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
 
+import 'app_router.dart';
+import 'screen1.dart';
+
 class Screen2 extends StatelessWidget {
+  const Screen2({Key key, this.args}) : super(key: key);
+  final Object args;
+
+  static Future<void> show(BuildContext context,
+      {Object argsFromCaller}) async {
+    await Navigator.of(context, rootNavigator: true).pushNamed(
+      AppRoutes.screen2,
+      arguments: argsFromCaller,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     Map data = {};
-
-    data = ModalRoute.of(context).settings.arguments;
+    data = args;
+    //data = ModalRoute.of(context).settings.arguments;
     print(data);
 
     return Scaffold(
@@ -23,13 +37,13 @@ class Screen2 extends StatelessWidget {
             RaisedButton(
               color: Colors.red,
               child: Text('Go To Screen 1'),
-              onPressed: () {
-                Navigator.pushNamed(
-                  context,
-                  '/first',
-                  arguments: data,
-                );
-              },
+              onPressed: () => Screen1.show(
+                context,
+                argsFromCaller: {
+                  'firstname': 'Data from',
+                  'lastname': 'Screen TWO'
+                },
+              ),
             ),
             RaisedButton(
               color: Colors.green,

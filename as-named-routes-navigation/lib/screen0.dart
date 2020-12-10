@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'app_router.dart';
+import 'screen1.dart';
+import 'screen2.dart';
 
 class Screen0 extends StatelessWidget {
+  static Future<void> show(BuildContext context) async {
+    await Navigator.of(context, rootNavigator: true).pushNamed(
+      AppRoutes.screen0,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,24 +24,24 @@ class Screen0 extends StatelessWidget {
             RaisedButton(
               color: Colors.red,
               child: Text('Go To Screen 1'),
-              onPressed: () {
-                //Use .pushReplacementNamed to replace the
-                //previous page where as .pushNamed goes on
-                //top of the previous page.
-                //Can not pop if using .pushReplacementNamed.
-                Navigator.pushNamed(context, '/first',
-                    arguments: {'firstname': 'Robbin', 'lastname': 'Law'});
-                //Navigate to Screen 1
-              },
+              onPressed: () => Screen1.show(
+                context,
+                argsFromCaller: {
+                  'firstname': 'Data from',
+                  'lastname': 'Screen ZERO'
+                },
+              ),
             ),
             RaisedButton(
               color: Colors.blue,
               child: Text('Go To Screen 2'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/second',
-                    arguments: {'firstname': 'Jim', 'lastname': 'Bean'});
-                //Navigate to Screen 2
-              },
+              onPressed: () => Screen2.show(
+                context,
+                argsFromCaller: {
+                  'firstname': 'Data from',
+                  'lastname': 'Screen ZERO'
+                },
+              ),
             ),
           ],
         ),
