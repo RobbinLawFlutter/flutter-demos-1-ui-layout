@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(10.0),
           child: Container(
             height: 400.0,
             width: 340.0,
@@ -36,9 +36,7 @@ class MyApp extends StatelessWidget {
               shape: BoxShape.rectangle,
               color: Colors.amber,
             ),
-            child: Image(
-              image: AssetImage('images/bottle.jpg'),
-            ),
+            child: Image.asset('images/bottle.jpg'),
           ),
         ),
       ),
