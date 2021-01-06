@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-// https://flutter.dev/docs/development/ui/layout
+//https://flutter.dev/docs/development/ui/layout
 
-//The first thing this app shows is a short cut (lambda operator)
+//This app shows is a short cut (lambda operator)
 //to use when you have only one statement in a code block.
 //Instead of the { runApp(); } or { return Widget} use =>
 
-//The second thing this app shows is the use of
-//methods to create complex Widgets reusing code.
+//This app also shows the use of
+//methods to create complex Widgets by reusing code.
 
 /*
 void main() {
@@ -19,30 +19,37 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => MaterialApp(
-        title: 'Flutter layout demo',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('Flutter layout demos'),
-          ),
-          body: Center(
-            child: buildImageColumn(),
-          ),
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter layout demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Layout demo using reusable methods'),
         ),
-      );
+        body: Center(
+          child: buildImageColumn(),
+        ),
+      ),
+    );
+  }
 
-  Widget buildImageColumn() => Container(
-        decoration: BoxDecoration(
-          color: Colors.black45,
-        ),
-        child: Column(
-          children: [
-            buildImageRow(1),
-            buildImageRow(3),
-          ],
-        ),
-      );
+  //A method that is structured the long way using {} and return.
+  Widget buildImageColumn() {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.black45,
+      ),
+      child: Column(
+        children: [
+          buildImageRow(1),
+          buildImageRow(3),
+        ],
+      ),
+    );
+  }
 
+  //A method that is structured the short way using =>
+  //now we do not need {} and return.
   Widget buildImageRow(int imageIndex) => Row(
         children: [
           buildDecoratedImage(imageIndex),
@@ -50,16 +57,14 @@ class MyApp extends StatelessWidget {
         ],
       );
 
-  Widget buildDecoratedImage(int imageIndex) {
-    return Expanded(
-      child: Container(
-        decoration: BoxDecoration(
-          border: Border.all(width: 10, color: Colors.black38),
-          borderRadius: BorderRadius.all(Radius.circular(8)),
+  Widget buildDecoratedImage(int imageIndex) => Expanded(
+        child: Container(
+          decoration: BoxDecoration(
+            border: Border.all(width: 10, color: Colors.black38),
+            borderRadius: BorderRadius.all(Radius.circular(8)),
+          ),
+          margin: EdgeInsets.all(4),
+          child: Image.asset('images/pic$imageIndex.jpg'),
         ),
-        margin: EdgeInsets.all(4),
-        child: Image.asset('images/pic$imageIndex.jpg'),
-      ),
-    );
-  }
+      );
 }

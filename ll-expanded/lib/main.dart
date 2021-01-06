@@ -5,11 +5,6 @@ import 'package:flutter/material.dart';
 //Expanded Widget of the Week
 //https://www.youtube.com/watch?v=_rnZaagadyo
 
-//To see what is happening in this app we need to start the dartdevtools
-//by going to View/Command Palette/Dart: Open DevTools.
-//Choose to open DevTools in the browser and click on Debug Paint to show
-//the results of the padding and margin demo.
-
 //We can use the Expanded Widget with the Padding Widget
 //and the Container Widget to stretch the Container Widgets
 //as per the flex value.
@@ -27,13 +22,13 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Container Widget"),
+          title: Text("Expanded Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
           children: [
             Expanded(
-              flex: 2,
+              flex: 1,
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Container(
