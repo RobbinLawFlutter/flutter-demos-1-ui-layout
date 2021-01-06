@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 
 //To see what is happening in this app we need to start the dartdevtools
 //by going to View/Command Palette/Dart: Open DevTools.
-//Choose to open DevTools in the browser and click on Debug Paint to show
-//the results of the padding and margin demo.
+//Choose open inspector page and click on Debug Paint to show
+//the results of the padding and margin on the VM.
 
 //We can use the Padding Widget wrapping the Container to apply
 //padding, but from the body of the Scaffolds perspective.
@@ -28,7 +28,8 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Padding(
-          padding: EdgeInsets.all(10.0),
+          padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+          //padding: EdgeInsets.all(10.0),
           child: Container(
             height: 400.0,
             width: 340.0,

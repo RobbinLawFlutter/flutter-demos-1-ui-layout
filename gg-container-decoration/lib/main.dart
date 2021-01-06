@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 
 //To see what is happening in this app we need to start the dartdevtools
 //by going to View/Command Palette/Dart: Open DevTools.
-//Choose to open DevTools in the browser and click on Debug Paint to show
-//the results of the padding and margin demo.
+//Choose open inspector page and click on Debug Paint to show
+//the results of the padding and margin on the VM.
 
 //By default a container sizes itself to its child size.
 
@@ -52,10 +52,10 @@ class MyApp extends StatelessWidget {
           //you can decorate the container to change its shape and
           //give it a border and color.
           decoration: BoxDecoration(
-            //change the shape of the container default is rectangle.
-            //shape: BoxShape.rectangle,
+            //change the shape of the container, default is rectangle.
+            shape: BoxShape.circle,
             //you cannot have color in two places.
-            //color: Colors.amber,
+            color: Colors.amber,
             border: Border.all(color: Colors.black, width: 3),
           ),
           child: Image.asset('images/bottle.jpg'),

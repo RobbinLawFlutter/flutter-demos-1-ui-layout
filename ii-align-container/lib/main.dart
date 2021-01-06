@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 
 //To see what is happening in this app we need to start the dartdevtools
 //by going to View/Command Palette/Dart: Open DevTools.
-//Choose to open DevTools in the browser and click on Debug Paint to show
-//the results of the padding and margin demo.
+//Choose open inspector page and click on Debug Paint to show
+//the results of the padding and margin on the VM.
 
 //We can use the Align Widget wrapping the Container to
 //align it, but from the body of the Scaffolds perspective.

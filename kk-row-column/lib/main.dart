@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 //https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
 
 //Row and Column Widget of the Week
-//
+//There is NO widget of the week.
 
 void main() {
   runApp(MyApp());
