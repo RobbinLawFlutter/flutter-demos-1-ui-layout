@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
-//https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
-
-//Container Widget of the Week
+//Container Widget of the Week from the flutter team
 //https://www.youtube.com/watch?v=c1xLMaTUWCY&vl=en
+
+//container widget from RetroPortal
+//https://www.youtube.com/watch?v=fvtyGySLlfs&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=3
+
+//boxdecoration cheat sheet
+//https://medium.com/jlouage/flutter-boxdecoration-cheat-sheet-72cedaa1ba20
 
 //To see what is happening in this app we need to start the dartdevtools
 //by going to View/Command Palette/Dart: Open DevTools.

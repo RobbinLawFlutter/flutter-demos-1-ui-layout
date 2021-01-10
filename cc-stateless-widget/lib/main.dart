@@ -7,8 +7,11 @@
 //the base classes build method to our own.
 //Our version will return our produced MaterialApp Widget tree.
 
-//stateless Widget from Widgets 101 series
-// https://www.youtube.com/watch?v=wE7khGHVkYY
+//stateless Widget from Widgets 101 series by the flutter team.
+//https://www.youtube.com/watch?v=wE7khGHVkYY
+
+//center widget by RetroStudio
+//https://www.youtube.com/watch?v=c726pWTtxqI&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=2
 
 // https://flutter.dev/docs/development/ui/layout
 

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-//https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
-
 //Padding Widget of the Week
 //https://www.youtube.com/watch?v=oD5RtLhhubg&vl=en
+
+//padding widget by RetroSudio
+//https://www.youtube.com/watch?v=d9wQuxPZ494&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=7
 
 //To see what is happening in this app we need to start the dartdevtools
 //by going to View/Command Palette/Dart: Open DevTools.

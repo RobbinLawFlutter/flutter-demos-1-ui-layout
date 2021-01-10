@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-//https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
-
-//Align Widget of the Week
+//Align Widget of the Week by the flutter team
 //https://www.youtube.com/watch?v=g2E7yl3MwMk
+
+//align widget by RetroStudio
+//https://www.youtube.com/watch?v=7Dljvr-Afvc&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=11
 
 //To see what is happening in this app we need to start the dartdevtools
 //by going to View/Command Palette/Dart: Open DevTools.

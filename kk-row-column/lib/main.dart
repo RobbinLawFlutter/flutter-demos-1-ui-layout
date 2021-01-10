@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 
+//Row and Column Widget of the Week
+//There is NO widget of the week.
+
+//row and column widgets by RetroStudio
+//https://www.youtube.com/watch?v=4-pqu00zgek&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=4
+
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
 
 //Row and Column CheatSheet
 //https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
-
-//Row and Column Widget of the Week
-//There is NO widget of the week.
 
 void main() {
   runApp(MyApp());

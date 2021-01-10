@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
 
-//Expanded Widget of the Week
+//Expanded Widget of the Week by the flutter team
 //https://www.youtube.com/watch?v=_rnZaagadyo
+
+//expanded widget by RetroStudio
+//https://www.youtube.com/watch?v=a-jbBVAB5o0&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=12
 
 //We can use the Expanded Widget with the Padding Widget
 //and the Container Widget to stretch the Container Widgets

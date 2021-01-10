@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//Images Widget of the Week
+//Images Widget of the Week by the flutter team
 //https://www.youtube.com/watch?v=7oIAs-0G4mw
 
 void main() {
