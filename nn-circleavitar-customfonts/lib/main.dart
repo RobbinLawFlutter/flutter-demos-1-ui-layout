@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-//https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+//custom font text by RetroStudio: After minute 4.
+//https://www.youtube.com/watch?v=96Gb-YHQdmY&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=9
 
 //Using Avitar Widgets & Manipulating Text Properties
 //Also loading custom fonts

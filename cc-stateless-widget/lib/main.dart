@@ -13,10 +13,10 @@
 //center widget by RetroStudio
 //https://www.youtube.com/watch?v=c726pWTtxqI&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=2
 
-//text widget by RetroStudio
+//text widget with style by RetroStudio: Just up to minute 4.
 //https://www.youtube.com/watch?v=96Gb-YHQdmY&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=9
 
-// https://flutter.dev/docs/development/ui/layout
+//https://flutter.dev/docs/development/ui/layout
 
 import 'package:flutter/material.dart';
 
