@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Stacked and Positioned Widgets"),
+          title: Text("Stack and Positioned Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Text('hi'),
