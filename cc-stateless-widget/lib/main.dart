@@ -13,6 +13,9 @@
 //center widget by RetroStudio
 //https://www.youtube.com/watch?v=c726pWTtxqI&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=2
 
+//text widget by RetroStudio
+//https://www.youtube.com/watch?v=96Gb-YHQdmY&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=9
+
 // https://flutter.dev/docs/development/ui/layout
 
 import 'package:flutter/material.dart';
@@ -32,6 +35,15 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Text(
             'Hey Man',
+            style: TextStyle(
+                fontSize: 40,
+                color: Colors.white,
+                backgroundColor: Colors.black,
+                //color: Colors.blue,
+                decoration: TextDecoration.combine([
+                  TextDecoration.underline,
+                  TextDecoration.overline,
+                ])),
           ),
         ),
       ),
