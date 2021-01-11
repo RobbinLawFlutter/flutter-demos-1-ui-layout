@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //using the Icon Widget
-// go to http://www.materialpalette.com
+//go to http://www.materialpalette.com
 
 //Icons from Material
 //https://material.io/resources/icons/?style=baseline
