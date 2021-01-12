@@ -6,6 +6,12 @@
 //shows on the screen, or helps to show objects
 //on the screen.
 
+// center widget by RetroStudio
+// https://www.youtube.com/watch?v=c726pWTtxqI&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=2
+
+// text widget with style by RetroStudio: Just up to minute 4.
+// https://www.youtube.com/watch?v=96Gb-YHQdmY&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=9
+
 // https://flutter.dev/docs/development/ui/widgets-intro
 
 // https://flutter.dev/docs/development/ui/widgets/layout
@@ -20,7 +26,8 @@ void main() {
 //This version of the code is easy to read
 //as there are , after each ) and if we right mouse
 //and choose Format Document we get this result
-/* void main() {
+/* 
+void main() {
   runApp(
     MaterialApp(
       home: Center(
@@ -30,4 +37,5 @@ void main() {
       ),
     ),
   );
-} */
+} 
+*/
