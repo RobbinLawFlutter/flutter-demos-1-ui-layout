@@ -2,12 +2,14 @@
 //runApp will instanciate this MyApp into a Widget object
 //and run it.
 //The extends key word means that we are inheriting
-//from the StatelessWidget class.
+//from the StatelessWidget class. Inheritance is a
+//pillar of OOP.
 //The @override keyword means that we are changing
-//the base classes build method to our own.
-//Our version will return our produced MaterialApp Widget tree.
+//the base classes build method to our own. This is an example
+//of polymophism. This is another pillar of OOP.
+//This will return our produced MaterialApp Widget tree.
 
-//stateless Widget from Widgets 101 series by the flutter team.
+//stateless Widget from Widgets 101 series by the flutter team. Just up to minute 4:07.
 //https://www.youtube.com/watch?v=wE7khGHVkYY
 
 //center widget by RetroStudio
@@ -37,9 +39,9 @@ class MyApp extends StatelessWidget {
             'Hey Man',
             style: TextStyle(
                 fontSize: 40,
-                color: Colors.white,
-                backgroundColor: Colors.black,
-                //color: Colors.blue,
+                //color: Colors.white,
+                //backgroundColor: Colors.black,
+                color: Colors.blue,
                 decoration: TextDecoration.combine([
                   TextDecoration.underline,
                   TextDecoration.overline,

@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Stack and Positioned Widgets"),

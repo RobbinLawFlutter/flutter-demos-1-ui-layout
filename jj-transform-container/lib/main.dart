@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-//https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
-
 //Transform Widget of the Week
 //https://www.youtube.com/watch?v=9z_YNlRlWfA&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=24
 
