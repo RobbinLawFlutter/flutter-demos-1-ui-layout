@@ -1,5 +1,5 @@
 // This is where the app starts executing.
-main() {
+void main() {
   print('This is our first Dart App');
   // Declare and initialize a variable.
   var number = 42;

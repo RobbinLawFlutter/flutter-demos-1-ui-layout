@@ -2,40 +2,36 @@
 //and defines which is the root widget of the application.
 //The framework forces the root widget to cover all the screen.
 //Our root widget is the MaterialApp widget.
-//The word "widget" refers to any object that that
+//The word "widget" refers to any object that
 //shows on the screen, or helps to show objects
 //on the screen.
 
-// center widget by RetroStudio
-// https://www.youtube.com/watch?v=c726pWTtxqI&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=2
-
-// text widget with style by RetroStudio: Just up to minute 4.
-// https://www.youtube.com/watch?v=96Gb-YHQdmY&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=9
-
-// https://flutter.dev/docs/development/ui/widgets-intro
-
-// https://flutter.dev/docs/development/ui/widgets/layout
+//material component widgets
+//https://flutter.dev/docs/development/ui/widgets/material
 
 import 'package:flutter/material.dart';
 
 //This version of the code is hard to read
 //as there are no , after each ) at the end
 void main() {
-  runApp(MaterialApp(home: Center(child: Text('Hello World!'))));
+  runApp(
+      MaterialApp(home: Scaffold(body: Center(child: Text('Hello World!')))));
 }
 //This version of the code is easy to read
 //as there are , after each ) and if we right mouse
 //and choose Format Document we get this result
-/* 
+/*
 void main() {
   runApp(
     MaterialApp(
-      home: Center(
-        child: Text(
-          'Hello World!',
+      home: Scaffold(
+        body: Center(
+          child: Text(
+            'Hello World!',
+          ),
         ),
       ),
     ),
   );
-} 
+}
 */
