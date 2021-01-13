@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-//https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
-
 //Expanded Widget of the Week by the flutter team
 //https://www.youtube.com/watch?v=_rnZaagadyo
 
