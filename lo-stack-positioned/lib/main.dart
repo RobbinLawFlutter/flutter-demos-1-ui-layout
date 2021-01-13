@@ -18,13 +18,34 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Stack and Positioned Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Text('hi'),
+        body: Center(
+          child: Stack(
+            alignment: Alignment(0.4, 0.6),
+            children: [
+              Container(
+                child: Image.asset('images/bottle.jpg'),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.black45,
+                ),
+                child: Text(
+                  'message in a bottle',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
