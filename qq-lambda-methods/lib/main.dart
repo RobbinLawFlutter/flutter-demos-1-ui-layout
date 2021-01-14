@@ -23,8 +23,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout demo',
       home: Scaffold(
+        backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text('Layout demo using reusable methods'),
+          backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(
           child: buildImageColumn(),
@@ -60,7 +62,7 @@ class MyApp extends StatelessWidget {
   Widget buildDecoratedImage(int imageIndex) => Expanded(
         child: Container(
           decoration: BoxDecoration(
-            border: Border.all(width: 10, color: Colors.black38),
+            border: Border.all(width: 10, color: Colors.blueGrey[900]),
             borderRadius: BorderRadius.all(Radius.circular(8)),
           ),
           margin: EdgeInsets.all(4),

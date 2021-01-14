@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Icon Widget"),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
           mainAxisSize: MainAxisSize.max,

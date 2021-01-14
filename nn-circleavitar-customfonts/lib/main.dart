@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Avitar & Text Properties"),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blueGrey[900],
         ),
         body: Align(
           alignment: Alignment.center,

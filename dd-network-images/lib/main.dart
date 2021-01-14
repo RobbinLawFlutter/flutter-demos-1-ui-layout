@@ -10,14 +10,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    //first level widget of Material Design
     return MaterialApp(
-      //default route of MaterialApp Widget
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Stateless Widget with Network Image"),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(
           child:

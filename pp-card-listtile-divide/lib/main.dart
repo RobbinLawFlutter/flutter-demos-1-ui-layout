@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Card, ListTile, and Divider Widgets"),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blueGrey[900],
         ),
         body: SizedBox(
           height: 250,

@@ -19,13 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //first level widget of Material Design
       home: Scaffold(
-        //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Row and Column Widgets"),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
           mainAxisSize: MainAxisSize.max,
