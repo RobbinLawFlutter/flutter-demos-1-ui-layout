@@ -36,12 +36,12 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Text(
-            'Hey Man',
+            'Hey Man this is fun',
             style: TextStyle(
-                fontSize: 40,
-                //color: Colors.white,
-                //backgroundColor: Colors.black,
-                color: Colors.blue,
+                fontSize: 40.0,
+                color: Colors.white,
+                backgroundColor: Colors.black,
+                //color: Colors.blue,
                 decoration: TextDecoration.combine([
                   TextDecoration.underline,
                   TextDecoration.overline,
