@@ -26,10 +26,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //first level widget of Material Design
       home: Scaffold(
-        //default route
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blueGrey[300],
         appBar: AppBar(
           title: Text("Container Widget"),
           backgroundColor: Colors.blueGrey[900],
@@ -43,7 +41,7 @@ class MyApp extends StatelessWidget {
           //cannot provide both a color and decoration at the same time.
           color: Colors.white,
 
-          padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+          //padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
           //padding: EdgeInsets.all(100.0),
 
           //margin: EdgeInsets.fromLTRB(50.0, 40.0, 20.0, 10.0),
