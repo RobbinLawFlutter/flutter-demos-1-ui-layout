@@ -38,13 +38,12 @@ class MyApp extends StatelessWidget {
           height: 400.0,
           width: 340.0,
           //default color is the color of the containers parent, the scaffold.
-          //cannot provide both a color and decoration at the same time.
           color: Colors.white,
 
-          //padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+          padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
           //padding: EdgeInsets.all(100.0),
 
-          //margin: EdgeInsets.fromLTRB(50.0, 40.0, 20.0, 10.0),
+          margin: EdgeInsets.fromLTRB(50.0, 40.0, 20.0, 10.0),
           //margin: EdgeInsets.all(100.0),
           //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
 

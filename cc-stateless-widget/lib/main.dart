@@ -31,8 +31,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text('Intro to Stateless Widget'),
+          backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(
           child: Text(
@@ -41,7 +43,6 @@ class MyApp extends StatelessWidget {
                 fontSize: 40.0,
                 color: Colors.white,
                 backgroundColor: Colors.black,
-                //color: Colors.blue,
                 decoration: TextDecoration.combine([
                   TextDecoration.underline,
                   TextDecoration.overline,
