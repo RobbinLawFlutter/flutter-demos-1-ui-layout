@@ -21,8 +21,22 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Transform.rotate(
-          angle: 0,
-          //angle: pi / 4,
+          //the angle property is required even if it is zero.
+          //angle: 0,
+
+          //the angle property needs a radian angle between
+          //0 and pi (3.14).
+          angle: pi / 4,
+          //angle: pi / 2,
+
+          //the origin property moves the center of the Transforms
+          //child widget to new coordinates from the center of
+          //its parent, in this case the body of the scaffold.
+          //the first number moves from center up(+) or down(-)
+          //and the second number moves from center right(+) or left(-).
+          //origin: Offset(125, 125),
+          //origin: Offset(-125, 125),
+          //origin: Offset(125, -125),
           //origin: Offset(-125, -125),
           child: Center(
             child: Container(

@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Padding(
           padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
-          //padding: EdgeInsets.all(10.0),
+          //padding: EdgeInsets.all(20.0),
           child: Container(
             height: 400.0,
             width: 340.0,
