@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
           title: Text("Row and Column Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Row(
+        body: Column(
+          //mainAxisSize: MainAxisSize.max,
           //mainAxisSize: MainAxisSize.min,
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -40,14 +41,12 @@ class MyApp extends StatelessWidget {
           //mainAxisAlignment: MainAxisAlignment.center,
           //mainAxisAlignment: MainAxisAlignment.end,
 
-          //crossAxisAlignment: CrossAxisAlignment.stretch,
-          //crossAxisAlignment: CrossAxisAlignment.baseline,
-          //crossAxisAlignment: CrossAxisAlignment.start,
-
           //center is the default
           //crossAxisAlignment: CrossAxisAlignment.center,
-
+          //crossAxisAlignment: CrossAxisAlignment.stretch,
+          //crossAxisAlignment: CrossAxisAlignment.start,
           //crossAxisAlignment: CrossAxisAlignment.end,
+          //crossAxisAlignment: CrossAxisAlignment.baseline,
           children: <Widget>[
             Container(
               height: 100.0,
