@@ -20,20 +20,71 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Stack and Positioned Widgets"),
+          title: Text("Stack, Aligned, and Positioned Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Center(
-          child: Stack(
-            alignment: Alignment(0.4, 0.6),
-            children: [
-              Container(
+        body: Stack(
+          //Children of the stack are stacked on top of
+          //one another starting with the first child on
+          //the bottom.
+          //Non Positioned and Non Aligned children
+          //of the stack will be aligned with alignment
+          //property of stack.
+          //topLeft is the default.
+          //alignment: Alignment.topLeft,
+          //alignment: Alignment.bottomCenter,
+          //alignment: Alignment.topRight,
+          children: <Widget>[
+            //POSITIONED WIDGET WITHIN STACK
+            //It works with a combination of parameters
+            //vertical (top, bottom, height) and
+            //horizontal (left, right, width)
+            //to position the widgets within the Stack.
+            Positioned(
+              top: 100,
+              left: 100,
+              child: Container(
+                height: 300,
+                width: 300,
+                child: Center(child: Text('Positioned')),
+                color: Colors.amber,
+              ),
+            ),
+            //ALIGNED WIDGET WITHIN STACK
+            Align(
+              //alignment: Alignment.bottomCenter,
+              //alignment: Alignment.bottomLeft,
+              alignment: Alignment.topRight,
+              //alignment: Alignment.centerLeft,
+              //alignment: Alignment.center, //default
+              child: Container(
+                height: 200,
+                width: 200,
+                child: Center(child: Text('Aligned')),
+                color: Colors.brown,
+              ),
+            ),
+            //NON POSITIONED AND NON ALIGNED CHILD OF STACK
+            Container(
+              height: 150,
+              width: 160,
+              child: Center(child: Text('Non-Positioned/Aligned')),
+              color: Colors.cyan,
+            ),
+            Positioned(
+              bottom: 100,
+              right: 100,
+              child: Container(
                 child: Image.asset('images/bottle.jpg'),
               ),
-              Container(
+            ),
+            Positioned(
+              bottom: 110,
+              right: 110,
+              child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.black45,
-                ),
+                    //color: Colors.black45,
+                    ),
                 child: Text(
                   'message in a bottle',
                   style: TextStyle(
@@ -43,8 +94,8 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
