@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Icon Widget"),
+          title: Text("Icon Widget and SizedBox Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(

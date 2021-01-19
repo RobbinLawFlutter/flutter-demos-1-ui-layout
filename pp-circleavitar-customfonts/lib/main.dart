@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 //Also loading custom fonts
 //google fonts.google.com download the font you want and unzip
 //in my case Chilanka-Regular
-//create a directory in studio called "fonts" and drag and drop
+//create a directory called "fonts" and drag and drop
 //the ttf file to the new directory
 //now edit pubspec.yaml to add the font same way as images
 void main() {
