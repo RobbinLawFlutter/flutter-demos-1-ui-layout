@@ -25,14 +25,28 @@ class MyApp extends StatelessWidget {
           title: Text("Row and Column Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Column(
-          mainAxisSize: MainAxisSize.max,
+        body: Row(
+          //mainAxisSize: MainAxisSize.min,
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+          //spaceAround spaces evenly but half at the fist and last
+          //child
+          //mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+          //start is the default
           //mainAxisAlignment: MainAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
+
+          //mainAxisAlignment: MainAxisAlignment.center,
           //mainAxisAlignment: MainAxisAlignment.end,
+
           //crossAxisAlignment: CrossAxisAlignment.stretch,
+          //crossAxisAlignment: CrossAxisAlignment.baseline,
           //crossAxisAlignment: CrossAxisAlignment.start,
+
+          //center is the default
+          //crossAxisAlignment: CrossAxisAlignment.center,
+
           //crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Container(

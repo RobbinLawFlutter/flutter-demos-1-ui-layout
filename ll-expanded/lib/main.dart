@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //first level widget of Material Design
       home: Scaffold(
-        //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Expanded Widget"),
@@ -29,9 +27,9 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Container(
                   height: 100.0,
                   width: 100.0,
@@ -46,7 +44,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 2,
+              flex: 1,
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
@@ -55,6 +53,21 @@ class MyApp extends StatelessWidget {
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: Colors.yellow,
+                  ),
+                  child: Image.asset('images/bottle.jpg'),
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Container(
+                  height: 100.0,
+                  width: 100.0,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    color: Colors.white,
                   ),
                   child: Image.asset('images/bottle.jpg'),
                 ),
