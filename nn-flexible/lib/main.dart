@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 //flexible widget of the week
 //https://www.youtube.com/watch?v=CI7x0mAZiY0&list=LLidCa21ZCJRTHUXUgg0OVSQ&index=340
 
-//Flexible takes only the needed space, and Expanded takes all available space, respecting the flex factor.
+//Flexible takes only the needed space when using tight fit but acts
+//like expanded when using loose fit (default), and Expanded takes all
+//available space, respecting the flex factor.
 void main() {
   runApp(MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Container(
-          height: 500,
+          height: 550,
           width: 300,
           color: Colors.white,
           child: Column(

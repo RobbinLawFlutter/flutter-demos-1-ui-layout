@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
-              flex: 2,
+              flex: 1,
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
@@ -41,6 +41,17 @@ class MyApp extends StatelessWidget {
                     image: AssetImage('images/bottle.jpg'),
                   ),
                 ),
+              ),
+            ),
+            Container(
+              height: 100.0,
+              width: 100.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                color: Colors.cyan,
+              ),
+              child: Image(
+                image: AssetImage('images/bottle.jpg'),
               ),
             ),
             Expanded(

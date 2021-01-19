@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             //POSITIONED WIDGET WITHIN STACK
             //A POSITIONED WIDGET MUST BE A DECENDENT OF A STACK.
+            //IT WILL NOT WORK WITH ROW, COLUMN WIDGITS.
             //It works with a combination of parameters
             //vertical (top, bottom, height) and
             //horizontal (left, right, width)
@@ -59,11 +60,11 @@ class MyApp extends StatelessWidget {
             ),
             //ALIGNED WIDGET WITHIN STACK
             Align(
+              //alignment: Alignment.center, //default
               //alignment: Alignment.bottomCenter,
               //alignment: Alignment.bottomLeft,
               alignment: Alignment.topRight,
               //alignment: Alignment.centerLeft,
-              //alignment: Alignment.center, //default
               child: Container(
                 height: 200,
                 width: 200,
