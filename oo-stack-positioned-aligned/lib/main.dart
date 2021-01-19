@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
           //alignment: Alignment.topRight,
           children: <Widget>[
             //POSITIONED WIDGET WITHIN STACK
+            //A POSITIONED WIDGET MUST BE A DECENDENT OF A STACK.
             //It works with a combination of parameters
             //vertical (top, bottom, height) and
             //horizontal (left, right, width)
