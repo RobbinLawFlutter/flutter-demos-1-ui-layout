@@ -6,8 +6,14 @@ import 'package:flutter/material.dart';
 //positioned widget of the week by the flutter team
 //https://www.youtube.com/watch?v=EgtPleVwxBQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=27
 
-//stacked and positioned widgets by RetroStudio
+//stack and positioned widgets by RetroStudio
 //https://www.youtube.com/watch?v=1qlgbNN0BaE&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=6
+
+//Align Widget of the Week by the flutter team
+//https://www.youtube.com/watch?v=g2E7yl3MwMk
+
+//align widget by RetroStudio
+//https://www.youtube.com/watch?v=7Dljvr-Afvc&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=11
 
 void main() {
   runApp(MyApp());
@@ -20,7 +26,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Stack, Aligned, and Positioned Widgets"),
+          title: Text("Stack, Positioned, and Aligned Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Stack(
