@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //first level widget of Material Design
       home: Scaffold(
-        //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Icon Widget and SizedBox Widget"),
@@ -51,7 +49,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.black, width: 8),
@@ -63,7 +61,7 @@ class MyApp extends StatelessWidget {
                     children: <Widget>[
                       Icon(
                         //Icons.add_shopping_cart,
-                        Icons.anchor,
+                        Icons.add_shopping_cart,
                         size: 50,
                         color: Colors.blue.shade500,
                       ),

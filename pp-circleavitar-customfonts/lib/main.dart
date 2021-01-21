@@ -26,35 +26,32 @@ class MyApp extends StatelessWidget {
           title: Text("Avitar & Text Properties"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Align(
-          alignment: Alignment.center,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: CircleAvatar(
-                  radius: 150,
-                  backgroundColor: Colors.yellow,
-                  backgroundImage: AssetImage('images/bottle.jpg'),
+        body: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: CircleAvatar(
+                radius: 150,
+                //backgroundColor: Colors.amber,
+                backgroundImage: AssetImage('images/bottle.jpg'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(
+                'bottle pic',
+                style: TextStyle(
+                  fontFamily: 'Chilanka-Regular',
+                  fontSize: 60,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  //fontWeight: FontWeight.normal,
+                  letterSpacing: 10.5,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Text(
-                  'bottle pic',
-                  style: TextStyle(
-                    fontFamily: 'Chilanka-Regular',
-                    fontSize: 60,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    //fontWeight: FontWeight.normal,
-                    letterSpacing: 6.5,
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
