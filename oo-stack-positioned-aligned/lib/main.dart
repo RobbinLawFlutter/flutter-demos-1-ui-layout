@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
             //It works with a combination of parameters
             //vertical (top, bottom, height) and
             //horizontal (left, right, width)
-            //to position the widgets within the Stack.
+            //to position the widgets within the Stacks.
             Positioned(
               top: 100,
               left: 100,
