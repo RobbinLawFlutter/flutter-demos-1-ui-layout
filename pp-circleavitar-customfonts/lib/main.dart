@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     //fontWeight: FontWeight.normal,
-                    letterSpacing: 4.5,
+                    letterSpacing: 6.5,
                   ),
                 ),
               ),

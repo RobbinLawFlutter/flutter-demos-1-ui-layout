@@ -58,16 +58,18 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(20),
                   child: Row(
                     children: <Widget>[
                       Icon(
-                        Icons.add_shopping_cart,
+                        //Icons.add_shopping_cart,
+                        Icons.anchor,
                         size: 50,
                         color: Colors.blue.shade500,
                       ),
                       SizedBox(
-                        width: 20,
+                        width: 50,
+                        height: 10,
                       ),
                       Text(
                         'go to this place',

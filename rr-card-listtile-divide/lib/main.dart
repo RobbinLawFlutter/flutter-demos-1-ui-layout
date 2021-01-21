@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               height: 50,
             ),
             Card(
-              elevation: 3,
+              elevation: 10,
               child: Column(
                 children: [
                   ListTile(
@@ -37,12 +37,12 @@ class MyApp extends StatelessWidget {
                     subtitle: Text('My City, CA 99984'),
                     leading: Icon(
                       Icons.restaurant_menu,
-                      color: Colors.blue[500],
+                      color: Colors.blueGrey,
                       size: 40,
                     ),
                     trailing: Icon(
                       Icons.edit,
-                      color: Colors.blue[500],
+                      color: Colors.blueGrey,
                     ),
                   ),
                   Divider(
@@ -53,24 +53,24 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(fontWeight: FontWeight.w500)),
                     leading: Icon(
                       Icons.contact_phone,
-                      color: Colors.blue[500],
+                      color: Colors.blueGrey,
                       size: 40,
                     ),
                     trailing: Icon(
                       Icons.edit,
-                      color: Colors.blue[500],
+                      color: Colors.blueGrey,
                     ),
                   ),
                   ListTile(
                     title: Text('costa@example.com'),
                     leading: Icon(
                       Icons.contact_mail,
-                      color: Colors.blue[500],
+                      color: Colors.blueGrey,
                       size: 40,
                     ),
                     trailing: Icon(
                       Icons.edit,
-                      color: Colors.blue[500],
+                      color: Colors.blueGrey,
                     ),
                   ),
                 ],
