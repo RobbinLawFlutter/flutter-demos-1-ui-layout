@@ -10,11 +10,9 @@ import 'package:flutter/rendering.dart';
 //This app also shows the use of
 //methods with parameters to create complex Widgets by reusing code.
 
-/*
-void main() {
-  runApp(MyApp());
-}
-*/
+// void main() {
+//   runApp(MyApp());
+// }
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -38,11 +36,13 @@ class MyApp extends StatelessWidget {
   //A method that is structured the long way using {} and return.
   Widget buildImageColumn() {
     return Container(
+      //color: Colors.white,
       decoration: BoxDecoration(
         color: Colors.black45,
       ),
       child: Column(
         children: [
+          //Text('hi'),
           buildImageRow(1),
           buildImageRow(3),
         ],
