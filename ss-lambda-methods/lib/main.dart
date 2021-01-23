@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       ),
       child: Column(
         children: [
-          //Text('hi'),
+          //Text('hi there'),
           buildImageRow(1),
           buildImageRow(3),
         ],
