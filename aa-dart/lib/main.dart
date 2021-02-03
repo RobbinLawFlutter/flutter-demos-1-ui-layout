@@ -1,4 +1,4 @@
-// This is where the app starts executing.
+// This is where the app starts executing its code.
 void main() {
   print('This is our first Dart App');
   // Declare and initialize a variable.
