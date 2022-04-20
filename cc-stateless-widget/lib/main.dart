@@ -1,12 +1,12 @@
 //In this app we create our own class called MyApp.
-//runApp will instanciate this MyApp into a Widget object
+//runApp will instantiate this MyApp into a Widget object
 //and run it.
 //The extends key word means that we are inheriting
 //from the StatelessWidget class. Inheritance is a
 //pillar of OOP.
 //The @override keyword means that we are changing
 //the base classes build method to our own. This is an example
-//of polymophism. This is another pillar of OOP.
+//of polymorphism. This is another pillar of OOP.
 //This will return our produced MaterialApp Widget tree.
 
 //stateless Widget from Widgets 101 series by the flutter team. Just up to minute 4:07.
