@@ -40,13 +40,14 @@ class MyApp extends StatelessWidget {
           child: Text(
             'Hey Man this is fun',
             style: TextStyle(
-                fontSize: 40.0,
-                color: Colors.white,
-                backgroundColor: Colors.black,
-                decoration: TextDecoration.combine([
-                  TextDecoration.underline,
-                  TextDecoration.overline,
-                ])),
+              fontSize: 40.0,
+              color: Colors.white,
+              backgroundColor: Colors.black,
+              decoration: TextDecoration.combine([
+                TextDecoration.underline,
+                TextDecoration.overline,
+              ]),
+            ),
           ),
         ),
       ),
