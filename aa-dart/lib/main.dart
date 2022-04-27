@@ -36,6 +36,10 @@ void main() {
   p3.printProps();
   p3.changeProps(age: 80);
   p3.printProps();
+  var p4 = PersonNewWay.defaultAge(name: 'Jimbo');
+  p4.printProps();
+  var p5 = PersonNewWay.defaultName();
+  p5.printProps();
 }
 
 // Define a function with one parameter.
@@ -47,7 +51,10 @@ printInteger(int aNumber) {
 //A class declaration and definition without a constructor.
 class PersonOldWay {
   //Variables inside of a class are called "properties".
+  //Also they can be called "instance" fields.
   //Defaults to "public".
+  //A leading "_" makes them "private" to the file.
+  //Private not demonstrated here as we only have one file.
   String name;
   int age = 66;
 
@@ -79,9 +86,18 @@ class PersonNewWay {
   int age;
 
   //Explicit constructor with named parameters that are all optional.
-  //You can have default values as age has.
-  //Only the constructor can use the "this" key word.
+  //You can have default values as age has in the constructor.
+  //Only the constructor/s can use the "this" key word in their
+  //parameter list.
   PersonNewWay({this.name, this.age = 10});
+  //Multiple constructors
+  PersonNewWay.defaultAge({this.name}) {
+    age = 62;
+  }
+
+  PersonNewWay.defaultName({this.age}){
+    name = 'Robbin';
+  }
 
   void changeProps({String name, int age}) {
     this.name = name;
