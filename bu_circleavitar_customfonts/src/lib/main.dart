@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
               child: CircleAvatar(
                 radius: 150,
                 //backgroundColor: Colors.amber,
-                backgroundImage: AssetImage('images/bottle.jpg'),
+                backgroundImage: AssetImage('assets/images/bottle.jpg'),
               ),
             ),
             Padding(
