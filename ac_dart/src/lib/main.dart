@@ -86,8 +86,7 @@ class PersonNewWay {
   String name;
   int age;
 
-  //Explicit constructor with named parameters that are all optional.
-  //You can have default values as age has in the constructor.
+  //Explicit greedy constructor with named parameters that are all optional.
   //Only the constructor/s can use the "this" key word in their
   //parameter list.
   PersonNewWay({this.name = '', this.age = 0});
