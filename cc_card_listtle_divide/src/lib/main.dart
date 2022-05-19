@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Card, ListTile, and Divider Widgets"),
+          title: const Text("Card, ListTile, and Divider Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                     thickness: 2,
                   ),
                   ListTile(
-                    title: Text('(408) 555-1212',
+                    title: Text('(408) 555-1212-777777777777777777777777777777777777',
                         style: TextStyle(fontWeight: FontWeight.w500)),
                     leading: Icon(
                       Icons.contact_phone,
