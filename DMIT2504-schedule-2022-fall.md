@@ -19,19 +19,19 @@
 |0||||Sep01|Sep02-[Day01](#day01)-Intro|
 |1|Sep05|Sep06-[Day02](#day02)|Sep07-[Day03](#day03)|Sep08|Sep09-[Day04](#day04)|
 |2|Sep12|Sep13-[Day05](#day05)|Sep14-[Day06](#day06)|Sep15|Sep16-[Day07](#day07)|
-|3|Sep19|Sep20-[Day08](#day08)|Sep21-[Day09](#day09)|Sep22|<span style="color:red">Sep23</span>-[Day10](#day10)|
+|3|Sep19|Sep20-[Day08](#day08)|Sep21-[Day09](#day09)|Sep22|Sep23-[Day10](#day10)|
 |4|Sep26|Sep27-[Day11](#day11)|Sep28-[Day12](#day12)|Sep29|Sep30|
 |5|Oct03|Oct04-[Day13](#day13)|Oct05-[Day14](#day14)|Oct06|Oct07-[Day15](#day15)|
-|6|Oct10|Oct11|Oct12-[Day16](#day16)|Oct13|<span style="color:red">Oct14</span>-[Day17](#day17)|
+|6|Oct10|Oct11|Oct12-[Day16](#day16)|Oct13|Oct14-[Day17](#day17)|
 |7|Oct17|Oct18-[Day18](#day18)|Oct19-[Day19](#day19)|Oct20|Oct21-[Day20](#day20)|
 |8|Oct24|Oct25-[Day21](#day21)|Oct26-[Day22](#day22)|Oct27|Oct28-[Day23](#day23)|
-|9|Oct31|Nov01-[Day24](#day24)|Nov02-[Day25](#day25)|Nov03|<span style="color:red">Nov04</span>-[Day26](#day26)|
+|9|Oct31|Nov01-[Day24](#day24)|Nov02-[Day25](#day25)|Nov03|Nov04-[Day26](#day26)|
 |10|Nov07|Nov08-[Day27](#day27)|Nov09-[Day28](#day28)|Nov10|Nov11|
 |11|Nov14|Nov15-[Day29](#day29)|Nov16-[Day30](#day30)|Nov17|Nov18-[Day31](#day31)|
-|12|Nov21|Nov22-[Day32](#day32)|Nov23-[Day33](#day33)|Nov24|<span style="color:red">Nov25</span>-[Day34](#day34)|
+|12|Nov21|Nov22-[Day32](#day32)|Nov23-[Day33](#day33)|Nov24|Nov25-[Day34](#day34)|
 |13|Nov28|Nov29-[Day35](#day35)|Nov30-[Day36](#day36)|Dec01|Dec02-[Day37](#day37)|
 |14|Dec05|Dec06-[Day38](#day38)|Dec07-[Day39](#day39)|Dec08|Dec09-[Day40](#day40)|
-|15|Dec12|Dec13-[Day41](#day41)|<span style="color:red">Dec14</span>-[Day42](#day42)|Dec15||
+|15|Dec12|Dec13-[Day41](#day41)|Dec14-[Day42](#day42)|Dec15||
 
 ## Day01
 
