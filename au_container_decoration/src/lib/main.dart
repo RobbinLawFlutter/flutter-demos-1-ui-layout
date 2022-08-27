@@ -20,10 +20,11 @@ import 'package:flutter/material.dart';
 //to apply padding and margin to the Container.
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Container Widget"),
+          title: const Text("Container Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Container(

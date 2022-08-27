@@ -9,34 +9,33 @@ import 'package:flutter/material.dart';
 //SizedBox Widget of the Week
 //https://www.youtube.com/watch?v=EHPu_DzRfqA
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Icon Widget and SizedBox Widget"),
+          title: const Text("Icon Widget and SizedBox Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
               child: CircleAvatar(
                 radius: 150,
                 backgroundColor: Colors.blue,
                 backgroundImage: AssetImage('assets/images/bottle.jpg'),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Text(
                 'bottle pic',
                 style: TextStyle(
@@ -65,7 +64,7 @@ class MyApp extends StatelessWidget {
                         size: 50,
                         color: Colors.blue.shade500,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 50,
                         height: 10,
                       ),

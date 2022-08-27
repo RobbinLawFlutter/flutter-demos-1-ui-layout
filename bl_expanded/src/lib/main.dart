@@ -11,17 +11,18 @@ import 'package:flutter/material.dart';
 //as per the flex value.
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Expanded Widget"),
+          title: const Text("Expanded Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
@@ -33,11 +34,11 @@ class MyApp extends StatelessWidget {
                 child: Container(
                   height: 100.0,
                   width: 100.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: Colors.blue,
                   ),
-                  child: Image(
+                  child: const Image(
                     image: AssetImage('images/bottle.jpg'),
                   ),
                 ),
@@ -46,11 +47,11 @@ class MyApp extends StatelessWidget {
             Container(
               height: 100.0,
               width: 100.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.rectangle,
                 color: Colors.cyan,
               ),
-              child: Image(
+              child: const Image(
                 image: AssetImage('images/bottle.jpg'),
               ),
             ),
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
                 child: Container(
                   height: 100.0,
                   width: 100.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: Colors.yellow,
                   ),
@@ -76,7 +77,7 @@ class MyApp extends StatelessWidget {
                 child: Container(
                   height: 100.0,
                   width: 100.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: Colors.white,
                   ),

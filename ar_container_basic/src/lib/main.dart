@@ -19,17 +19,18 @@ import 'package:flutter/material.dart';
 //to apply padding and margin to the Container.
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Container Widget"),
+          title: const Text("Container Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         //by default the container will be placed in the top left of its parent, the body of the scaffold.
@@ -40,10 +41,10 @@ class MyApp extends StatelessWidget {
           //default color is the color of the containers parent, the scaffold.
           color: Colors.white,
 
-          padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+          padding: const EdgeInsets.fromLTRB(10, 20, 30, 40),
           //padding: EdgeInsets.all(100.0),
 
-          margin: EdgeInsets.fromLTRB(50.0, 40.0, 20.0, 10.0),
+          margin: const EdgeInsets.fromLTRB(50.0, 40.0, 20.0, 10.0),
           //margin: EdgeInsets.all(100.0),
           //margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
 

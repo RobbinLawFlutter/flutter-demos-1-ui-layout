@@ -6,17 +6,18 @@ import 'package:flutter/material.dart';
 //and pubspec.yaml has to be changed to expose them.
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Asset Image"),
+          title: const Text("Asset Image"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(

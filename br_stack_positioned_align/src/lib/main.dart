@@ -16,17 +16,18 @@ import 'package:flutter/material.dart';
 //https://www.youtube.com/watch?v=7Dljvr-Afvc&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=11
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Stack, Positioned, and Aligned Widgets"),
+          title: const Text("Stack, Positioned, and Aligned Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Stack(
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
               child: Container(
                 height: 300,
                 width: 300,
-                child: Center(child: Text('Positioned')),
+                child: const Center(child: Text('Positioned')),
                 color: Colors.amber,
               ),
             ),
@@ -68,7 +69,7 @@ class MyApp extends StatelessWidget {
               child: Container(
                 height: 200,
                 width: 200,
-                child: Center(child: Text('Aligned')),
+                child: const Center(child: Text('Aligned')),
                 color: Colors.brown,
               ),
             ),
@@ -76,24 +77,22 @@ class MyApp extends StatelessWidget {
             Container(
               height: 150,
               width: 160,
-              child: Center(child: Text('Non-Positioned/Aligned')),
+              child: const Center(child: Text('Non-Positioned/Aligned')),
               color: Colors.cyan,
             ),
             Positioned(
               bottom: 100,
               right: 100,
-              child: Container(
-                child: Image.asset('images/bottle.jpg'),
-              ),
+              child: Image.asset('images/bottle.jpg'),
             ),
             Positioned(
               bottom: 110,
               right: 110,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     //color: Colors.black45,
                     ),
-                child: Text(
+                child: const Text(
                   'message in a bottle',
                   style: TextStyle(
                     fontSize: 20,

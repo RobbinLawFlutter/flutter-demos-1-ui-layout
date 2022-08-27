@@ -7,12 +7,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,13 +23,13 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Card(
               elevation: 10,
               child: Column(
-                children: [
+                children: const [
                   ListTile(
                     title: Text('1625 Main Street',
                         style: TextStyle(fontWeight: FontWeight.w500)),
@@ -49,7 +48,8 @@ class MyApp extends StatelessWidget {
                     thickness: 2,
                   ),
                   ListTile(
-                    title: Text('(408) 555-1212-777777777777777777777777777777777777',
+                    title: Text(
+                        '(408) 555-1212-777777777777777777777777777777777777',
                         style: TextStyle(fontWeight: FontWeight.w500)),
                     leading: Icon(
                       Icons.contact_phone,

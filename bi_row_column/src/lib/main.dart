@@ -12,17 +12,18 @@ import 'package:flutter/material.dart';
 //https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Row and Column Widgets"),
+          title: const Text("Row and Column Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
               height: 100.0,
               width: 100.0,
               color: Colors.white,
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Container 1',
                 ),
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
               height: 150.0,
               width: 100.0,
               color: Colors.orange,
-              child: Text(
+              child: const Text(
                 'Container 2',
               ),
             ),
@@ -72,7 +73,7 @@ class MyApp extends StatelessWidget {
               width: 50,
               //width: double.infinity,
               color: Colors.red,
-              child: Text(
+              child: const Text(
                 'Container 3',
               ),
             ),
@@ -80,7 +81,7 @@ class MyApp extends StatelessWidget {
               height: 20.0,
               //width: 10,
               color: Colors.blue,
-              child: Text(
+              child: const Text(
                 'Container 4',
               ),
             ),

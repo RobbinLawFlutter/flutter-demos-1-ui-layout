@@ -7,17 +7,18 @@ import 'package:flutter/material.dart';
 //like expanded when using loose fit (default), and Expanded takes all
 //available space, respecting the flex factor.
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Flexible Widget"),
+          title: const Text("Flexible Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Container(
@@ -39,11 +40,11 @@ class MyApp extends StatelessWidget {
                   child: Container(
                     height: 150.0,
                     width: 150.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.rectangle,
                       color: Colors.blue,
                     ),
-                    child: Image(
+                    child: const Image(
                       image: AssetImage('images/bottle.jpg'),
                     ),
                   ),
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
                   child: Container(
                     height: 150.0,
                     width: 150.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.rectangle,
                       color: Colors.yellow,
                     ),

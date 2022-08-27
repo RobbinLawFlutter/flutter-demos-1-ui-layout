@@ -15,21 +15,22 @@ import 'package:flutter/material.dart';
 //padding, but from the body of the Scaffolds perspective.
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Padding Widget"),
+          title: const Text("Padding Widget"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Padding(
-          padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+          padding: const EdgeInsets.fromLTRB(10, 20, 30, 40),
           //padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
           //padding: EdgeInsets.all(20.0),
           child: Container(
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
             //padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
             height: 400.0,
             width: 340.0,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.amber,
             ),

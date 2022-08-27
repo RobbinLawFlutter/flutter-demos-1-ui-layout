@@ -13,9 +13,10 @@ import 'package:flutter/rendering.dart';
 // void main() {
 //   runApp(MyApp());
 // }
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text('Layout demo using reusable methods'),
+          title: const Text('Layout demo using reusable methods'),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
   Widget buildImageColumn() {
     return Container(
       //color: Colors.white,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.black45,
       ),
       child: Column(
@@ -62,10 +63,13 @@ class MyApp extends StatelessWidget {
   Widget buildDecoratedImage(int imageIndex) => Expanded(
         child: Container(
           decoration: BoxDecoration(
-            border: Border.all(width: 10, color: Color(0xFFFFFFFF)),
-            borderRadius: BorderRadius.all(Radius.circular(8)),
+            border: Border.all(
+              width: 10,
+              color: const Color(0xFFFFFFFF),
+            ),
+            borderRadius: const BorderRadius.all(Radius.circular(8)),
           ),
-          margin: EdgeInsets.all(4),
+          margin: const EdgeInsets.all(4),
           child: Image.asset('images/pic$imageIndex.jpg'),
         ),
       );

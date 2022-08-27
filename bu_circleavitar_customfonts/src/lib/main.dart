@@ -11,10 +11,11 @@ import 'package:flutter/material.dart';
 //the ttf file to the new directory
 //now edit pubspec.yaml to add the font same way as images
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +24,14 @@ class MyApp extends StatelessWidget {
         //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Avitar & Text Properties"),
+          title: const Text("Avitar & Text Properties"),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
           mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
+          children: const <Widget>[
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: EdgeInsets.all(15.0),
               child: CircleAvatar(
                 radius: 150,
                 //backgroundColor: Colors.amber,
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: EdgeInsets.all(15.0),
               child: Text(
                 'bottle pic',
                 style: TextStyle(
