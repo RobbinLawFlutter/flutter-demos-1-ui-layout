@@ -8,6 +8,8 @@
 .buildlog/
 .history
 .svn/
+pubspec.lock
+generated_plugins.cmake
 
 # IntelliJ related
 *.iml
