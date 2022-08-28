@@ -10,9 +10,17 @@
   - C:\FlutterDev\FlutterRepos
 
 ---
+
+## Create a GitHub Account
+
+- [GitHub Website](https://github.com)
+- Go to GitHub and create an account. Choose an appropriate username that has your first and last name in it. Remember the username that you create the account with as well as the email that you use. You will need this information to complete the setup.
+
+---
+
 ## Download Git
 
-- [Git](https://git-scm.com/)
+- [Git Website](https://git-scm.com/)
 - Download the latest version. Allow all the defaults on download. The path should be updated automatically, so that `git` is available from any directory.
 - Open a PowerShell or CMD terminal. In the shell run `git –version` to make sure that git is installed and accessible from this directory. Note that it is two minus bars before version. If a version number is not returned, the path must be set so that `git` is available from any directory. To set the path, in the search area at the bottom of the windows task bar type `env` and select `Edit Environment Variables for your Account`. Then edit the `PATH` and add new `C:\Program Files\Git\cmd`. You could add this to the system environments alternatively. Now you can run the `git` command from a terminal anywhere.
   
@@ -20,7 +28,7 @@
 
 ## Download GitHub CLI
 
-- [GitHub CLI](https://cli.github.com/) (*Command-Line Interface*)
+- [GitHub CLI Website](https://cli.github.com/) (*Command-Line Interface*)
 - Download the latest version. Allow all the defaults on download. The path should be updated automatically, so that `gh` is available from any directory.
 
 ----
@@ -37,7 +45,7 @@
 
 ## Download Android Studio
 
-- [Android Studio](https://developer.android.com/studio?gclid=EAIaIQobChMIuqaW2PPp-QIVph-tBh38GAKCEAAYASAAEgLQVfD_BwE&gclsrc=aw.ds)
+- [Android Studio Website](https://developer.android.com/studio?gclid=EAIaIQobChMIuqaW2PPp-QIVph-tBh38GAKCEAAYASAAEgLQVfD_BwE&gclsrc=aw.ds)
 - Download `Android Studio` and `Android SDK` from the link at `flutter.dev` (or above) using instructions as per document called `Download of Android Studio and Android SDK` located at `flutter.dev`. This whole process takes a while. Note `Android Studio` is to be stored in `C:\FlutterDev\AndroidStudio`, and `AndroidSDK` is to be stored in `C:\FlutterDev\AndroidSDK`.
 - Start Android Studio and under `more actions` click on the `virtual device manager` and create a virtual device if one has not already been created for you. Use the instructions as per document called `Create a Virtual Machine` located at `flutter.dev`. Launch the new Virtual Machine.
 - From any terminal run `flutter doctor –android-sdk C:\FlutterDev\AndroidSDK`. Note that it is two minus bars before android-sdk.
@@ -49,7 +57,7 @@
 
 ## Download Visual Studio Code
 
-- [Visual Studio Code](https://code.visualstudio.com)
+- [Visual Studio Code Website](https://code.visualstudio.com)
 - Download Visual Studio Code if you do not already have it on your machine.
 From VS Code install the `flutter extension` which will also load the dart extension.
 From VS Code start a terminal and run the `flutter doctor -v` again, to see that it is happy and if the Virtual Machine is running it will see a connected device. Note that you can only run the doctor from here if your path is set correctly. Otherwise, you must navigate to and run `C:\FlutterDev\FlutterSDK\flutter\flutter_console.bat` and then within the console run `flutter doctor -v`.

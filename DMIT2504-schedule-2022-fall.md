@@ -39,11 +39,10 @@ Intro to Course
 - Outline, Calendar & Assessments
 
 Setup of Development Environment.
-  - Visual Studio Code (VSCode)
-  - VSCode Extensions
-  - Visual Studio 2022 Community Edition
-  - Download Git to computer
-  - GitHub Account
+- Download Git to computer
+- GitHub Account
+- Visual Studio Code (VSCode)
+- VSCode Extensions
 
 [Back to Top](#calendar)
 
