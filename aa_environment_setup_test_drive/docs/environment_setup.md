@@ -59,8 +59,8 @@
 
 - [Visual Studio Code Website](https://code.visualstudio.com)
 - Download Visual Studio Code if you do not already have it on your machine.
-From VS Code install the `flutter extension` which will also load the dart extension.
-From VS Code start a terminal and run the `flutter doctor -v` again, to see that it is happy and if the Virtual Machine is running it will see a connected device. Note that you can only run the doctor from here if your path is set correctly. Otherwise, you must navigate to and run `C:\FlutterDev\FlutterSDK\flutter\flutter_console.bat` and then within the console run `flutter doctor -v`.
+From VS Code install the extension `flutter` which will also load the dart extension.
+- From VS Code start a terminal and run the `flutter doctor -v` again, to see that it is happy and if the Virtual Machine is running it will see a connected device. Note that you can only run the doctor from here if your path is set correctly. Otherwise, you must navigate to and run `C:\FlutterDev\FlutterSDK\flutter\flutter_console.bat` and then within the console run `flutter doctor -v`.
 
 ---
 
