@@ -4,12 +4,12 @@
 
 |Assessment Name|Description|Weight|Due Date|
 |:-:|:-:|:-:|:-:|
-|App-1||15|11:59 PM [Day10](#day10)|
-|App-2||15|11:59 PM [Day17](#day17)|
-|App-3||15|11:59 PM [Day26](#day26)|
-|App-4||15|11:59 PM [Day34](#day34)|
-|App-5||20|11:59 PM [Day42](#day42)|
-|Quiz||20|11:59 PM [Day42](#day42)
+|App-1||14|11:59 PM [Day10](#day10)|
+|App-2||16|11:59 PM [Day17](#day17)|
+|App-3||20|11:59 PM [Day26](#day26)|
+|App-4||20|11:59 PM [Day34](#day34)|
+|App-5||16|11:59 PM [Day42](#day42)|
+|Quiz||14|11:59 PM [Day42](#day42)
 ||Total|100||
 
 ## Calendar
