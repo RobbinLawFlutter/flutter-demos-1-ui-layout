@@ -43,7 +43,7 @@
 
 ----
 
-## Download Android Studio
+## Download Android Studio and the Android SDK
 
 - [Android Studio Website](https://developer.android.com/studio?gclid=EAIaIQobChMIuqaW2PPp-QIVph-tBh38GAKCEAAYASAAEgLQVfD_BwE&gclsrc=aw.ds)
 - Download `Android Studio` and `Android SDK` from the link at `flutter.dev` (or above) using instructions as per document called `Download of Android Studio and Android SDK` located at `flutter.dev`. This whole process takes a while. Note `Android Studio` is to be stored in `C:\FlutterDev\AndroidStudio`, and `AndroidSDK` is to be stored in `C:\FlutterDev\AndroidSDK`.
@@ -55,7 +55,6 @@
 - From any terminal run `flutter doctor -v` to see that now the flutter sdk sees the android sdk but there may be some license issues.
 - From any terminal run `flutter doctor –android-licenses` and choose `y` for all. There are about 10 licenses to say yes to.
 - From any terminal run `flutter doctor -v` to see that now the doctor is happy with the android tool chain.
-- Start Android Studio and under `more actions` click on the `virtual device manager` and create a virtual device if one has not already been created for you. Use the instructions as per document called `Create a Virtual Machine` located at `flutter.dev`. Launch the new Virtual Machine.
 
 ---
 
@@ -63,7 +62,7 @@
 
 - [Visual Studio Code Website](https://code.visualstudio.com)
 - Download Visual Studio Code if you do not already have it on your machine.
-From VS Code install the extension `flutter` which will also load the dart extension.
+- From VS Code install the extension `flutter` which will also load the dart extension.
 - From VS Code start a terminal and run the `flutter doctor -v` again, to see that it is happy and if the Virtual Machine is running it will see a connected device. Note that you can only run the doctor from here if your path is set correctly. Otherwise, you must navigate to and run `C:\FlutterDev\FlutterSDK\flutter\flutter_console.bat` and then within the console run `flutter doctor -v`.
 
 ---
