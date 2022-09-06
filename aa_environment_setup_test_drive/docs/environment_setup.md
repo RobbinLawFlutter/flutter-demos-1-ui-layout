@@ -48,7 +48,7 @@
 - [Android Studio Website](https://developer.android.com/studio?gclid=EAIaIQobChMIuqaW2PPp-QIVph-tBh38GAKCEAAYASAAEgLQVfD_BwE&gclsrc=aw.ds)
 - Download `Android Studio` and `Android SDK` from the link at `flutter.dev` (or above) using instructions as per document called `Download of Android Studio and Android SDK` located at `flutter.dev`. This whole process takes a while. Note `Android Studio` is to be stored in `C:\FlutterDev\AndroidStudio`, and `AndroidSDK` is to be stored in `C:\FlutterDev\AndroidSDK`.
 - Start Android Studio and under `more actions` click on the `virtual device manager` and create a virtual device if one has not already been created for you. Use the instructions as per document called `Create a Virtual Machine` located at `flutter.dev`. Launch the new Virtual Machine.
-- From any terminal run `flutter doctor –android-sdk C:\FlutterDev\AndroidSDK`. Note that it is two minus bars before android-sdk.
+- From any terminal run `flutter config –android-sdk C:\FlutterDev\AndroidSDK`. Note that it is two minus bars before android-sdk.
 - From any terminal run `flutter doctor -v` to see that now the flutter sdk sees the android sdk but there may be some license issues.
 - From any terminal run `flutter doctor –android-licenses` and choose `y` for all. There are about 10 licenses to say yes to.
 - From any terminal run `flutter doctor -v` to see that now the doctor is happy with the android tool chain.
