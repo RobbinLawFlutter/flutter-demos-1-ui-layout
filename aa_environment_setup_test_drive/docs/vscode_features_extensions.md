@@ -50,7 +50,6 @@
 - PDF Preview by Analytic Signal Limited
 - Material Icon Theme by Philipp Kief - Icon Theme
 - One Dark Pro by binaryify - Color Theme
-- Bracket Pair Colorizer by CoenraadS
 - Prettier-Code Formatter by Prettier
 - htmltagwrap by Brad Gashler (Alt + w) - to markup content that is already in place
     - multiple cursors
@@ -75,8 +74,6 @@
 - VS Code Editor:
   - Format on Save: check
   - Format on Save Mode: file
-- Prettier configuration settings:
-  - see my video on my settings, too many to list here
 - Auto Import configuration settings:
   - Go to File/Preferences/Settings in VSCode
   - In the settings search type "auto import"
