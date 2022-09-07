@@ -1,3 +1,6 @@
+windows/**
+pubspec.lock
+
 # Miscellaneous
 *.class
 *.log
