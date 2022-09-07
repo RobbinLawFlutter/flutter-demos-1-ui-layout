@@ -1,6 +1,5 @@
-pubspec.loc
-generated_plugins.cmake
-.windows/*
+windows/**
+pubspec.lock
 
 # Miscellaneous
 *.class

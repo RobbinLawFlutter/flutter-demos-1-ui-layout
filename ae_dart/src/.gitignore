@@ -1,4 +1,5 @@
 windows/**
+pubspec.lock
 
 # Miscellaneous
 *.class
