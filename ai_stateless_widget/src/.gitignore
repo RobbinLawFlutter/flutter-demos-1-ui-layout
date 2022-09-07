@@ -1,6 +1,6 @@
 pubspec.loc
 generated_plugins.cmake
-.windows/
+.windows/*
 
 # Miscellaneous
 *.class
