@@ -1,3 +1,6 @@
+pubspec.loc
+generated_plugins.cmake
+
 # Miscellaneous
 *.class
 *.log
