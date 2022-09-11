@@ -14,6 +14,9 @@
 
 ## Calendar
 
+- [my demos link](https://github.com)
+- [Link to Github Classroom](https://github.com)
+
 |Week|Mon|Tue|Wed|Thu|Fri|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |0||||Sep01|Sep02-[Day01](#day01)-Intro|
@@ -39,7 +42,8 @@ Intro to Course
 - Outline, Calendar & Assessments
 
 Setup of Development Environment
-- Doc: environment_setup_test_drive
+- Go to my github repo with the link above
+- Doc: environment-setup-test-drive
   - Setup Folder Structure
   - GitHub Account
   - Download Git to computer
@@ -54,11 +58,12 @@ Setup of Development Environment
 ## Day02
 
 Setup of Development Environment
-- Doc: environment_setup_test_drive
+- Clone my Demos from Github with the link above
+- Doc: environment-setup-test-drive
   - Review setup steps from previous day
   - Test drive the tool chain 
-- Doc: vscode_features_extensions
-- Clone my Demos from Github
+- Doc: vscode-features-extensions
+- Doc: git-github-with-VSCode
 
 [Back to Top](#calendar)
 
@@ -82,8 +87,7 @@ Stateless Widget
 ## Day05
 
 Setup of Assessment Repo via Github Classroom
-- Use the following link to join Classroom, create an assessment repo, and clone it
-- [Link to Github Classroom](https://github.com)
+- Use the link above to join Classroom, create an assessment repo, and clone it
 
 Container Widget
 - Demo: container_basic
