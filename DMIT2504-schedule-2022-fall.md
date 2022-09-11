@@ -38,35 +38,57 @@
 Intro to Course
 - Outline, Calendar & Assessments
 
-Setup of Development Environment.
-- Download Git to computer
-- GitHub Account
-- Visual Studio Code (VSCode)
-- VSCode Extensions
+Setup of Development Environment
+- Doc: environment_setup_test_drive
+  - Setup Folder Structure
+  - GitHub Account
+  - Download Git to computer
+  - Download GetHub CLI
+  - Download Flutter SDK
+  - Download Android Studio and Android SDK
+  - Visual Studio Code (VSCode)
+  - VSCode Flutter/Dart Extensions
 
 [Back to Top](#calendar)
 
 ## Day02
 
-
+Setup of Development Environment
+- Doc: environment_setup_test_drive
+  - Review setup steps from previous day
+  - Test drive the tool chain 
+- Doc: vscode_features_extensions
+- Clone my Demos from Github
 
 [Back to Top](#calendar)
 
 ## Day03
 
-
+Intro to dart and flutter
+- Demo: dart
+- Demo: flutter
 
 [Back to Top](#calendar)
 
 ## Day04
 
-
+Stateless Widget
+- Demo: stateless_widget
+- Demo: network_images
+- Demo: asset_images
 
 [Back to Top](#calendar)
 
 ## Day05
 
+Setup of Assessment Repo via Github Classroom
+- Use the following link to join Classroom, create an assessment repo, and clone it
+- [Link to Github Classroom](https://github.com)
 
+Container Widget
+- Demo: container_basic
+  - using DevTools to see margin and padding
+- Demo: container_decoration
 
 [Back to Top](#calendar)
 

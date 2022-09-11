@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 //In order to do this the images have to be
 //in a "images" folder in the project
 //and pubspec.yaml has to be changed to expose them.
+//Note that the relative path to the image starts relative
+//to where the pubspec.yaml file is not this main.dart file.
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: const Text("Asset Image"),
+          title: const Text('Asset Image'),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(

@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
             color: Colors.amber,
             border: Border.all(color: Colors.black, width: 3),
           ),
-          child: Image.asset('images/bottle.jpg'),
+          child: Image.asset('./images/bottle.jpg'),
         ),
       ),
     );
