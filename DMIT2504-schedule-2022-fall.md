@@ -98,13 +98,22 @@ Container Widget
 
 ## Day06
 
+Padding Widget with Container Widget
+- Demo: padding_container
+  - using DevTools to see padding
 
+Align Widget with Container Widget
+- Demo: align_container
 
 [Back to Top](#calendar)
 
 ## Day07
 
+Transform Widget with Container Widget
+- Demo: transform_container
 
+Row and Column Widgets
+- Demo: row_column
 
 [Back to Top](#calendar)
 

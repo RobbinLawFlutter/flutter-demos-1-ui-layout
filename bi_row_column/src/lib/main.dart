@@ -27,8 +27,6 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Column(
-          //mainAxisSize: MainAxisSize.max,
-          //mainAxisSize: MainAxisSize.min,
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
@@ -48,6 +46,8 @@ class MyApp extends StatelessWidget {
           //crossAxisAlignment: CrossAxisAlignment.start,
           //crossAxisAlignment: CrossAxisAlignment.end,
           //crossAxisAlignment: CrossAxisAlignment.baseline,
+          //mainAxisSize: MainAxisSize.max,
+          //mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Container(
               height: 100.0,
@@ -69,8 +69,12 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               height: 50.0,
+              //This will only work with a row
+              //as it affects the cross axis only.
               //height: double.infinity,
-              width: 50,
+              width: 50.0,
+              //This will only work with a column
+              //as it affects the cross axis only.
               //width: double.infinity,
               color: Colors.red,
               child: const Text(
@@ -79,6 +83,9 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               height: 20.0,
+              //If we do not specify a width
+              //it will default to the size
+              //of the containers child.
               //width: 10,
               color: Colors.blue,
               child: const Text(
