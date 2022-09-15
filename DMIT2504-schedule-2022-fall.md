@@ -14,7 +14,7 @@
 
 ## Calendar
 
-- [my demos link](https://github.com/RobbinLawFlutter/flutter-demos-1-ui-layout.git)
+- [Link to my demos](https://github.com/RobbinLawFlutter/flutter-demos-1-ui-layout.git)
 - [Link to Github Classroom](https://classroom.github.com/a/Tn_AzTv8)
 
 |Week|Mon|Tue|Wed|Thu|Fri|
