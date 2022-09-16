@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           title: const Text("Row and Column Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Column(
+        body: Row(
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
