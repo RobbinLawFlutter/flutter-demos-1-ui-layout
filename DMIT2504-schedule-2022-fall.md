@@ -2,14 +2,14 @@
 
 ## Assessments
 
-|Assessment Name|Description|Weight|Due Date|
+|Assessment Name|Description|Weight|Due Date at 11:59 PM|
 |:-:|:-:|:-:|:-:|
-|App-1||14|11:59 PM [Day10](#day10)|
-|App-2||16|11:59 PM [Day17](#day17)|
-|App-3||20|11:59 PM [Day26](#day26)|
-|App-4||20|11:59 PM [Day34](#day34)|
-|App-5||16|11:59 PM [Day42](#day42)|
-|Quiz||14|11:59 PM [Day42](#day42)
+|App-1||14|[Day10](#day10) Sep 23|
+|App-2||16|[Day17](#day17) Oct 14|
+|App-3||20|[Day26](#day26) Nov 4|
+|App-4||20|[Day34](#day34) Nov 25|
+|App-5||16|[Day42](#day42) Dec 14|
+|Quiz||14|[Day42](#day42) Dec 14|
 ||Total|100||
 
 ## Calendar
@@ -69,7 +69,7 @@ Setup of Development Environment
 
 ## Day03
 
-Intro to dart and flutter
+Intro to Dart and Flutter
 - Demo: dart
 - Demo: flutter
 
@@ -77,7 +77,7 @@ Intro to dart and flutter
 
 ## Day04
 
-Stateless Widget
+UI Layout
 - Demo: stateless_widget
 - Demo: network_images
 - Demo: asset_images
@@ -89,7 +89,7 @@ Stateless Widget
 Setup of Assessment Repo via Github Classroom
 - Use the link above to join Classroom, create an assessment repo, and clone it
 
-Container Widget
+UI Layout
 - Demo: container_basic
   - using DevTools to see margin and padding
 - Demo: container_decoration
@@ -98,7 +98,7 @@ Container Widget
 
 ## Day06
 
-Layout Widgets
+UI Layout
 - Demo: padding_container
   - using DevTools to see padding
 - Demo: align_container
@@ -107,7 +107,7 @@ Layout Widgets
 
 ## Day07
 
-Layout Widgets
+UI Layout
 - Demo: transform_container
 - Demo: row_column
 - Demo: expanded
@@ -117,7 +117,7 @@ Layout Widgets
 
 ## Day08 
 
-Layout Widgets
+UI Layout
 - Demo: stack_positioned_align
 - Demo: circleavitar_customfonts
 
@@ -125,7 +125,7 @@ Layout Widgets
 
 ## Day09 
 
-Layout Widgets
+UI Layout
 - Demo: icon_sizedbox
 - Demo: card_listtile_divide
 
@@ -133,7 +133,7 @@ Layout Widgets
 
 ## Day10
 
-Layout Widgets
+UI Layout
 - Demo: lambda_methods
 
 [Back to Top](#calendar)
@@ -146,199 +146,187 @@ User Input
 
 ## Day12
 
-
+User Input
 
 [Back to Top](#calendar)
 
 ## Day13
 
-
+User Input
 
 [Back to Top](#calendar)
 
 ## Day14
 
-
+User Input
 
 [Back to Top](#calendar)
 
 ## Day15
 
-
+User Input
 
 [Back to Top](#calendar)
 
 ## Day16
 
-
+User Input
 
 [Back to Top](#calendar)
 
 ## Day17
 
-
+User Input
 
 [Back to Top](#calendar)
 
 ## Day18 
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day19 
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day20
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day21
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day22
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day23
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day24
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day25
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day26
 
-
+Navigation & State Management
 
 [Back to Top](#calendar)
 
 ## Day27
 
-
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day28
 
-
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day29 
 
-
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day30 
 
-
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day31
 
-Project
-- Work Period
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day32
 
-Project
-- Work Period
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day33
 
-Project
-- Work Period
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day34
 
-Project
-- Work Period
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day35
 
-Project
-- Work Period
+Web Data & Local Persistence
 
 [Back to Top](#calendar)
 
 ## Day36 
 
-Project
-- Work Period
+Cloud Services
 
 
 [Back to Top](#calendar)
 
 ## Day37
 
-Project
-- Work Period
+Cloud Services
 
 [Back to Top](#calendar)
 
 ## Day38
 
-Project
-- Work Period
+Cloud Services
 
 [Back to Top](#calendar)
 
 ## Day39
 
-Project
-- Work Period
+Cloud Services
 
 [Back to Top](#calendar)
 
 ## Day40
 
-Project
-- Work Period
+Cloud Services
 
 [Back to Top](#calendar)
 
 ## Day41
 
-Project
-- Work Period
+Cloud Services
 
 [Back to Top](#calendar)
 
 ## Day42
 
-Project
-- Work Period
+Cloud Services
 
 [Back to Top](#calendar)
