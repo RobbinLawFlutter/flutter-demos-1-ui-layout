@@ -98,46 +98,49 @@ Container Widget
 
 ## Day06
 
-Padding Widget with Container Widget
+Layout Widgets
 - Demo: padding_container
   - using DevTools to see padding
-
-Align Widget with Container Widget
 - Demo: align_container
 
 [Back to Top](#calendar)
 
 ## Day07
 
-Transform Widget with Container Widget
+Layout Widgets
 - Demo: transform_container
-
-Row and Column Widgets
 - Demo: row_column
+- Demo: expanded
+- Demo: flexible
 
 [Back to Top](#calendar)
 
 ## Day08 
 
-
+Layout Widgets
+- Demo: stack_positioned_align
+- Demo: circleavitar_customfonts
 
 [Back to Top](#calendar)
 
 ## Day09 
 
-
+Layout Widgets
+- Demo: icon_sizedbox
+- Demo: card_listtile_divide
 
 [Back to Top](#calendar)
 
 ## Day10
 
-
+Layout Widgets
+- Demo: lambda_methods
 
 [Back to Top](#calendar)
 
 ## Day11
 
-
+User Input
 
 [Back to Top](#calendar)
 
