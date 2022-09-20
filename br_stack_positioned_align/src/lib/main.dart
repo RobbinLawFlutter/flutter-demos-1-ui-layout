@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
           //alignment: Alignment.topRight,
           children: <Widget>[
             //POSITIONED WIDGET WITHIN STACK
-            //A POSITIONED WIDGET MUST BE A DECENDENT OF A STACK.
+            //A POSITIONED WIDGET MUST BE A DESCENDENT OF A STACK.
             //IT WILL NOT WORK WITH ROW, COLUMN WIDGITS.
             //It works with a combination of parameters
             //vertical (top, bottom, height) and
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
             //to position the widgets within the Stack.
             Positioned(
               top: 100,
-              left: 100,
+              right: 50,
               child: Container(
                 height: 300,
                 width: 300,
@@ -81,12 +81,12 @@ class MyApp extends StatelessWidget {
               color: Colors.cyan,
             ),
             Positioned(
-              bottom: 100,
+              bottom: 90,
               right: 100,
               child: Image.asset('images/bottle.jpg'),
             ),
             Positioned(
-              bottom: 110,
+              bottom: 120,
               right: 110,
               child: Container(
                 decoration: const BoxDecoration(
