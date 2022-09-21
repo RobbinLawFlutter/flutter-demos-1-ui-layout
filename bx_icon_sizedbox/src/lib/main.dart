@@ -48,14 +48,14 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(20.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.black, width: 8),
                   color: Colors.white,
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(30),
                   child: Row(
                     children: <Widget>[
                       Icon(
@@ -65,8 +65,8 @@ class MyApp extends StatelessWidget {
                         color: Colors.blue.shade500,
                       ),
                       const SizedBox(
-                        width: 50,
-                        height: 10,
+                        width: 20,
+                        //height: 30,
                       ),
                       Text(
                         'go to this place',

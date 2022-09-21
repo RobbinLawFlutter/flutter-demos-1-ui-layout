@@ -1,4 +1,4 @@
-//listtile widget of the week by the flutter team.
+//listTile widget of the week by the flutter team.
 //https://www.youtube.com/watch?v=l8dj0yPBvgQ
 
 //cards in Material
@@ -24,15 +24,20 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             const SizedBox(
-              height: 50,
+              height: 20,
             ),
             Card(
               elevation: 10,
               child: Column(
                 children: const [
                   ListTile(
-                    title: Text('1625 Main Street',
-                        style: TextStyle(fontWeight: FontWeight.w500)),
+                    title: Text(
+                      '1625 Main Street',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
                     subtitle: Text('My City, CA 99984'),
                     leading: Icon(
                       Icons.restaurant_menu,
@@ -48,8 +53,7 @@ class MyApp extends StatelessWidget {
                     thickness: 2,
                   ),
                   ListTile(
-                    title: Text(
-                        '(408) 555-1212-777777777777777777777777777777777777',
+                    title: Text('(408) 555-1212-7777',
                         style: TextStyle(fontWeight: FontWeight.w500)),
                     leading: Icon(
                       Icons.contact_phone,
@@ -60,6 +64,9 @@ class MyApp extends StatelessWidget {
                       Icons.edit,
                       color: Colors.blueGrey,
                     ),
+                  ),
+                  Divider(
+                    thickness: 2,
                   ),
                   ListTile(
                     title: Text('costa@example.com'),
