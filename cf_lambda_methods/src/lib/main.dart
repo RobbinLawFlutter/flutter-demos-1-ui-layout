@@ -11,7 +11,7 @@ import 'package:flutter/rendering.dart';
 //methods with parameters to create complex Widgets by reusing code.
 
 // void main() {
-//   runApp(MyApp());
+//   runApp(const MyApp());
 // }
 void main() => runApp(const MyApp());
 
@@ -64,7 +64,7 @@ class MyApp extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             border: Border.all(
-              width: 10,
+              width: 5,
               color: const Color(0xFFFFFFFF),
             ),
             borderRadius: const BorderRadius.all(Radius.circular(8)),
