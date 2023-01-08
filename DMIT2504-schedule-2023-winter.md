@@ -1,9 +1,9 @@
-# DMIT2504 Winter 2023
+# DMIT2504 Android Dev with Flutter/Dart Winter 2023
 
 ## Links
 
 - [Link to Github Demos Repo](https://github.com/RobbinLawFlutter/flutter-demos-1-ui-layout.git)
-- [Link to Github Classroom and your Assessments Repo]()
+- [Link to Github Classroom and your Assessments Repo](https://classroom.github.com/a/CBni9M7H)
 
 ---
 
