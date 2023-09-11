@@ -4,6 +4,7 @@
 
 - [first time git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 - [git integration with VSCode](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support)
+- [git credential manager with multiple users](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/multiple-users.md)
 
 ----
 
