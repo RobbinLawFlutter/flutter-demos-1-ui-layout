@@ -11,9 +11,9 @@ import 'package:flutter/material.dart';
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
 
 //To see what is happening in this app we need to start the dartdevtools
-//by going to View/Command Palette/Dart: Open DevTools.
-//Choose open inspector page and click on Debug Paint to show
-//the results of the padding and margin on the VM.
+//by going to View/Command Palette/Dart: Open DevTools in a browser.
+//Choose the Flutter Inspector tab and click on Show Guidelines to show
+//the results of the padding in light blue and margin in dark blue on the VM.
 
 //By default a container sizes itself to its child size.
 
