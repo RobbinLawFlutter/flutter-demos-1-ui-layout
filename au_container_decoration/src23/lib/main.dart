@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 
 //Container Widget of the Week from the flutter team
@@ -9,22 +11,11 @@ import 'package:flutter/material.dart';
 //boxdecoration cheat sheet
 //https://medium.com/jlouage/flutter-boxdecoration-cheat-sheet-72cedaa1ba20
 
-//To see what is happening in this app we need to start the dartdevtools
-//by going to View/Command Palette/Dart: Open DevTools.
-//Choose open inspector page and click on Debug Paint to show
-//the results of the padding and margin on the VM.
-
-//By default a container sizes itself to its child size.
-
-//We can use the padding and margin properties of the Container Widget
-//to apply padding and margin to the Container.
-
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -59,7 +50,9 @@ class MyApp extends StatelessWidget {
           decoration: BoxDecoration(
             //change the shape of the container, default is rectangle.
             shape: BoxShape.circle,
-            //you cannot have color in two places.
+            // If you use the decoration property
+            // you can only change the color here, not
+            // in the color prop of the container.
             color: Colors.amber,
             border: Border.all(color: Colors.black, width: 3),
           ),

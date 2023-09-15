@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 
 //Padding Widget of the Week
@@ -6,20 +8,13 @@ import 'package:flutter/material.dart';
 //padding widget by RetroSudio
 //https://www.youtube.com/watch?v=d9wQuxPZ494&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=7
 
-//To see what is happening in this app we need to start the dartdevtools
-//by going to View/Command Palette/Dart: Open DevTools.
-//Choose open inspector page and click on Debug Paint to show
-//the results of the padding and margin on the VM.
-
-//We can use the Padding Widget wrapping the Container to apply
-//padding, but from the body of the Scaffolds perspective.
+// Note that there is NO Margin Widget.
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

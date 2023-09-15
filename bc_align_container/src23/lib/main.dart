@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 
 //Align Widget of the Week by the flutter team
@@ -6,22 +8,11 @@ import 'package:flutter/material.dart';
 //align widget by RetroStudio
 //https://www.youtube.com/watch?v=7Dljvr-Afvc&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=11
 
-//To see what is happening in this app we need to start the dartdevtools
-//by going to View/Command Palette/Dart: Open DevTools.
-//Choose open inspector page and click on Debug Paint to show
-//the results of the padding and margin on the VM.
-
-//We can use the Align Widget wrapping the Container to
-//align it, but from the body of the Scaffolds perspective.
-//We can also use Align wrapping the image to align it inside
-//the container.
-
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
