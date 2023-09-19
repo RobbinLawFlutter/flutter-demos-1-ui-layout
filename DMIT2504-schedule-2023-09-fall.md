@@ -1,9 +1,8 @@
-# CPSC1520 Fall 2023
+# DMIT2504 Fall 2023
 
 ## Links
 
-- [Link to my demos repo](https://github.com/RobbinLawJavaScript/javascript-demos.git)
-- [CPSC 1520 Student Website](https://cpsc-1520.github.io/cpsc1520/)
+- [Link to my demos repo](https://github.com/RobbinLawFlutter/flutter-demos-1-ui-layout.git)
 
 ---
 
@@ -11,21 +10,13 @@
 
 |Assessment|via|Due 11:59 PM Friday|%|
 |:-:|:-:|:-:|:-:|
-|L1 Console, DOM Access, Netlify|GitHub|Week 3|5
-|Q1 JavaScript Basics|Moodle|Week 3|5
-|L2 Functions|GitHub|Week 4|5
-|L3 Events|GitHub|Week 5|5
-|Q2 Functions & Events|Moodle|Week 5|5
-|L4 Forms with Validation, Decisions|GitHub|Week 6|5
-|A1 Dom Access, Functions, Events, Decisions, Forms: Cheeper App|GitHub|Week 7|10
-|L5 Loops & Arrays|GitHub|Week 9|5
-|Q3 Loops & Arrays|Moodle|Week 9|5
-|L6 Fetch API with .forEach() and .map()|GitHub|Week 11|5
-|Q4 Fetch API|Moodle|Week 11|5
-|A2 Loops, Arrays, Fetch API: Ted Talks Search Filter App|GitHub|Week 12|10
-|L7 ES Modules, npm, json, 3d party packages|GitHub|Week 13|5
-|L8 Classes, Objects|GitHub|Week 14|5
-|A3 Dictionary App|GitHub|Week 15|10
+| App 1 | Moodle | week 3  | 5 |
+| Quiz 1 | Moodle | week 3  | 5 |
+| App 2 | Moodle | week 6 | 10 |
+| Quiz 2 | Moodle | week 6 | 10 |
+| App 3 | Moodle | week 9  | 10 |
+| Quiz 3 | Moodle | week 9  | 10 |
+| Project| Youtube | week 15 | 50|
 |Total|||100|
 
 ## Calendar
