@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //Align Widget of the Week by the flutter team
 //https://www.youtube.com/watch?v=g2E7yl3MwMk
 
-//align widget by RetroStudio
+//Align widget by RetroStudio
 //https://www.youtube.com/watch?v=7Dljvr-Afvc&list=PLybADvIp2cxiVOEHi9ooCHP2tAAihHQPX&index=11
 
 void main() {
@@ -56,8 +56,10 @@ class MyApp extends StatelessWidget {
               child: Container(
                 height: 300,
                 width: 300,
-                child: const Center(child: Text('Positioned')),
                 color: Colors.amber,
+                child: const Center(
+                  child: Text('Positioned'),
+                ),
               ),
             ),
             //ALIGNED WIDGET WITHIN STACK
@@ -70,16 +72,20 @@ class MyApp extends StatelessWidget {
               child: Container(
                 height: 200,
                 width: 200,
-                child: const Center(child: Text('Aligned')),
                 color: Colors.brown,
+                child: const Center(
+                  child: Text('Aligned'),
+                ),
               ),
             ),
             //NON POSITIONED AND NON ALIGNED CHILD OF STACK
             Container(
               height: 150,
               width: 160,
-              child: const Center(child: Text('Non-Positioned/Aligned')),
               color: Colors.cyan,
+              child: const Center(
+                child: Text('Non-Positioned/Aligned'),
+              ),
             ),
             Positioned(
               bottom: 90,
