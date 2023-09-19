@@ -46,7 +46,10 @@ class MyApp extends StatelessWidget {
           //crossAxisAlignment: CrossAxisAlignment.stretch,
           //crossAxisAlignment: CrossAxisAlignment.start,
           //crossAxisAlignment: CrossAxisAlignment.end,
+          // If you use .baseline you must also require
+          // a textBaseline, else it throws an exception.
           //crossAxisAlignment: CrossAxisAlignment.baseline,
+          // These two parameters seam to do nothing.
           //mainAxisSize: MainAxisSize.max,
           //mainAxisSize: MainAxisSize.min,
           children: <Widget>[
