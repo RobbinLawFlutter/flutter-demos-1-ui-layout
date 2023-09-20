@@ -28,11 +28,11 @@ class MyApp extends StatelessWidget {
           title: const Text("Avitar & Text Properties"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Column(
+        body: const Column(
           mainAxisSize: MainAxisSize.max,
-          children: const <Widget>[
+          children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(15.0),
+              padding: EdgeInsets.all(20.0),
               child: CircleAvatar(
                 radius: 150,
                 //backgroundColor: Colors.amber,
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     //fontWeight: FontWeight.normal,
                     letterSpacing: 10.5,
-                    wordSpacing: 6),
+                    wordSpacing: 5),
               ),
             ),
           ],

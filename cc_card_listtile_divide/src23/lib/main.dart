@@ -22,15 +22,15 @@ class MyApp extends StatelessWidget {
           title: const Text("Card, ListTile, and Divider Widgets"),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Column(
+        body: const Column(
           children: [
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
             Card(
               elevation: 10,
               child: Column(
-                children: const [
+                children: [
                   ListTile(
                     title: Text(
                       '1625 Main Street',

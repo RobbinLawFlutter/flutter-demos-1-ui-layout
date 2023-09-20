@@ -60,14 +60,14 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     children: <Widget>[
                       Icon(
+                        Icons.access_alarm_sharp,
                         //Icons.add_shopping_cart,
-                        Icons.add_shopping_cart,
                         size: 50,
                         color: Colors.blue.shade500,
                       ),
                       const SizedBox(
                         width: 20,
-                        //height: 30,
+                        height: 20,
                       ),
                       Text(
                         'go to this place',
